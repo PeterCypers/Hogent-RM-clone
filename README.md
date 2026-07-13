@@ -3,7 +3,7 @@
 | Name     | First Name | Class group | Github user name                        |
 | :------- | :--------- | :---------- | :-------------------------------------- |
 | Cypers | Peter | TIN-2A1 | [PeterCypers](https://github.com/PeterCypers) |
-| Manu | Coppens | TIN-2A1     | [ManuCoppens](https://github.com/ManuCoppens) |
+| Coppens | Manu | TIN-2A1     | [ManuCoppens](https://github.com/ManuCoppens) |
 | SURNAME3 | FirstName3 | TIN-2A1     | [UserName](https://github.com/UserName) |
 | SURNAME4 | FirstName4 | TIN-2A1     | [UserName](https://github.com/UserName) |
 
