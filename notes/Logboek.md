@@ -24,3 +24,15 @@
 ## Todo's
 
 - [ ] Geschikte Onderwerpen zoeken
+- [ ] Onderwerp(en) kiezen
+- [ ] Onderwerpen fijnstellen: Opstellen centraal onderzoeksvraag (Cov)
+- [ ] Deelvragen probleem/oplossings-domein formuleren
+- [ ] Bronnen verzamelen
+- [ ] Initiële literatuurstudie
+- [ ] Mogelijke methodes
+- [ ] Verwachtte conclusies
+- [ ] Poster 1 design (spec.)
+- [ ] Poster 2 design (inter.)
+- [ ] Presentaties voorbereiden
+  - [ ] presentatie specialisatie
+  - [ ] presentatie interprofessioneel
