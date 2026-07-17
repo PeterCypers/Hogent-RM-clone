@@ -13,11 +13,13 @@
 | Datum | Activiteit | Groepslid |
 | ----- | ---------- | --------- |
 | 10-7-26 | github repo opzetten | Peter |
+| 17-7-26 | 1 mogelijk onderzoeks-probleem (interprofessioneel) gevonden | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
 | ----- | ---------- | ---- |
 | 10-07-26 | Team meeting 1 | / |
+| 17-07-26 | Team meeting 2 | / |
 
 ## Milestones
 
