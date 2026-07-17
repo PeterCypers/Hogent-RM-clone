@@ -2,9 +2,9 @@
 
 | Name     | First Name | Class group | Github user name                        |
 | :------- | :--------- | :---------- | :-------------------------------------- |
-| Cypers | Peter | TIN-2A1 | [PeterCypers](https://github.com/PeterCypers) |
-| Coppens | Manu | TIN-2A1     | [ManuCoppens](https://github.com/ManuCoppens) |
-| SURNAME3 | FirstName3 | TIN-2A1     | [UserName](https://github.com/UserName) |
+| Cypers     | Peter | TIN-2A1     | [PeterCypers](https://github.com/PeterCypers) |
+| Coppens    | Manu  | TIN-2A1     | [ManuCoppens](https://github.com/ManuCoppens) |
+| Van Mullem | Ewout | TIN-2A1     | [Ewout-VM](https://github.com/Ewout-VM)       |
 | SURNAME4 | FirstName4 | TIN-2A1     | [UserName](https://github.com/UserName) |
 
 ## TODOs
