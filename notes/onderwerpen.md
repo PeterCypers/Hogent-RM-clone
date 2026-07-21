@@ -101,6 +101,7 @@ Hoe kan een modulair Linux-gebaseerd besturingssysteem ontworpen worden dat zich
 - Sommige optimalisaties zijn afhankelijk van hardware, drivers of externe software.
 - Er moet een goede balans gevonden worden tussen automatisering en controle door de gebruiker.
 
+---
 
 ### 4. Cyberveiligheid in woonzorgcentra
 
@@ -140,6 +141,8 @@ Hoe kunnen woonzorgcentra hun computernetwerk optimaal beschermen tegen ransomwa
 - Het is lastig om te bewijzen dat een netwerk "veilig" is.
 - Professionele beveiligingsoplossingen zijn vaak duur en vereisen gespecialiseerde hardware.
 - Een woonzorgcentrum heeft vaak een uitgebreid netwerk met meerdere afdelingen, servers, printers, IoT-apparaten en gebruikers.
+
+---
 
 ### 5. Digitale inclusie voor ouderen
 
