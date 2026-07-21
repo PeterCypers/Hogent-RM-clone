@@ -20,6 +20,7 @@
 | ----- | ---------- | ---- |
 | 10-07-26 | Team meeting 1 | / |
 | 17-07-26 | Team meeting 2 | / |
+| 21-07-26 | Team meeting 3 | / |
 
 ## Milestones
 

@@ -28,5 +28,20 @@ Is het mogelijk om de verkoops-cijfers te traceren van verkochte voeding van inh
 **Mogelijke problemen met het onderwerp**:
 - te weinig technische
 - mogelijks problemen met toelating inkijk verkoops-cijfers winkel
+- Is het probleem al opgelost?
+- Is er al een onderzoek naar gebeurd?
 
 ---
+
+### 2. "Naam Onderzoeksvoorstel"
+
+**Vakgebied**: Interprofessioneel onderwerp (bijv. technologie en onderwijs,
+gezondheidszorg, economie, klimaat, voeding, sport ...)
+
+**Probleem**:
+
+**Centraal onderzoeksvraag**:
+
+**Deelvragen (probleemdomein)**:
+
+**Deelvragen (oplossingsdomein)**:
