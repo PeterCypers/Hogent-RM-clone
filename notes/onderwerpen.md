@@ -100,3 +100,81 @@ Hoe kan een modulair Linux-gebaseerd besturingssysteem ontworpen worden dat zich
 - Detecteren van de huidige gebruikersactiviteit (gaming, development...) is niet altijd eenduidig.
 - Sommige optimalisaties zijn afhankelijk van hardware, drivers of externe software.
 - Er moet een goede balans gevonden worden tussen automatisering en controle door de gebruiker.
+
+
+### 4. Cyberveiligheid in woonzorgcentra
+
+**Vakgebied**:
+Cybersecurity
+
+**Probleem**:
+Door de vergrijzing groeit het aantal woonzorgcentra en wordt de zorg steeds afhankelijker van digitale systemen. Bewonersgegevens, medische dossiers, medicatieschema's en communicatie verlopen grotendeels digitaal. Hierdoor worden woonzorgcentra een aantrekkelijk doelwit voor cybercriminelen, vooral voor ransomware-aanvallen.
+
+Een succesvolle aanval kan ervoor zorgen dat zorgverleners tijdelijk geen toegang hebben tot essentiële patiëntgegevens, wat de kwaliteit en veiligheid van de zorg ernstig kan beïnvloeden. Veel woonzorgcentra beschikken bovendien over beperkte IT-budgetten en weinig gespecialiseerde IT-medewerkers, waardoor een goede beveiliging niet altijd vanzelfsprekend is.
+
+**Centraal onderzoeksvraag**:
+Hoe kunnen woonzorgcentra hun computernetwerk optimaal beschermen tegen ransomware-aanvallen met een haalbare en kostenefficiënte beveiligingsstrategie?
+
+**Deelvragen (probleemdomein)**:
+- Waarom zijn woonzorgcentra een aantrekkelijk doelwit voor ransomware?
+- Welke gevolgen heeft een ransomware-aanval voor bewoners, personeel en de organisatie?
+- Welke soorten cyberaanvallen komen het vaakst voor in de zorgsector?
+- Welke beveiligingsmaatregelen gebruiken woonzorgcentra vandaag?
+- Welke zwakke punten komen vaak voor in de IT-infrastructuur van woonzorgcentra?
+- Welke wettelijke verplichtingen (zoals GDPR/NIS2) zijn relevant voor woonzorgcentra?
+
+**Deelvragen (oplossingsdomein)**:
+- Welke rol spelen firewalls bij het voorkomen van ransomware?
+- Hoe kan netwerksegmentatie de verspreiding van malware beperken?
+- Welke voordelen biedt Multi-Factor Authenticatie (MFA)?
+- Welke endpointbeveiliging is geschikt voor zorginstellingen?
+- Hoe kunnen veilige back-ups de impact van ransomware beperken?
+- Welke monitoringtools kunnen verdachte activiteiten tijdig detecteren?
+
+**Mogelijke problemen met het onderwerp**:
+- Beperkte toegang tot een echt woonzorgcentrum (via werk Ewout bij de gemeente zou dit geen probleem zijn.)
+- Woonzorgcentra verwerken medische en persoonlijke gegevens die beschermd zijn door de GDPR.
+- Een echte ransomware-aanval uitvoeren op een netwerk is onveilig en ethisch onverantwoord.
+- Cybersecurity is een zeer breed vakgebied met veel mogelijke beveiligingsmaatregelen.
+- Nieuwe ransomwarevarianten en aanvalstechnieken verschijnen voortdurend.
+- Het is lastig om te bewijzen dat een netwerk "veilig" is.
+- Professionele beveiligingsoplossingen zijn vaak duur en vereisen gespecialiseerde hardware.
+- Een woonzorgcentrum heeft vaak een uitgebreid netwerk met meerdere afdelingen, servers, printers, IoT-apparaten en gebruikers.
+
+### 5. Digitale inclusie voor ouderen
+
+**Vakgebied**:
+Webontwikkeling, UX/UI-design, Accessibility (WCAG-richtlijnen), Front-endontwikkeling, Responsive design, Gebruikersonderzoek (User Experience), Eventueel back-endontwikkeling en databanken
+
+**Probleem**:
+Door de vergrijzing groeit het aantal ouderen dat gebruik moet maken van digitale diensten, zoals het maken van afspraken bij de huisarts, het ziekenhuis, de gemeente of een woonzorgcentrum. Veel bestaande digitale platforms zijn echter niet ontworpen met ouderen in gedachten. Kleine knoppen, onduidelijke navigatie, complexe formulieren en technische vaktermen maken het gebruik moeilijk.
+
+Digitale uitsluiting kan ertoe leiden dat ouderen minder zelfstandig zijn, afspraken missen of afhankelijk worden van familie en zorgverleners. Daarom is het belangrijk om digitale toepassingen toegankelijk en gebruiksvriendelijk te ontwerpen.
+
+**Centraal onderzoeksvraag**:
+Hoe kan een gebruiksvriendelijk digitaal afsprakenplatform de digitale toegankelijkheid en zelfstandigheid van ouderen verbeteren?
+
+**Deelvragen (probleemdomein)**:
+- Waarom ervaren ouderen moeilijkheden bij het gebruik van digitale toepassingen?
+- Welke factoren dragen bij aan digitale uitsluiting bij ouderen?
+- Welke maatschappelijke gevolgen heeft beperkte digitale toegankelijkheid?
+- Wat is digitale inclusie?
+- Welke toegankelijkheidsrichtlijnen (WCAG) zijn relevant voor webapplicaties?
+- Welke ontwerpprincipes maken een website gebruiksvriendelijk voor ouderen?
+- Welke bestaande afsprakenplatformen zijn er en welke tekortkomingen hebben ze?
+
+**Deelvragen (oplossingsdomein)**:
+- Welke technologieën zijn geschikt voor het ontwikkelen van een toegankelijk afsprakenplatform?
+- Hoe kan een veilige gebruikersregistratie worden voorzien?
+- Hoe worden afspraken opgeslagen en beheerd?
+- Hoe kan het platform zowel op computer als tablet en smartphone goed werken?
+
+**Mogelijke problemen met het onderwerp**:
+- Het vinden van voldoende ouderen om gebruikerstesten uit te voeren kan lastig zijn.
+- Afbakening heel ruim
+- Wat voor de ene gebruiker eenvoudig is, kan voor een andere nog steeds moeilijk zijn.
+- Een volledig afsprakenplatform ontwikkelen kan veel tijd kosten.
+- Digitale toegankelijkheid omvat ook kleurcontrast, toetsenbordnavigatie, schermlezers, eenvoudige taal en duidelijke feedback.
+- Je kunt bestaande afsprakenplatformen van ziekenhuizen of woonzorgcentra meestal niet aanpassen of integreren.
+- Niet alle ouderen hebben dezelfde ervaring met computers, tablets of smartphones.
+- Ook een eenvoudig afsprakenplatform verwerkt persoonsgegevens.
