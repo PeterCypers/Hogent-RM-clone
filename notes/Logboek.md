@@ -8,12 +8,15 @@
 * Ewout Van Mullem
 * Manu Coppens
 * Peter Cypers
+* Stef Simons
 
 ## Activiteiten Individueel
 | Datum | Activiteit | Groepslid |
 | ----- | ---------- | --------- |
 | 10-7-26 | github repo opzetten | Peter |
-| 17-7-26 | 1 mogelijk onderzoeks-probleem (interprofessioneel) gevonden | Peter |
+| 17-7-26 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Peter |
+| 21-7-23 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Stef |
+| 21-7-23 | 1 mogelijk onderzoeksprobleem (specialisatie) gevonden | Stef |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |

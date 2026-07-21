@@ -5,7 +5,7 @@
 | Cypers     | Peter | TIN-2A1      | [PeterCypers](https://github.com/PeterCypers) |
 | Coppens    | Manu  | TIN-2A1      | [ManuCoppens](https://github.com/ManuCoppens) |
 | Van Mullem | Ewout | TIN-AO/2     | [Ewout-VM](https://github.com/Ewout-VM)       |
-| SURNAME4 | FirstName4 | TIN-2A1     | [UserName](https://github.com/UserName) |
+| Simons     | Stef  | TIN-AO/1      | [StefSimons](https://github.com/StefSimons) |
 
 ## TODOs
 
