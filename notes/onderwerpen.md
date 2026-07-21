@@ -38,7 +38,21 @@ Is het mogelijk om de verkoops-cijfers te traceren van verkochte voeding van inh
 **Vakgebied**: Interprofessioneel onderwerp (bijv. technologie en onderwijs,
 gezondheidszorg, economie, klimaat, voeding, sport ...)
 
-**Probleem**:
+**Probleem**: (Ecologisch voetafdruk tracker)
+
+**Centraal onderzoeksvraag**:
+
+**Deelvragen (probleemdomein)**:
+
+**Deelvragen (oplossingsdomein)**:
+
+---
+
+### 3. "Naam Onderzoeksvoorstel"
+
+**Vakgebied**: Development
+
+**Probleem**: (Modulair Operating Systeem binnen Linux)
 
 **Centraal onderzoeksvraag**:
 

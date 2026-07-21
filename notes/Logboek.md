@@ -34,8 +34,6 @@
 - [ ] Initiële literatuurstudie
 - [ ] Mogelijke methodes
 - [ ] Verwachtte conclusies
-- [ ] Poster 1 design (spec.)
-- [ ] Poster 2 design (inter.)
 - [ ] Presentaties voorbereiden
   - [ ] presentatie specialisatie
   - [ ] presentatie interprofessioneel
