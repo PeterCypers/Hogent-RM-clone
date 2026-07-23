@@ -24,15 +24,16 @@
 | 10-07-26 | Team meeting 1 | / |
 | 17-07-26 | Team meeting 2 | / |
 | 21-07-26 | Team meeting 3 | / |
+| 23-07-26 | Onderwerpen bespreken/kiezen | / |
 
 ## Milestones
 
 ## Todo's
 
-- [ ] Geschikte Onderwerpen zoeken
-- [ ] Onderwerp(en) kiezen
-- [ ] Onderwerpen fijnstellen: Opstellen centraal onderzoeksvraag (Cov)
-- [ ] Deelvragen probleem/oplossings-domein formuleren
+- [x] Geschikte Onderwerpen zoeken
+- [x] Onderwerp(en) kiezen
+- [x] Onderwerpen fijnstellen: Opstellen centraal onderzoeksvraag (Cov)
+- [x] Deelvragen probleem/oplossings-domein formuleren
 - [ ] Bronnen verzamelen
 - [ ] Initiële literatuurstudie
 - [ ] Mogelijke methodes
