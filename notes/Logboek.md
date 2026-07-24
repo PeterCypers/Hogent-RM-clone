@@ -17,6 +17,7 @@
 | 17-7-26 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Peter |
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Stef |
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (specialisatie) gevonden | Stef |
+| 24-7-26 | Ecologisch voetafdruk bronnen zoeken | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
