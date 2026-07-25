@@ -18,6 +18,7 @@
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Stef |
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (specialisatie) gevonden | Stef |
 | 24-7-26 | Ecologisch voetafdruk bronnen zoeken | Peter |
+| 25-7-26 | Bestaande apps (carbon footprint calculators) opgezocht | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
@@ -36,6 +37,7 @@
 - [x] Onderwerpen fijnstellen: Opstellen centraal onderzoeksvraag (Cov)
 - [x] Deelvragen probleem/oplossings-domein formuleren
 - [ ] Bronnen verzamelen
+- [ ] craap-test
 - [ ] Initiële literatuurstudie
 - [ ] Mogelijke methodes
 - [ ] Verwachtte conclusies
