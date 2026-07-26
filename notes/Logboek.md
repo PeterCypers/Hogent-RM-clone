@@ -19,6 +19,7 @@
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (specialisatie) gevonden | Stef |
 | 24-7-26 | Ecologisch voetafdruk bronnen zoeken | Peter |
 | 25-7-26 | Bestaande apps (carbon footprint calculators) opgezocht | Peter |
+| 26-7-26 | Gamification opgezocht & bronnen aan bib-file toegevoegd | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
