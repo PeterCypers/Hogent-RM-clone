@@ -33,73 +33,82 @@ Is het mogelijk om de verkoops-cijfers te traceren van verkochte voeding van inh
 
 ---
 
-### 2. Een digitale ecologische voetafdruktracker voor duurzamere keuzes
+### 2. Een digitale ecologische voetafdruktracker ter ondersteuning van duurzaam gedrag bij jongeren
 
 **Vakgebied**:
-Interprofessioneel onderwerp: Informatietechnologie & Klimaat/Duurzaamheid
+Interprofessioneel onderwerp: Informatietechnologie & Klimaat/Duurzaamheid & Psychologie
 
 **Probleem**:
-Veel mensen willen duurzamer leven, maar hebben weinig inzicht in de impact van hun dagelijkse keuzes op hun ecologische voetafdruk. Bestaande tools zijn vaak complex, vereisen veel handmatige invoer of geven onvoldoende gepersonaliseerde feedback, waardoor gebruikers minder gemotiveerd zijn om hun gedrag aan te passen.
+Jongeren zijn zich steeds meer bewust van het belang van duurzaamheid, maar hebben vaak weinig inzicht in de impact van hun dagelijkse keuzes op hun ecologische voetafdruk. Bestaande tools zijn vaak complex, vereisen veel handmatige invoer of bieden onvoldoende gepersonaliseerde feedback, waardoor jongeren minder gemotiveerd zijn om duurzame gewoontes op te bouwen. 
 
-**Centraal onderzoeksvraag**:
-Hoe kan een digitale ecologische voetafdruktracker gebruikers helpen om inzicht te krijgen in hun ecologische impact en hen motiveren om duurzamere keuzes te maken?
+Er is behoefte aan een gebruiksvriendelijke digitale oplosssing die inzicht biedt in hun ecologische impact en hen ondersteunt bij het maken van duurzamere keuzes.
+
+**Centrale onderzoeksvraag**:
+Hoe kan een digitale ecologische voetafdruktracker jongeren ondersteunen bij het maken van duurzamere keuzes door inzicht te geven in hun ecologische impact?
 
 **Deelvragen (probleemdomein)**:
-- Wat is een ecologische voetafdruk en welke factoren hebben de grootste invloed hierop?
-- Waarom hebben veel mensen moeite om hun ecologische impact correct in te schatten?
-- Welke bestaande oplossingen bestaan er om een ecologische voetafdruk te berekenen en wat zijn hun beperkingen?
-- Welke informatie hebben gebruikers nodig om hun ecologische voetafdruk te begrijpen en te verminderen?
+- Wat is een ecologische voetafdruk en welke factoren hebben de grootste invloed hierop? 
+- Welke dagelijkse keuzes van jongeren hebben de grootste impact op hun ecologische voetafdruk? 
+- Waarom vinden jongeren het moeilijk om duurzame keuzes consequent vol te houden? 
+- Welke bestaande digitale toepassingen ondersteunen duurzame keuzes en welke beperkingen hebben ze?  
+- Welke behoeften en verwachtingen hebben jongeren van een digitale ecologische voetafdruktracker?
 
 **Deelvragen (oplossingsdomein)**:
-- Welke gegevens zijn nodig om de ecologische voetafdruk van een gebruiker op een betrouwbare manier te berekenen?
-- Welke functionaliteiten moet een digitale voetafdruktracker bevatten om gebruiksvriendelijk en effectief te zijn?
-- Hoe kunnen visualisaties en dashboards gebruikers helpen om hun ecologische impact beter te begrijpen?
-- Hoe kunnen technieken zoals gamification of gepersonaliseerde aanbevelingen gebruikers motiveren om duurzamere keuzes te maken?
+- Welke gegevens zijn nodig om de ecologische voetafdruk van jongere op een betrouwbare manier te berekenen? 
+- Welke functionaliteiten moet een digitale voetafdruktracker bevatten om aantrekkelijk en gebruiksvriendelijk te zijn voor jongeren? 
+- Hoe kunnen visualisaties en dashboards jongeren helpen om hun ecologische impact beter te begrijpen? 
+- Hoe kunnen gamification of gepersonaliseerde aanbevelingen jongeren motiveren om duurzamere keuzes te maken? 
+- Hoe kan de privacy van jongeren worden gewaarborgd bij het verzamelen en verwerken van persoonlijke gegevens?
 
 **Mogelijke problemen met het onderwerp**:
-- Veel factoren moeten in kaart gebracht worden
-- Gebruikers kunnen foute data doorgeven
-- Gebruikers geven geen toegang tot sommige data vanwege privacy redenen
-- Actuele gegevens kunnen snel veranderen
+- De ecologische voetafdruk is afhankelijk van veel factoren, waardoor een nauwkeurige berekening moeilijk is.  
+- Jongeren kunnen onvolledige of foutieve gegevens invoeren.  
+- Niet alle noodzakelijke gegevens zijn beschikbaar vanwege privacy- of toegangsbeperkingen.  
+- Emissiefactoren en duurzaamheidsgegevens veranderen regelmatig en moeten actueel blijven.  
+- Het is moeilijk om aan te tonen dat een digitale toepassing daadwerkelijk leidt tot langdurige gedragsverandering.  
+- Jongeren kunnen hun motivatie verliezen wanneer de applicatie onvoldoende aantrekkelijk of gebruiksvriendelijk is.
 
 ---
 
-### 3. MOS – Modulair Operating Systeem: Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving
+### 3. Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten 
 
 **Vakgebied**:
 Development (Software Engineering / Operating Systems / Human-Computer Interaction)
 
 **Probleem**:
-Huidige besturingssystemen zijn ontworpen als algemene ("one-size-fits-all") omgevingen. Hierdoor bevatten ze veel functionaliteiten die niet voor elke gebruiker relevant zijn, terwijl ze zich slechts beperkt aanpassen aan de huidige activiteit van de gebruiker.
+Huidige desktopsystemen zijn voornamelijk ontworpen als algemene ("one-size-fits-all") omgevingen. Hierdoor bevatten ze veel functionaliteiten die niet voor iedere gebruiker relevant zijn, terwijl ze zich nauwelijks aanpassen aan de activiteit die de gebruiker op dat moment uitvoert. 
 
-Hoewel Linux verschillende gespecialiseerde distributies aanbiedt (bv. Pop!_OS voor development, SteamOS voor gaming), moet de gebruiker vooraf één distributie kiezen. Er bestaat geen systeem dat de voordelen van verschillende gespecialiseerde omgevingen combineert binnen één modulair platform dat zich kan aanpassen aan de context van de gebruiker.
+Hoewel Linux verschillende gespecialiseerde distributies aanbiedt (zoals Pop!_OS voor development en SteamOS voor gaming), moet de gebruiker vooraf één distributie kiezen. Wanneer de gebruiker wisselt tussen programmeren, gamen, content creatie of creatieve toepassingen, blijft de werkomgeving grotendeels hetzelfde en moeten veel instellingen, applicaties en systeemoptimalisaties handmatig aangepast worden. 
 
-**Centraal onderzoeksvraag**:
-Hoe kan een modulair Linux-gebaseerd besturingssysteem ontworpen worden dat zich dynamisch aanpast aan de huidige activiteit van de gebruiker zonder de prestaties of gebruikservaring negatief te beïnvloeden?
+Er bestaat momenteel geen modulair Linux-desktopsysteem dat zich dynamisch kan aanpassen aan de context van de gebruiker en waarbij functionaliteit eenvoudig toegevoegd, verwijderd of gepersonaliseerd kan worden. 
+
+**Centrale onderzoeksvraag**:
+Hoe kan een modulair Linux-desktopsysteem gebruikers ondersteunen die regelmatig wisselen tussen verschillende computeractiviteiten?
 
 **Deelvragen (probleemdomein)**:
-- Waarom voelen huidige besturingssystemen voor veel gebruikers tegelijk uitgebreid én onnodig complex aan?
-- Welke architectuur gebruiken Linux-distributies zoals Pop!_OS, SteamOS en Ubuntu?
-- Welke onderdelen van een Linux-distributie zijn verantwoordelijk voor de gebruikerservaring en welke behoren tot de onderliggende kernel?
-- Hoe beheren bestaande besturingssystemen systeemresources tijdens verschillende gebruiksscenario's (gaming, development, creatief werk...)?
-- Welke bestaande oplossingen bestaan er reeds voor modulaire of contextbewuste systemen?
-- Welke beperkingen ondervinden gebruikers vandaag bij het wisselen tussen verschillende workflows?
+- Hoe zijn huidige Linux-distributies zoals Pop!_OS, SteamOS en Ubuntu technisch opgebouwd?  
+- Welke onderdelen van een Linux-distributie bepalen de gebruikerservaring?  
+- Welke bestaande oplossingen bestaan er voor contextbewuste of modulaire desktopomgevingen?  
+- Welke beperkingen ervaren gebruikers die regelmatig wisselen tussen verschillende workflows (bv. development, gaming en contentcreatie)?  
+- Hoe worden systeemresources momenteel beheerd tijdens verschillende soorten computergebruik?  
+- Welke ontwerpprincipes kunnen afgeleid worden uit bestaande Linux-distributies zonder hun volledige architectuur over te nemen?
 
 **Deelvragen (oplossingsdomein)**:
-- Hoe kan een modulaire architectuur ontworpen worden waarbij functionaliteit opgesplitst wordt in afzonderlijke modules?
-- Hoe kunnen verschillende modi (Gaming, Development, Writing...) dynamisch geactiveerd worden?
-- Hoe kan het systeem applicaties classificeren en bepalen welke processen prioriteit moeten krijgen?
-- Hoe kunnen gebruikers modules installeren, verwijderen en personaliseren zonder de stabiliteit van het systeem aan te tasten?
-- Hoe kan een prototype gebouwd worden bovenop een bestaande Linux-distributie (bv. Pop!_OS) zonder een volledig nieuwe kernel te ontwikkelen?
-- Welke prestatieverbeteringen of workflowverbeteringen levert een modulair systeem op ten opzichte van een standaard Linux-installatie?
+- Hoe kan een modulaire architectuur ontwikkeld worden bovenop een bestaande Linux-distributie?  
+- Welke contextinformatie is noodzakelijk om automatisch tussen gebruikersmodi te kunnen schakelen? 
+- Hoe kan het systeem bepalen welke applicaties en processen prioriteit moeten krijgen afhankelijk van de actieve modus?  
+- Hoe kunnen gebruikers modules toevoegen, verwijderen en personaliseren zonder de stabiliteit van het systeem in gevaar te brengen?  
+- Welke softwarearchitectuur is geschikt voor het implementeren van een modulair Linux-desktopsysteem met contextbewuste gebruikersmodi?  
+- Welke invloed heeft een contextbewuste desktopomgeving op prestaties, gebruiksgemak en workflow?
 
 **Mogelijke problemen met het onderwerp**:
-- De scope is zeer groot en moet beperkt worden tot een proof-of-concept.
-- Niet alle systeemoptimalisaties kunnen zonder wijzigingen aan de Linux-kernel gerealiseerd worden.
-- Het meten van prestatieverbeteringen is complex en vereist objectieve benchmarks.
-- Detecteren van de huidige gebruikersactiviteit (gaming, development...) is niet altijd eenduidig.
-- Sommige optimalisaties zijn afhankelijk van hardware, drivers of externe software.
-- Er moet een goede balans gevonden worden tussen automatisering en controle door de gebruiker.
+- De scope is zeer groot en moet beperkt worden tot een proof-of-concept. 
+- Niet alle systeemoptimalisaties kunnen zonder wijzigingen aan de Linux-kernel gerealiseerd worden. 
+- Het meten van prestatieverbeteringen is complex en vereist objectieve benchmarks. 
+- Detecteren van de huidige gebruikersactiviteit (gaming, development...) is niet altijd eenduidig. 
+- Sommige optimalisaties zijn afhankelijk van hardware, drivers of externe software. 
+- Er moet een goede balans gevonden worden tussen automatisering en controle door de gebruiker. 
+- De modulaire architectuur moet uitbreidbaar blijven zonder onnodige complexiteit toe te voegen. 
 
 ---
 
