@@ -22,6 +22,7 @@
 | 26-7-26 | Gamification opgezocht & bronnen aan bib-file toegevoegd | Peter |
 | 26-7-26 | Aanpassen en verduidelijken van specialisatie onderzoeksprobleem | Stef |
 | 26-7-26 | Bronnen voor specialisatie onderzoeksprobleem toegevoegd | Stef |
+| 27-7-26 | Interdisciplinair tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
