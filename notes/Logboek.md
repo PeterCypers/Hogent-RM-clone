@@ -31,6 +31,7 @@
 | 17-07-26 | Team meeting 2 | / |
 | 21-07-26 | Team meeting 3 | / |
 | 23-07-26 | Onderwerpen bespreken/kiezen | / |
+| 28-07-26 | Groepen indelen specialisatie/interdisciplinair | Per 2 aan een voorstel |
 
 ## Milestones
 
