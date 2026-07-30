@@ -2,7 +2,7 @@
 
 | Name     | First Name | Class group | Github user name                        |
 | :------- | :--------- | :---------- | :-------------------------------------- |
-| Cypers     | Peter | TIN-2A1      | [PeterCypers](https://github.com/PeterCypers) |
+| Cypers     | Peter | TIN-AO/2      | [PeterCypers](https://github.com/PeterCypers) |
 | Coppens    | Manu  | TIN-2A1      | [ManuCoppens](https://github.com/ManuCoppens) |
 | Van Mullem | Ewout | TIN-AO/2     | [Ewout-VM](https://github.com/Ewout-VM)       |
 | Simons     | Stef  | TIN-AO/1      | [StefSimons](https://github.com/StefSimons) |

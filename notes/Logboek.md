@@ -23,6 +23,7 @@
 | 26-7-26 | Aanpassen en verduidelijken van specialisatie onderzoeksprobleem | Stef |
 | 26-7-26 | Bronnen voor specialisatie onderzoeksprobleem toegevoegd | Stef |
 | 27-7-26 | Interdisciplinair tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Peter |
+| 30-7-26 | V2 Introductie: lead-in, work in progress probleemstelling | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
