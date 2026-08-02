@@ -24,6 +24,7 @@
 | 26-7-26 | Bronnen voor specialisatie onderzoeksprobleem toegevoegd | Stef |
 | 27-7-26 | Interdisciplinair tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Peter |
 | 30-7-26 | V2 Introductie: lead-in, work in progress probleemstelling | Peter |
+| 02-8-26 | V2 Introductie wip | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
@@ -33,6 +34,15 @@
 | 21-07-26 | Team meeting 3 | / |
 | 23-07-26 | Onderwerpen bespreken/kiezen | / |
 | 28-07-26 | Groepen indelen specialisatie/interdisciplinair | Per 2 aan een voorstel |
+
+## Activiteiten sub-groep
+* Specialisatie: Ewout & Stef
+* Interdisciplinair: Manu & Peter
+
+| Datum | Activiteit | Groepsleden |
+| ----- | ---------- | ----------- |
+| 31-07-26 | Taken verdelen | Manu & Peter |
+
 
 ## Milestones
 

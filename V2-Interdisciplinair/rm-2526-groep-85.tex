@@ -6,6 +6,12 @@
 % "english" option, i.e. \documentclass[english]{hogent-article}
 \documentclass{hogent-article}
 
+% Preamble
+% package imports:
+\usepackage{comment} % comment-blocks
+\usepackage{enumitem} % meer enum-list opties
+\usepackage{tcolorbox} % deelvragen
+
 % Include bibliography file
 \addbibresource{references.bib}
 
@@ -16,8 +22,9 @@
 \course{Research Methods, 2N1} 
 \assignmenttype{Groepsopdracht}
 \academicyear{2025-2026}
-\title{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijkse gedrag bij Vlaamse scholieren}
-
+\title{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij Vlaamse studenten (tussen 18 en 26 jaar)}
+% doelgroep a: Vlaamse studenten (tussen 18 en 26 jaar)
+% doelgroep b: studenten aan HOGENT
 % TODO: English text? Comment or remove the lines above and uncomment the lines
 % below
 
@@ -56,10 +63,7 @@
 \specialisation{Mobile \& Enterprise development}
 
 % TODO: choose some appropriate keywords for your research proposals
-\keywords{Carabon footprint, Ecological footprint, Ecological footprint calculator, User experience, Sustainable consumption behavior, Sustainability}
-
-% extra package imports:
-\usepackage{comment}
+\keywords{Carbon footprint, Ecological footprint, Ecological footprint calculator, User experience, Sustainable consumption behavior, Sustainability}
 
 \begin{document}
 
@@ -97,6 +101,56 @@ Er wordt dagelijks in Europa heel wat afval geproduceerd, als Belgen spelen we h
 % Probleemstelling:
 % als we jongeren kunnen aanzetten tot meer ecologisch - duurzame gedrag kan dat een positieve effect hebben op de ecologisch voetafdruk heel het land, dus als we jongeren/scholieren kunnen attent maken of met een leuke app kunnen overtuigen om hun gedrag een beetje aan te passen gaat ons land misschien zakken in de lijst van afvalproducenten en andere positieve gevolgen (buiten enkel focus op wegwerp-afval en recyclage)
 
+%todo: CoV
+% Centraal onderzoeksvraag
+
+
+% Deelvragen
+Hieronder wordt de onderzoeksvraag opgesplitst in een aantal deelvragen die zullen worden onderzocht om het probleem beter te begrijpen:
+
+\begin{itemize}[leftmargin=0pt]
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Wat is een ecologische voetafdruk en welke factoren hebben de grootste invloed hierop? 
+    \end{tcolorbox} 
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke dagelijkse keuzes van jongeren hebben de grootste impact op hun ecologische voetafdruk? 
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Waarom vinden jongeren het moeilijk om duurzame keuzes consequent vol te houden?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke bestaande digitale toepassingen ondersteunen duurzame keuzes en welke beperkingen hebben ze?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke behoeften en verwachtingen hebben jongeren van een digitale ecologische voetafdruk-tracker? 
+    \end{tcolorbox}
+\end{itemize}
+
+De volgende deelvragen bouwen hierop verder en richten zich op de ontwikkeling en uitwerking van een geschikte oplossing:
+
+\begin{itemize}[leftmargin=0pt]
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke gegevens zijn nodig om de ecologische voetafdruk van jongeren op een betrouwbare manier te berekenen?
+    \end{tcolorbox} 
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke functionaliteiten moet een digitale voetafdruktracker bevatten om aantrekkelijk en gebruiksvriendelijk te zijn voor jongeren? 
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe kunnen visualisaties en dashboards jongeren helpen om hun ecologische impact beter te begrijpen? 
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe kunnen gamification of gepersonaliseerde aanbevelingen jongeren motiveren om duurzamere keuzes te maken? 
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe kan de privacy van jongeren worden gewaarborgd bij het verzamelen en verwerken van persoonlijke gegevens? 
+    \end{tcolorbox}
+\end{itemize}
+
+% Doel en begrenzing van het onderzoek + Methode(outline)
+% todo: mogelijks "specifieke doelgroep" en "een doelgroep" vervangen met studenten aan HOGENT (als de Titel verandert)
+In dit onderzoek worden ontwerptechnieken zoals gamification, voortgangssystemen en feedbackmechanismen ingezet om een proof-of-concept-applicatie op te stellen die gebruikersretentie bevordert bij een specifieke doelgroep. Deze proof-of-concept heeft uiteindelijk als doel inzicht te verwerven in hoe het gebruik van dit soort app een doelgroep kan stimuleren om hun ecologische voetafdruk te verminderen.
+
+In de volgende hoofdstukken worden bovenstaande onderzoeksvragen behandeld aan de hand van een literatuurstudie en requirements-analyse.
 
 \section{Literatuurstudie}%
 \label{sec:literatuurstudie}
@@ -111,6 +165,7 @@ Inleidende deel $\ldots$
 \subsection{Carbon Footprint}
 \label{ssec:carbonfootprint}
 %disambiguation: wat is dit? wat houdt het in? welke acties van mensen hebben hier een invloed op?
+% EPD: environmental product declaration (is dit relevant/interessant/nuttig?)
 %todo
 
 \subsection{Tools om de carbon footprint te meten}
@@ -132,7 +187,7 @@ Inleidende deel $\ldots$
 \label{ssec:retentieengamification}
 % bron: Oliveira2024
 % Fogg's Behavior Model
-% octalysis framework
+% octalysis framework (voortgangssystemen en feedbackmechanismen)
 % PBL-framework
 
 \section{Methodologie}%
