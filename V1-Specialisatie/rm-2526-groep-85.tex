@@ -6,6 +6,12 @@
 % "english" option, i.e. \documentclass[english]{hogent-article}
 \documentclass{hogent-article}
 
+% Preamble
+% package imports:
+\usepackage{comment} % comment-blocks
+\usepackage{enumitem} % meer enum-list opties
+\usepackage{tcolorbox} % deelvragen
+
 % Include bibliography file
 \addbibresource{references.bib}
 
@@ -16,7 +22,7 @@
 \course{Research Methods, 2AO} 
 \assignmenttype{Groepsopdracht}
 \academicyear{2025-2026}
-\title{Schriftelijke voorbereiding onderzoeksvoorstellen}
+\title{}
 
 % TODO: English text? Comment or remove the lines above and uncomment the lines
 % below
@@ -28,8 +34,13 @@
 % \title{Written preparation of research proposals}
 
 % TODO: Replace student names and email addresses
+<<<<<<< HEAD
 \author{Stef Simons}
 \email{stef.simons@student.hogent.be}
+=======
+\author{Ewout Van Mullem}
+\email{ewout.vanmullen@student.hogent.be}
+>>>>>>> 22ffbae (Klaarzetten texfile voor specialisatie)
 
 \author{Manu Coppens}
 \email{manu.coppens@student.hogent.be}
@@ -37,8 +48,13 @@
 \author{Peter Cypers}
 \email{peter.cypers@student.hogent.be}
 
+<<<<<<< HEAD
 \author{Ewout Van Mullem}
 \email{ewout.vanmullem@student.hogent.be}
+=======
+\author{Stef Simons}
+\email{stef.simons@student.hogent.be}
+>>>>>>> 22ffbae (Klaarzetten texfile voor specialisatie)
 
 % TODO: Link your Github-repository here
 \projectrepo{https://github.com/HoGentTIN/rm-25-26-groep-85}
@@ -53,7 +69,7 @@
 %
 % - If your research does not fit into any of these domains, specify a specialization yourself.
 %
-\specialisation{Mobile \& Enterprise development}
+\specialisation{System Software \& Software Architecture}
 
 % TODO: choose some appropriate keywords for your research proposals
 \keywords{Linux, Modulair, Operating System}
@@ -64,23 +80,38 @@
 % proposal. **ALSO REPLACE THE HEADING TITLES BY APPROPRIATE ONES!** The
 % current headings are just placeholders.
 \begin{abstract}
-  Wij presenteren het éérste onderzoek naar radiofrequente interferentie (RFI) op de toekomstige locatie van de laagfrequente Square Kilometre Array (SKA), het Murchison Radio-astronomie Observatorium (MRO), dat de RFI zowel in de tijd als ruimtelijk oplost.  Het onderzoek wordt uitgevoerd in een frequentiebereik van 1 MHz binnen de FM-band, ontworpen om de dichtstbijzijnde en sterkste FM-zenders van de MRO (gevestigd in Geraldton, op ongeveer 300 km afstand) te omvatten.  Gedurende ongeveer drie dagen, met gebruikmaking van de tweede iteratie van de Engineering Development Array in een ``all-sky imaging mode'', hebben we een reeks RFI-signalen gevonden.  We kunnen de signalen categoriseren in: signalen die rechtstreeks van de zenders worden ontvangen, vanaf hun horizonlocaties; reflecties van vliegtuigen (die ongeveer 13\% van de waarnemingsduur in beslag nemen); reflecties van objecten in een baan om de aarde; en reflecties van meteoor-ionisatiesporen.  In totaal analyseren we 33.994 beelden met een tijdresolutie van 7,92 s in beide polarisaties en een hoekresolutie van ongeveer 3,5$^{\circ}$, waarbij ongeveer veertigduizend RFI-gebeurtenissen worden gedetecteerd.  Deze gedetailleerde uitsplitsing van RFI in de MRO-omgeving zal toekomstige gedetailleerde analyses mogelijk maken van de waarschijnlijke gevolgen van RFI voor belangrijke wetenschap bij lage radiofrequenties met de SKA.
+  Lorum ipsum
 \end{abstract}
 
 \tableofcontents
 
-\section{Introductie}%
-\label{sec:introductie}
+\section{Inleiding}%
+\label{sec:inleiding}
 Computers worden vandaag gebruikt voor uiteenlopende activiteiten, zoals softwareontwikkeling, het spelen van spellen maar ook administratief werk. Deze activiteiten stellen verschillende eisen aan de beschikbare software, de systeemconfiguratie en het gebruik van systeemresources. Toch maken de meeste besturingssystemen gebruik van één algemene desktopomgeving die nauwelijks verandert wanneer de gebruiker wisselt tussen verschillende workflows.
 
-Binnen het Linux-ecosysteem bestaan verschillende distributies die geoptimaliseerd zijn voor specifieke toepassingen, zoals Pop! \textunderscore OS voor development en SteamOS voor gaming. Deze optimalisaties zijn echter statisch: de gebruiker moet vooraf één distributie kiezen en handmatig instellingen of applicaties aanpassen wanneer de activiteit verandert. Hoewel Linux bekendstaat om zijn flexibiliteit en uitbreidbaarheid, bestaat er momenteel geen modulaire desktopomgeving die zich automatisch aanpast aan de context van de gebruiker en waarbij functionaliteit eenvoudig kan worden toegevoegd of gepersonaliseerd.
+Binnen het Linux-ecosysteem bestaan verschillende distributies die geoptimaliseerd zijn voor specifieke toepassingen, zoals Pop!\_OS voor development en SteamOS voor gaming. Deze optimalisaties zijn echter statisch: de gebruiker moet vooraf één distributie kiezen en handmatig instellingen of applicaties aanpassen wanneer de activiteit verandert. Hoewel Linux bekendstaat om zijn flexibiliteit en uitbreidbaarheid, bestaat er momenteel geen modulaire desktopomgeving die zich automatisch aanpast aan de context van de gebruiker en waarbij functionaliteit eenvoudig kan worden toegevoegd of gepersonaliseerd.
 
 Deze bachelorproef onderzoekt daarom hoe een modulair en contextbewust Linux-desktopsysteem kan worden ontworpen dat gebruikers ondersteunt die regelmatig wisselen tussen verschillende computeractiviteiten. Daarbij wordt nagegaan welke architectuur hiervoor geschikt is, welke contextinformatie nodig is om automatisch tussen gebruikersmodi te schakelen en welke invloed een dergelijke aanpak heeft op prestaties, gebruiksgemak en workflow.
 
-\section{Framework}%
-\label{sec:framework}
+\begin{comment}
+  verwachtte structuur:
+  - Lead-in (algemene kadering)
+  - Probleemstelling
+  - Onderzoeksvraag (CoV)
+  - Deelvragen probleem
+  - Deelvragen oplossingen
+  - doel en begrenzing vh onderzoek
+  - Methode (+outline)
+\end{comment}
 
-Veronderstel dat er een multimodale theorie bestaat, zodat we gemakkelijk write-ahead logging kunnen bestuderen. Elke typische evaluatie van Scheme zal duidelijk vereisen dat SMP's alomtegenwoordig, psychoakoestisch, en mobiel kunnen worden gemaakt; onze benadering is niet anders. Ondanks de resultaten van P. U. Williams, kunnen we bevestigen dat webbrowsers event-driven kunnen worden gemaakt, homogeen, en heterogeen kunnen worden gemaakt. Daarom is het ontwerp dat YnowHip gebruikt stevig verankerd in de realiteit. Ondanks het feit dat het volledig een bevestigd doel is, heeft het een ruime historische precedent.
+%todo: lead-in
+% Lead-in:
+
+%todo: probleemstelling
+% Probleemstelling:
+
+%todo: CoV
+% Centraal onderzoeksvraag
 
 \section{Methodologie}%
 \label{sec:methodologie}
@@ -107,31 +138,52 @@ In de evaluatiefase wordt het prototype getest aan de hand van verschillende geb
 
 In de laatste fase worden de onderzoeksresultaten verwerkt in de bachelorproef. De resultaten van de literatuurstudie, het ontwerp, de implementatie en de evaluatie worden samengebracht om de centrale onderzoeksvraag te beantwoorden. Daarnaast worden de beperkingen van het prototype besproken en worden aanbevelingen geformuleerd voor verder onderzoek of toekomstige uitbreidingen. De fase wordt afgesloten met het finaliseren van de bachelorproef en de voorbereiding van de verdediging.
 
+% Deelvragen
+Hieronder wordt de onderzoeksvraag opgesplitst in een aantal deelvragen die zullen worden onderzocht om het probleem beter te begrijpen:
 
-\section{Results}%
-\label{sec:results}
+\begin{itemize}[leftmargin=0pt]
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe zijn huidige Linux-distributies zoals Pop!\_OS, SteamOS en Ubuntu technisch opgebouwd?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke onderdelen van een Linux-distributie bepalen de gebruikerservaring?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke bestaande oplossingen bestaan er voor contextbewuste of modulaire desktopomgevingen?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke beperkingen ervaren gebruikers die regelmatig wisselen tussen verschillende workflows (bv. development, gaming en contentcreatie)?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe worden systeemresources momenteel beheerd tijdens verschillende soorten computergebruik?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke ontwerpprincipes kunnen afgeleid worden uit bestaande Linux-distributies zonder hun volledige architectuur over te nemen?
+    \end{tcolorbox}
+\end{itemize}
 
-Onze prestatie-analyse\footnote{Zie \url{https://github.com/some/repo}} vormt op zichzelf al een waardevolle onderzoeksbijdrage. Onze algemene evaluatiestrategie tracht drie hypotheses te bewijzen: (1) dat hashtabellen niet langer het systeemontwerp beïnvloeden; (2) dat de partitietabel niet langer de prestaties beïnvloedt; en tenslotte (3) dat de interrupt rate constant is ge\-ble\-ven over opeenvolgende generaties van Commodore 64's. Onze evaluatie is erop gericht deze punten duidelijk te maken:
+De volgende deelvragen bouwen hierop verder en richten zich op de ontwikkeling en uitwerking van een geschikte oplossing:
 
-\begin{verbatim}
-  public class Greeter {
-    public static void main() {
-      System.out.println("Hello world!");
-    }
-  }
-\end{verbatim}
-
-\section{Analysis}%
-\label{sec:analysis}
-
-Is het mogelijk te rechtvaardigen dat we in sectie \ref{sec:results} weinig aandacht hebben besteed aan onze uitvoering en experimentele opzet? Ja, maar alleen in theorie. Met deze overwegingen in het achterhoofd, hebben we vier nieuwe experimenten uitgevoerd: (1) we gemeten de ruimte op de optische schijf als functie van de ROM verwerkingscapaciteit op een IBM PC Junior; (2) we maten de snelheid van de harde schijf als functie van het flash-geheugen geheugenruimte op een UNIVAC; (3) we vroegen (en antwoordden) wat er zou gebeuren als computationeel stochastische glasvezelkabels zouden worden gebruikt in plaats van checksums; en (4) we hebben YnowHip getest op onze eigen desktop machines, met bijzondere aandacht voor de ruimte op de tapedrive. We hebben de resultaten van enkele eerdere experimenten, met name toen we tape drive doorvoer als functie van de snelheid van het bandstation op een Motorola bag telefoon.
-
-Nu de climaxanalyse van experimenten (3) en (4) die hierboven. Hoewel het nooit een uitgebreid doel is, is het afgeleid van bekende resultaten. Foutbalken zijn weggelaten, omdat de meeste van onze datapunten vielen buiten de 84 standaardafwijkingen van de waargenomen gemiddelden vielen. Gaussian elektromagnetische storingen in ons systeem veroorzaakten onstabiele experimentele resultaten. Wij hadden nauwelijks voorzien hoe nauwkeurig onze resultaten in deze fase van de evaluatiemethode.
-
-\section{Conclusions}%
-\label{sec:conclusions}
-
-In dit artikel hebben we aangetoond dat Sche\-me en write-ahead logging zelden incompatibel zijn. Om dit te bereiken voor kernels, beschreven we een nieuw raamwerk voor de constructie van virtuele machines. Ons systeem kan met succes vele compilers tegelijk aansturen. De visualisatie van e-commerce is belangrijker dan ooit, en onze methodologie helpt eindgebruikers precies dat te doen.
+\begin{itemize}[leftmargin=0pt]
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe kan een modulaire architectuur ontwikkeld worden bovenop een bestaande Linux-distributie?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke contextinformatie is noodzakelijk om automatisch tussen gebruikersmodi te kunnen schakelen?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe kan het systeem bepalen welke applicaties en processen prioriteit moeten krijgen afhankelijk van de actieve modus?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Hoe kunnen gebruikers modules toevoegen, verwijderen en personaliseren zonder de stabiliteit van het systeem in gevaar te brengen?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke softwarearchitectuur is geschikt voor het implementeren van een modulair Linux-desktopsysteem met contextbewuste gebruikersmodi?
+    \end{tcolorbox}
+    \item[] \begin{tcolorbox}[colback=yellow!30]
+        Welke invloed heeft een contextbewuste desktopomgeving op prestaties, gebruiksgemak en workflow?
+    \end{tcolorbox}
+\end{itemize}
 
 \printbibliography[heading=bibintoc]
 
