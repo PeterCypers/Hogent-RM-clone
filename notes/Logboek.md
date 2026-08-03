@@ -17,6 +17,7 @@
 | 17-7-26 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Peter |
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (interprofessioneel) gevonden | Stef |
 | 21-7-23 | 1 mogelijk onderzoeksprobleem (specialisatie) gevonden | Stef |
+| 21-7-23 | 2 mogelijke onderzoeksproblemen (interprofessioneel) gevonden | Ewout |
 | 24-7-26 | Ecologisch voetafdruk bronnen zoeken | Peter |
 | 25-7-26 | Bestaande apps (carbon footprint calculators) opgezocht | Peter |
 | 26-7-26 | Gamification opgezocht & bronnen aan bib-file toegevoegd | Peter |
