@@ -13,7 +13,7 @@
 
 \studyprogramme{Professionele bachelor toegepaste informatica}
 % TODO: replace 2N1 with the correct class group(s)!
-\course{Research Methods, 2N1} 
+\course{Research Methods, 2AO} 
 \assignmenttype{Groepsopdracht}
 \academicyear{2025-2026}
 \title{Schriftelijke voorbereiding onderzoeksvoorstellen}
@@ -28,20 +28,20 @@
 % \title{Written preparation of research proposals}
 
 % TODO: Replace student names and email addresses
-\author{Erdener Bayramoglu}
-\email{erdener.bayramoglu@student.hogent.be}
+\author{Stef Simons}
+\email{stef.simons@student.hogent.be}
 
-\author{Clara  Bekaert}
-\email{clara.bekaert@student.hogent.be}
+\author{Manu Coppens}
+\email{manu.coppens@student.hogent.be}
 
-\author{Sanya  Golovina}
-\email{sanya.golovina@student.hogent.be}
+\author{Peter Cypers}
+\email{peter.cypers@student.hogent.be}
 
-\author{Bavo Van Ginderen}
-\email{bavo.vanginderen@student.hogent.be}
+\author{Ewout Van Mullem}
+\email{ewout.vanmullem@student.hogent.be}
 
 % TODO: Link your Github-repository here
-\projectrepo{https://github.com/HoGentTIN/rm-25-26-groep-00}
+\projectrepo{https://github.com/HoGentTIN/rm-25-26-groep-85}
 
 % TODO: Choose the appropriate specialization from the list below, 
 %
@@ -56,7 +56,7 @@
 \specialisation{Mobile \& Enterprise development}
 
 % TODO: choose some appropriate keywords for your research proposals
-\keywords{Scheme, World Wide Web, $\lambda$-calculus}
+\keywords{Linux, Modulair, Operating System}
 
 \begin{document}
 
@@ -69,28 +69,44 @@
 
 \tableofcontents
 
-\section{Introduction}%
-\label{sec:introduction}
+\section{Introductie}%
+\label{sec:introductie}
+Computers worden vandaag gebruikt voor uiteenlopende activiteiten, zoals softwareontwikkeling, het spelen van spellen maar ook administratief werk. Deze activiteiten stellen verschillende eisen aan de beschikbare software, de systeemconfiguratie en het gebruik van systeemresources. Toch maken de meeste besturingssystemen gebruik van één algemene desktopomgeving die nauwelijks verandert wanneer de gebruiker wisselt tussen verschillende workflows.
 
-De laatste jaren is veel onderzoek gewijd aan de uitrol van het Internet; helaas hebben slechts weinigen onderzoek gedaan naar de simulatie van wide area netwerken~\autocite{Hykes2013}. In deze position paper ont\-krach\-ten we het begrip van het World Wide Web. De notie dat theoretici meewerken aan de verbetering van gerandomiseerde algoritmen wordt meestal belangrijk geacht. De analyse van lambda calculus zou de verfijning van het World Wide Web enorm vergroten.
+Binnen het Linux-ecosysteem bestaan verschillende distributies die geoptimaliseerd zijn voor specifieke toepassingen, zoals Pop! \textunderscore OS voor development en SteamOS voor gaming. Deze optimalisaties zijn echter statisch: de gebruiker moet vooraf één distributie kiezen en handmatig instellingen of applicaties aanpassen wanneer de activiteit verandert. Hoewel Linux bekendstaat om zijn flexibiliteit en uitbreidbaarheid, bestaat er momenteel geen modulaire desktopomgeving die zich automatisch aanpast aan de context van de gebruiker en waarbij functionaliteit eenvoudig kan worden toegevoegd of gepersonaliseerd.
 
-\begin{align*}
-  f(x) &= x^2\\
-  \mathbf{ g(x) } &= \frac{1}{x}\\
-   F(x)  &= \int^a_b \frac{1}{3}x^3\\
-\end{align*}
-
-Wij bevestigen dat het veel aangeprezen certificeerbare algoritme voor de constructie van online algoritmen door Lee en Davis loopt in $\Theta(n^2)$ tijd. Het lijkt op het eerste gezicht pervers maar het viel in met onze verwachtingen. Bestaande lossless en coöperatieve heuristieken gebruiken superblocks om DHCP in te zetten. Maar, twee eigenschappen maken deze oplossing perfect: YnowHip simuleert alomtegenwoordige symmetrieën, en bovendien biedt YnowHip gerepliceerde symmetrieën. Deze combinatie van eigenschappen is nog niet verbeterd in eerder werk.
+Deze bachelorproef onderzoekt daarom hoe een modulair en contextbewust Linux-desktopsysteem kan worden ontworpen dat gebruikers ondersteunt die regelmatig wisselen tussen verschillende computeractiviteiten. Daarbij wordt nagegaan welke architectuur hiervoor geschikt is, welke contextinformatie nodig is om automatisch tussen gebruikersmodi te schakelen en welke invloed een dergelijke aanpak heeft op prestaties, gebruiksgemak en workflow.
 
 \section{Framework}%
 \label{sec:framework}
 
 Veronderstel dat er een multimodale theorie bestaat, zodat we gemakkelijk write-ahead logging kunnen bestuderen. Elke typische evaluatie van Scheme zal duidelijk vereisen dat SMP's alomtegenwoordig, psychoakoestisch, en mobiel kunnen worden gemaakt; onze benadering is niet anders. Ondanks de resultaten van P. U. Williams, kunnen we bevestigen dat webbrowsers event-driven kunnen worden gemaakt, homogeen, en heterogeen kunnen worden gemaakt. Daarom is het ontwerp dat YnowHip gebruikt stevig verankerd in de realiteit. Ondanks het feit dat het volledig een bevestigd doel is, heeft het een ruime historische precedent.
 
-\section{Implementation}%
-\label{sec:implementation}
+\section{Methodologie}%
+\label{sec:methodologie}
 
-Hoewel veel sceptici zeiden dat het niet mogelijk was (met name Wilson en Moore), beschrijven wij een volledig werkende versie van ons systeem. Bovendien, was het nodig om de instructie snelheid die door ons raamwerk wordt gebruikt te beperken tot 30 pagina's. De met de hand geoptimaliseerde compiler bevat ongeveer 403 instructies van ML. Onze oplossing bestaat uit een client-side bibliotheek, een verzameling shell scripts, en een eigen database. Evenzo bevat de verzameling van shell scripts bevat ongeveer 52 instructies van~\textcite{LewisFowler2014}. Over het geheel genomen, voegt YnowHip slechts bescheiden overhead en complexiteit toe aan eerdere adaptieve systemen.
+Deze bachelorproef wordt uitgevoerd volgens de Proof-of-Concept-methodologie. Deze onderzoeksmethode combineert een theoretische analyse van een probleem met het ontwerpen, ontwikkelen en evalueren van een softwareoplossing. Het onderzoek wordt opgedeeld in vijf opeenvolgende fasen, waarbij de resultaten van elke fase de basis vormen voor de volgende. Dit wilt echter niet zeggen dat een fase volledig afgesloten wordt na het uitvoeren. Indien nodig, kunnen de vorige fases opnieuw doorlopen worden en kan er dus iteratief gewerkt worden.
+
+\subsection{Fase 1 – Literatuurstudie en probleemanalyse (februari)}%
+
+In de eerste fase wordt een literatuurstudie uitgevoerd naar Linux-distributies, desktopomgevingen, modulaire softwarearchitecturen en contextbewuste systemen. Daarnaast worden bestaande distributies, zoals Ubuntu, Pop!\textunderscore OS en SteamOS, geanalyseerd om hun architectuur, gebruikerservaring en beperkingen in kaart te brengen. Op basis van deze analyse worden de functionele en niet-functionele vereisten voor het systeem bepaald. Deze fase resulteert in een overzicht van bestaande oplossingen en een duidelijke afbakening van de eisen waaraan het proof-of-concept moet voldoen.
+
+\subsection{Fase 2 – Analyse en ontwerp (maart)}%
+
+Op basis van de resultaten uit de literatuurstudie wordt de softwarearchitectuur uitgewerkt. Hierbij wordt bepaald hoe de verschillende modules met elkaar communiceren, hoe contextinformatie wordt verzameld en verwerkt en hoe automatisch tussen verschillende gebruikersmodi kan worden geschakeld. Daarnaast worden de belangrijkste systeemcomponenten en hun onderlinge relaties uitgewerkt in architectuur- en UML-diagrammen. Het resultaat van deze fase is een technisch ontwerp dat als basis dient voor de implementatie.
+
+\subsection{Fase 3 – Ontwikkeling van het proof-of-concept (april)}%
+
+Tijdens de implementatiefase wordt een proof-of-concept ontwikkeld bovenop een bestaande Linux-distributie. De focus ligt op het realiseren van een modulaire architectuur, het implementeren van contextdetectie en het automatisch activeren van een beperkt aantal gebruikersmodi, zoals development en gaming. De ontwikkeling gebeurt iteratief, zodat onderdelen tijdens de implementatie getest en indien nodig aangepast kunnen worden. Aan het einde van deze fase is een werkend prototype beschikbaar.
+
+\subsection{Fase 4 – Testen en evalueren (mei)}%
+
+In de evaluatiefase wordt het prototype getest aan de hand van verschillende gebruiksscenario's. Hierbij wordt nagegaan of het systeem de gebruikerscontext correct detecteert, automatisch de juiste modules activeert en een meerwaarde biedt op het vlak van prestaties, gebruiksgemak en workflow. De resultaten van de functionele testen en prestatiebenchmarks worden geanalyseerd en eventuele tekortkomingen worden waar mogelijk verholpen. Deze fase resulteert in een geëvalueerd en geoptimaliseerd proof-of-concept.
+
+\subsection{Fase 5 – Rapportering en afronding (juni)}%
+
+In de laatste fase worden de onderzoeksresultaten verwerkt in de bachelorproef. De resultaten van de literatuurstudie, het ontwerp, de implementatie en de evaluatie worden samengebracht om de centrale onderzoeksvraag te beantwoorden. Daarnaast worden de beperkingen van het prototype besproken en worden aanbevelingen geformuleerd voor verder onderzoek of toekomstige uitbreidingen. De fase wordt afgesloten met het finaliseren van de bachelorproef en de voorbereiding van de verdediging.
+
 
 \section{Results}%
 \label{sec:results}
