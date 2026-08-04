@@ -28,8 +28,9 @@
 | 28-07-26 | Ecologisch voetafdruk bronnen zoeken | Manu |
 | 30-07-26 | V2 Introductie: lead-in, work in progress probleemstelling | Peter |
 | 02-08-26 | V2 Introductie wip | Peter |
-| 03-08-26 | Specialisatie tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Peter |
+| 03-08-26 | Specialisatie tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Stef |
 | 03-08-26 | Mmethodologie opstellen | Manu |
+| 04-08-26 | V2 Introductie voorlopig afgewerkt | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
