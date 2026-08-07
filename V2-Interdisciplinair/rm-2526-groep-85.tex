@@ -11,6 +11,7 @@
 \usepackage{comment} % comment-blocks
 \usepackage{enumitem} % meer enum-list opties
 \usepackage{tcolorbox} % deelvragen
+\usepackage{todonotes} % custom todos
 
 % Include bibliography file
 \addbibresource{references.bib}
@@ -19,10 +20,10 @@
 
 \studyprogramme{Professionele bachelor toegepaste informatica}
 % TODO: replace 2N1 with the correct class group(s)!
-\course{Research Methods, 2N1} 
+\course{Research Methods, AO2} 
 \assignmenttype{Groepsopdracht}
 \academicyear{2025-2026}
-\title{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij Vlaamse studenten (tussen 18 en 26 jaar)}
+\title{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT}
 % doelgroep a: Vlaamse studenten (tussen 18 en 26 jaar)
 % doelgroep b: studenten aan HOGENT
 % TODO: English text? Comment or remove the lines above and uncomment the lines
@@ -105,48 +106,36 @@
     %todo: CoV
     % Centraal onderzoeksvraag
     De kernvraag van dit onderzoek luidt als volgt:
-    \begin{tcolorbox}[colback=yellow!20]
+    \begin{tcolorbox}[colback=yellow!10]
         Hoe kan een digitale ecologische voetafdruk-tracker jongeren ondersteunen bij het maken van duurzamere keuzes door inzicht te geven in hun ecologische impact?
     \end{tcolorbox}
-    
-    \textit{Hoe kan een digitale ecologische voetafdruk-tracker jongeren ondersteunen bij het maken van duurzamere keuzes door inzicht te geven in hun ecologische impact?}
     
     % Deelvragen
     Hieronder wordt de onderzoeksvraag opgesplitst in een aantal deelvragen die zullen worden onderzocht om het probleem beter te begrijpen:
     
-    \begin{itemize}[leftmargin=0pt]
-        \item[] \begin{tcolorbox}[colback=yellow!10]
-            Wat is een ecologische voetafdruk en welke factoren hebben de grootste invloed hierop? 
-        \end{tcolorbox} 
-        \item[] \begin{tcolorbox}[colback=yellow!10]
-            Welke dagelijkse keuzes van jongeren hebben de grootste impact op hun ecologische voetafdruk? 
-        \end{tcolorbox}
-        \item[] \begin{tcolorbox}[colback=yellow!10]
-            Waarom vinden jongeren het moeilijk om duurzame keuzes consequent vol te houden?
-        \end{tcolorbox}
-        \item[] \begin{tcolorbox}[colback=yellow!10]
-            Welke bestaande digitale toepassingen ondersteunen duurzame keuzes en welke beperkingen hebben ze?
-        \end{tcolorbox}
-        \item[] \begin{tcolorbox}[colback=yellow!10]
-            Welke behoeften en verwachtingen hebben jongeren van een digitale ecologische voetafdruk-tracker? 
-        \end{tcolorbox}
-    \end{itemize}
+    \begin{enumerate}
+        \item Wat is een ecologische voetafdruk en welke factoren hebben de grootste invloed hierop? 
+        \item Welke dagelijkse keuzes van jongeren hebben de grootste impact op hun ecologische voetafdruk?
+        \item Waarom vinden jongeren het moeilijk om duurzame keuzes consequent vol te houden?
+        \item Welke bestaande digitale toepassingen ondersteunen duurzame keuzes en welke beperkingen hebben ze?
+        \item Welke behoeften en verwachtingen hebben jongeren van een digitale ecologische voet\-afdruk\--tracker?
+    \end{enumerate}
     
     De volgende deelvragen bouwen hierop verder en richten zich op de ontwikkeling en uitwerking van een geschikte oplossing:
     
     \begin{enumerate}[start=6]
         \item Welke gegevens zijn nodig om de ecologische voetafdruk van jongeren op een betrouwbare manier te berekenen?
-        \item Welke functionaliteiten moet een digitale voetafdruktracker bevatten om aantrekkelijk en gebruiksvriendelijk te zijn voor jongeren? 
+        \item Welke functionaliteiten moet een digitale\\ voet\-afdruk\--tracker bevatten om aantrekkelijk en gebruiksvriendelijk te zijn voor jongeren? 
         \item Hoe kunnen visualisaties en dashboards jongeren helpen om hun ecologische impact beter te begrijpen? 
-        \item Hoe kunnen gamification of gepersonaliseerde aanbevelingen jongeren motiveren om duurzamere keuzes te maken? 
+        \item Hoe kunnen gamification of gepersonaliseer\-de aanbevelingen jongeren motiveren om duurzamere keuzes te maken? 
         \item Hoe kan de privacy van jongeren worden gewaarborgd bij het verzamelen en verwerken van persoonlijke gegevens? 
     \end{enumerate}
     
     % Doel en begrenzing van het onderzoek + Methode(outline)
     % todo: mogelijks "specifieke doelgroep" en "een doelgroep" vervangen met studenten aan HOGENT (als de Titel verandert)
-    In dit rapport wordt gesteld dat ontwerptechnieken zoals gamification, voortgangssystemen en feedbackmechanismen kunnen worden ingezet om een applicatie op te stellen die gebruikersretentie bevordert bij een specifieke doelgroep. Vervolgens wordt een proof-of-concept-applicatie gemaakt. Deze heeft uiteindelijk als doel inzicht te verwerven in hoe het gebruik van dit soort app een doelgroep kan stimuleren om hun ecologische voetafdruk te verminderen.
+    In dit rapport wordt gesteld dat ontwerptechnieken zoals gamification, voortgangssystemen en feedbackmechanismen kunnen worden ingezet om een applicatie op te stellen die gebruikersretentie bevordert bij een specifieke doelgroep, namelijk studenten aan HOGENT. Vervolgens wordt een proof-of-concept-applicatie gemaakt. Deze heeft uiteindelijk als doel inzicht te verwerven in hoe het gebruik van dit soort app de studenten kan stimuleren om hun ecologische voetafdruk te verminderen.
     
-    In de volgende hoofdstukken worden bovenstaande onderzoeksvragen behandeld aan de hand van een literatuurstudie en requirements-analyse.
+    In de volgende hoofdstukken worden bovenstaande onderzoeksvragen behandeld aan de hand van een literatuurstudie en gebruikersonderzoek (requirements-analyse).
     
     \section{Literatuurstudie}%
     \label{sec:literatuurstudie}
@@ -163,6 +152,13 @@
     %disambiguation: wat is dit? wat houdt het in? welke acties van mensen hebben hier een invloed op?
     % EPD: environmental product declaration (is dit relevant/interessant/nuttig?)
     %todo
+    
+    % bron met de definitie van carbon footprint
+    % https://www.tarmacview.com/glossary/carbon-footprint/
+    % opmerking: het kan van een betere bron komen...
+    \begin{comment}
+        A carbon footprint is the total greenhouse gas emissions, measured as carbon dioxide equivalents (CO₂e), caused by individuals, organizations, products, or activities. It includes all direct and indirect GHG emissions across the entire life cycle, providing a comprehensive metric for understanding and reducing environmental impact.
+    \end{comment}
     
     \subsection{Tools om de carbon footprint te meten}
     \label{ssec:tools}
@@ -188,376 +184,380 @@
     
     \section{Methodologie}%
     \label{sec:methodologie}
+    
+    We bouwen een app en testen die daarna met echte gebruikers. Uit de literatuur \todo{ref:literatuur-sectie}
+    blijkt dat er al genoeg voetafdrukcalculators bestaan. Wat ontbreekt is onderzoek
+    naar wat zo'n tool met de gebruiker doet. De nadruk ligt in dit onderzoek dus op
+    het meten en niet enkel op het bouwen.
+    
+    Concreet leveren we vier dingen op:
+    
+    \begin{itemize}
+        \item een lijst van vereisten die we bij HOGENT-studenten zelf ophalen;
+        \item een berekeningsmodel dat we vergelijken met bestaande calculators;
+        \item een veldtest met een controlegroep, zodat we weten wat de gamification
+        zelf doet;
+        \item een test die meet of deelnemers achteraf beter inschatten welke keuzes
+        zwaar wegen.
+    \end{itemize}
+    
+    \subsection{Fasering}%
+    \label{ssec:fasering}
+    
+    Het onderzoek loopt in zes fasen. Tabel~\ref{tab:fasering} toont welke deelvraag
+    in welke fase aan bod komt.
+    
+    \begin{table*}[t]
+        \centering\small
+        \caption{Deelvragen, fasen en methoden}
+        \label{tab:fasering}
+        \fitwidth{
+            \begin{tabular}{@{}llp{6.5cm}p{4cm}@{}}
+                \toprule
+                \textbf{Fase} & \textbf{Deelvraag} & \textbf{Methode} & \textbf{Resultaat} \\
+                \midrule
+                1. Literatuurstudie    & 1, 2, 3 & Literatuuronderzoek, documentanalyse & Referentiekader \\
+                2. Gebruikersonderzoek & 3       & Enquête en interviews                & Vereisten, persona's \\
+                3. Ontwerp             & 1, 2    & Beslissingsmatrix, wireframes        & Ontwerpdossier \\
+                4. Implementatie       & 1, 3    & Twee ontwikkelrondes                 & Proof of concept \\
+                5. Evaluatie           & 4       & Usabilitytest, veldtest, loganalyse  & Meetgegevens \\
+                6. Analyse             & 4       & Statistiek en thematische analyse    & Conclusie \\
+                \bottomrule
+        \end{tabular}}
+    \end{table*}
+    
+    Voor de literatuurstudie zoeken we in Google Scholar, ScienceDirect, IEEE Xplore
+    en Web of Science. Onze zoektermen zijn onder andere \emph{ecological footprint},
+    \emph{carbon footprint calculator}, \emph{pro-environmental behaviour},
+    \emph{gamification} en \emph{adolescents}. We gebruiken peer-reviewed artikels
+    vanaf 2010.\todo{verwijderen? onnodig strenge restrictie} Voor emissiefactoren nemen we ook cijfers van instanties zoals de
+    Europese Commissie en ADEME, want die databanken zijn actueler dan academische
+    artikels.
+    
+    Fase~3 en~4 doorlopen we twee keer. Na de eerste versie houden we een korte
+    usabilitytest en die resultaten verwerken we in de tweede versie.
+    
+    \subsection{Gebruikersonderzoek}%
+    \label{ssec:gebruikersonderzoek}
+    
+    Onze doelgroep zijn studenten aan HOGENT, in de praktijk grotendeels tussen 18 en
+    25 jaar. We nemen in de enquête op of iemand op kot zit of thuis woont, want dat
+    bepaalt hoeveel invloed de student zelf heeft op energie en boodschappen. Wie thuis
+    woont beslist bijvoorbeeld zelden over de verwarming. Dat onderscheid gebruiken we
+    later om de resultaten op te splitsen.
+    
+    We verzamelen data op twee manieren. Eerst een online enquête bij ongeveer honderd \todo{Vanwaar 100? mogelijks kunnen we een email naar iedereen in onze opleiding sturen?}
+    studenten, verspreid via de opleidingen, de digitale leeromgeving en
+    studentenverenigingen. Die vraagt naar hun huidige gewoontes, wat hen tegenhoudt,
+    hoe ze hun smartphone gebruiken en wat ze van zo'n app verwachten. Daarnaast houden
+    we acht tot tien interviews. Daarin laten we studenten hardop denken terwijl ze
+    twee bestaande calculators uitproberen \todo{welke calculators specifiek?}. Zo zien we waar ze in de praktijk afhaken.
+    De interviews nemen we op en coderen we thematisch in twee rondes. Uit die thema's
+    maken we een lijst van vereisten, die we prioriteren met MoSCoW.
+    
+    \subsection{Platformkeuze}%
+    \label{ssec:platformkeuze}
+    
+    Het wordt een mobiele app. Jongeren zitten op hun smartphone en we hebben
+    pushnotificaties nodig. Zonder herinnering op het juiste moment houdt niemand
+    dagelijkse invoer vol.
+    
+    Welke technische aanpak we kiezen ligt nog open. We vergelijken drie opties in
+    een tabel: native, cross-platform (Flutter of React Native) en een progressive
+    web app. Onze criteria zijn:
+    
+    \begin{itemize}
+        \item werken pushnotificaties betrouwbaar op zowel Android als iOS;
+        \item kunnen we sensoren gebruiken, zoals de stappenteller, om invoer te
+        besparen;
+        \item hoe makkelijk raakt de app bij de studenten, en hoe lang duurt een app
+        store-review;
+        \item hoeveel tijd kost het en welke kennis heeft het team al; \todo{wie zit in het team? is het niet solo?}
+        \item werkt het in een klas waar iedereen een ander toestel heeft.
+    \end{itemize}
+    
+    Elk criterium krijgt een gewicht van 1 tot 5 en elke optie een score van 1 tot 5.
+    De volledige tabel zetten we in het verslag, zodat onze keuze te volgen is. We
+    verwachten dat een web app het beste scoort op bereik en een native app op
+    notificaties en sensoren. Wat een web app op iOS precies kan, testen we zelf uit.
+    
+    \subsection{Berekening van de voetafdruk}%
+    \label{ssec:berekeningsmodel}
+    
+    \subsubsection{Welke eenheid}
+    \label{sssec:welkeeenheid}
+    
+    De ecologische voetafdruk wordt normaal in mondiale hectaren uitgedrukt \todo{referentie nodig}. Bijna
+    alle emissiefactoren die je kan vinden staan echter in kilogram
+    CO$_2$-equivalent. Wij rekenen daarom in kg CO$_2$e. Die cijfers zijn publiek \todo{voetnoot:waar staan de cijfers}
+    beschikbaar en je kan ze per activiteit optellen. Waar het nuttig is tonen we ook
+    een omrekening naar hectaren, maar de feedback in de app baseren we daar niet op.
+    
+    \subsubsection{Emissiefactoren}
+    \label{sssec:emissiefactoren}
+    
+    De factoren halen we uit publieke databanken, vooral ADEME Base Empreinte \todo{referentie of voetnoot}. Waar
+    Belgische cijfers sterk afwijken gebruiken we die. Dat geldt bijvoorbeeld voor
+    elektriciteit, want die factor verschilt sterk per land.
+    
+    De factoren zetten we in een apart configuratiebestand met een versienummer en
+    een bron per factor. Ze staan dus niet in de code zelf. Emissiefactoren worden
+    namelijk regelmatig herzien \todo{ref:bewijs}. Een app die dat niet aankan klopt na één update niet
+    meer.
+    
+    \subsubsection{Wat meten we}
+    \label{sssec:watmetenwe}
+    
+    We delen gedrag op in vijf categorieën: mobiliteit, voeding, energie, consumptie
+    en afval. De verplaatsing naar de campus is voor studenten de meest herkenbare
+    dagelijkse keuze en die staat daarom centraal. Voor energie geldt een voorbehoud:
+    wie op kot zit heeft daar wel invloed op, wie thuis woont meestal niet. Voor die
+    tweede groep tonen we energie enkel informatief en laten we het niet meetellen in
+    de punten. Binnen de categorieën zijn er drie soorten waarden, zoals
+    Tabel~\ref{tab:indicatoren} toont.
+    \todo{in tabel: "vermenigvuldigen met de factor: refereer naar waar je deze formule hebt gevonden}
+    \begin{table*}[t]
+        \centering\small
+        \caption{Soorten waarden en hun verwerking}
+        \label{tab:indicatoren}
+        \fitwidth{
+            \begin{tabular}{@{}lp{5.5cm}p{7.5cm}@{}}
+                \toprule
+                \textbf{Soort} & \textbf{Voorbeeld} & \textbf{Verwerking} \\
+                \midrule
+                Getal  & Kilometers, kWh                  & Vermenigvuldigen met de factor  \\
+                Schaal & Aantal vleesmaaltijden per week  & Omrekenen via een gemiddelde portie \\
+                Ja/nee & Met de fiets of trein naar de campus & Vermeden uitstoot tegenover de normale situatie \\
+                \bottomrule
+        \end{tabular}}
+    \end{table*}
+    
+    Bij een ja/nee-actie is er geen meeteenheid. We rekenen die om naar uitstoot die
+    de student vermijdt tegenover zijn eigen normale situatie. Die situatie leggen we
+    vast bij het eerste gebruik. Zo kan een dag ook negatief uitvallen.
+    
+    De punten en de berekende uitstoot houden we uit elkaar. De uitstoot is een
+    schatting met een foutenmarge. De punten zijn iets wat wij bedenken om gedrag te
+    belonen. Haal je die twee door elkaar, dan gelooft niemand het cijfer nog \todo{iets té informeel?}. In de
+    app tonen we daarom een marge en geen exact getal.
+    
+    \subsubsection{Klopt ons model}
+    \label{sssec:kloptonsmodel}
+    
+    We maken tien persona's met een volledig ingevuld gedragsprofiel. Voor elke
+    persona berekenen we de jaarlijkse voetafdruk met ons model en met twee bestaande
+    calculators. Daarna vergelijken we de resultaten per categorie en in totaal. Een
+    afwijking onder 20 procent vinden we aanvaardbaar. Grotere verschillen zoeken we
+    uit. Ook dat levert een resultaat op, want het zegt iets over hoe verschillend
+    bestaande calculators rekenen.
+    
+    \subsection{Gamification}%
+    \label{ssec:gamification}
+    
+    De speelse elementen kiezen we op basis van twee modellen. Fogg zegt \todo{textcite:Volgens Fogg} dat gedrag
+    pas gebeurt als motivatie, mogelijkheid en een trigger samenvallen. De
+    zelfdeterminatietheorie \todo{textcite: zelfdeterminatietheorie} zegt dat motivatie enkel blijft als iemand zich autonoom,
+    bekwaam en verbonden voelt. Beloningen van buitenaf kunnen op termijn zelfs
+    averechts werken \todo{stelling:bewijs nodig - referentie}.
+    
+    Tabel~\ref{tab:mechanics} toont per element welk principe erachter zit en hoe we
+    het meten. Elk element dat we inbouwen moet in die tabel passen.
+    
+    \begin{table*}[t]
+        \centering\small
+        \caption{Gamification-elementen, principe en meetpunt}
+        \label{tab:mechanics}
+        \fitwidth{
+            \begin{tabular}{@{}p{4.5cm}p{4.5cm}p{6.5cm}@{}}
+                \toprule
+                \textbf{Element} & \textbf{Principe} & \textbf{Meetpunt} \\
+                \midrule
+                Puntensysteem            & Directe feedback           & Punten per actieve dag \\
+                Badges voor mijlpalen    & Bekwaamheid                & Badges per gebruiker \\
+                Dagelijkse reeks         & Trigger en gewoontevorming & Gemiddelde reekslengte \\
+                Zelfgekozen uitdaging    & Eigen keuze                & Aantal aangegane uitdagingen \\
+                Ranglijst tussen opleidingen & Verbondenheid          & Bijdrage per deelnemer \\
+                \bottomrule
+        \end{tabular}}
+    \end{table*}
+    
+    We werken met een ranglijst tussen opleidingen en niet tussen studenten
+    onderling. Een individuele ranglijst motiveert vooral wie al bovenaan staat. Wie
+    onderaan bengelt haakt af, en dat is net de groep waar het meeste te winnen valt.
+    Een groepsdoel vermijdt daarnaast dat het privégedrag van een individuele student
+    publiek vergelijkbaar wordt. Die keuze testen we niet apart. We onderbouwen ze
+    met literatuur en vermelden ze bij de beperkingen.
+    
+    \subsection{Evaluatie}%
+    \label{ssec:evaluatie}
+    
+    \subsubsection{Opzet}
+    \label{sssec:opzet}
+    
+    De evaluatie beantwoordt deelvraag~4 en heeft twee delen.
+    
+    Eerst een usabilitytest met vijf studenten. Die laten we hardop denken terwijl
+    ze de app gebruiken. We zoeken vooral naar dingen die de dagelijkse invoer
+    blokkeren.
+    
+    Daarna een veldtest van drie weken met twee groepen. Groep A krijgt de volledige
+    app. Groep B krijgt dezelfde app zonder gamification: wel invoer en feedback,
+    geen punten of badges. Beide groepen vullen voor en na de test dezelfde
+    vragenlijst in.
+    
+    Die tweede groep is belangrijk. Zonder controlegroep weten we niet of een
+    verbetering komt door de gamification, door het bijhouden zelf, of gewoon doordat
+    deelnemers weten dat ze gevolgd worden.
+    
+    We werven via de opleidingen, de digitale leeromgeving en studentenverenigingen,
+    en verdelen willekeurig per deelnemer. Dat kan hier, omdat studenten niet de hele
+    dag in dezelfde groep zitten zoals een klas in het secundair. Individuele
+    toewijzing is statistisch sterker, maar deelnemers uit dezelfde opleiding kunnen
+    hun versies wel met elkaar vergelijken. We vragen hen dat niet te doen en nemen
+    het risico op in de beperkingen. We mikken op 20 tot 30 deelnemers per groep.
+    
+    \subsubsection{Wat we meten}
+    \label{sssec:watmetenwe2}
+    
+    Tabel~\ref{tab:meetinstrumenten} toont per variabele het instrument en wanneer we
+    tevreden zijn. We combineren wat deelnemers zelf invullen met wat de app logt,
+    zodat we die twee tegen elkaar kunnen leggen\todo{informele taal}.
+    
+    \begin{table*}[t]
+        \centering\small
+        \caption{Variabelen, instrumenten en criteria}
+        \label{tab:meetinstrumenten}
+        \fitwidth{
+            \begin{tabular}{@{}lp{7.5cm}p{5cm}@{}}
+                \toprule
+                \textbf{Variabele} & \textbf{Instrument} & \textbf{Criterium} \\
+                \midrule
+                Bruikbaarheid  & System Usability Scale                & Score $\geq$ 68 \\
+                Invoerlast     & Tijd voor de dagelijkse invoer (log)  & Mediaan $<$ 60 s \\
+                Retentie       & Actieve dagen op 21, en dag 14 (log)  & Minstens 50 procent in groep A \\
+                Motivatie      & Intrinsic Motivation Inventory        & Verschil A en B \\
+                Inzicht        & Acties rangschikken, voor en na       & Betere rangcorrelatie \\
+                Gedrag         & Zelf ingevuld gedrag, voor en na      & Verschil A en B \\
+                Nauwkeurigheid & Persona's vergelijken met calculators & Afwijking onder 20 procent \\
+                Beleving       & Exit-interview, $n = 6$               & Kwalitatief \\
+                \bottomrule
+        \end{tabular}}
+    \end{table*}
+    
+    De rij \emph{inzicht} verdient uitleg. Mensen schatten de klimaatimpact van hun
+    keuzes vaak verkeerd in en onderschatten net de zware acties\todo{zware acties? -> acties die een groter impact op het klimaat hebben?}. We laten de
+    deelnemers voor en na de test acht acties rangschikken van meeste naar minste
+    impact. Die volgorde vergelijken we met de wetenschappelijke volgorde via een
+    Spearman-rangcorrelatie \todo{referentie of footnote / uitleg}. Zo meten we of ze echt iets geleerd hebben, en niet
+    alleen of ze dat zelf denken.
+    
+    \subsubsection{Analyse}
+    \label{sssec:analyse}
+    
+    Voor en na binnen dezelfde groep vergelijken we met een Wilcoxon signed-rank
+    test \todo{ref of footnote: + uitleg?}. Het verschil tussen de twee groepen toetsen we met een
+    Mann-Whitney-U-test\todo{ref of footnote: + uitleg?}. Onze steekproef is klein, dus geven we naast de
+    $p$-waarde ook de effectgrootte met een betrouwbaarheidsinterval. Onze conclusies
+    formuleren we als aanwijzingen. De exit-interviews coderen we op dezelfde manier
+    als in fase~2.
+    
+    \subsection{Ethiek en privacy}%
+    \label{ssec:ethiek}
+    
+    %todo: mogelijks referentie naar GDPR ?
+    
+    Onze deelnemers zijn meerderjarig. Toestemming van ouders is dus niet nodig, wat
+    de drempel om deel te nemen aanzienlijk verlaagt. We werken met een
+    toestemmingsformulier waarin staat welke gegevens we verzamelen, waarvoor we ze
+    gebruiken en hoe lang we ze bewaren. Deelname is vrijwillig en deelnemers kunnen
+    op elk moment stoppen zonder opgave van reden en zonder gevolgen voor hun
+    opleiding. Studenten die nog geen 18 zijn sluiten we uit, tenzij de bevoegde
+    instantie binnen de opleiding een andere regeling oplegt. Het volledige protocol
+    leggen we voor voordat de veldtest start.
+    
+    Eén punt vraagt extra aandacht. Wij zijn zelf studenten aan dezelfde
+    instelling, dus we werven onder medestudenten en soms onder mensen die we kennen.
+    Dat verhoogt het risico dat deelnemers antwoorden geven waarvan ze denken dat wij
+    ze willen horen. We werven daarom zo veel mogelijk buiten onze eigen opleiding, en
+    de enquête en de vragenlijsten voor en na de test nemen we anoniem af.
+    
+    Verder verzamelen we zo weinig mogelijk gegevens:
+    
+    \begin{itemize}
+        \item geen locatiegeschiedenis, alleen de afstand per vervoersmiddel;
+        \item accounts zonder naam of e-mailadres, gekoppeld via een deelnemerscode;
+        \item geen gevoelige categorieën zoals gezondheid;
+        \item geen publieke vergelijking tussen individuele deelnemers;
+        \item hosting binnen de EU en verwijdering na het onderzoek.
+    \end{itemize}
+    
+    \subsection{Planning}%
+    \label{ssec:planning}
+    
+    Tabel~\ref{tab:planning} geeft de indicatieve planning.
+    
+    \begin{table*}[t]
+        \centering\small
+        \caption{Indicatieve planning}
+        \label{tab:planning}
+        \fitwidth{
+            \begin{tabular}{@{}llp{9cm}@{}}
+                \toprule
+                \textbf{Periode} & \textbf{Fase} & \textbf{Mijlpaal} \\
+                \midrule
+                Week 1--3   & Literatuurstudie    & Referentiekader klaar \\
+                Week 3--5   & Gebruikersonderzoek & Enquête afgenomen, interviews gecodeerd \\
+                Week 5--7   & Ontwerp             & Platformkeuze en wireframes vast \\
+                Week 7--12  & Implementatie       & Proof of concept in twee rondes \\
+                Week 10     & Usabilitytest       & Blokkerende problemen opgelost \\
+                Week 13--15 & Veldtest            & Drie weken data verzameld \\
+                Week 16--17 & Analyse             & Resultaten en conclusie \\
+                \bottomrule
+        \end{tabular}}
+    \end{table*}
+    
+    Twee dingen kunnen die planning in de war sturen. Halen we de veertig deelnemers
+    niet, dan schakelen we over op een opzet waarbij elke deelnemer de twee versies na
+    elkaar gebruikt. Dat vraagt minder mensen, maar introduceert een leereffect tussen
+    de twee periodes. Duurt de app store-review \todo{Apple App Store of de Google Play Store? of maakt het niet perse uit?} te lang, dan verdelen we een testversie
+    rechtstreeks onder de deelnemers.
+    
+    \subsection{Validiteit en beperkingen}%
+    \label{ssec:beperkingen}
+    
+    Om de betrouwbaarheid te verhogen nemen we de enquête anoniem af en volgen we bij
+    de interviews een vaste vragenlijst, zodat de antwoorden onderling vergelijkbaar
+    blijven.
+    
+    De belangrijkste beperking is de duur. Drie weken is kort. We zien daarmee of
+    deelnemers de app in het begin blijven gebruiken, maar niet of hun gedrag
+    blijvend verandert. Een deel van wat we meten zal het nieuwtje zijn. Daarom
+    rapporteren we de retentie per week apart en niet als één gemiddelde.
+    
+    Onze steekproef is ook klein en niet representatief. Alle deelnemers studeren aan
+    één instelling en melden zich vrijwillig aan, waardoor studenten die al met
+    duurzaamheid bezig zijn waarschijnlijk oververtegenwoordigd zijn. Onze resultaten
+    gelden dus niet zonder meer voor jongeren in het algemeen of voor studenten aan
+    andere instellingen. Wie op kot zit en wie thuis woont hebben bovendien een heel
+    verschillende beslissingsruimte, dus rapporteren we die twee groepen apart.
+    
+    Verder meten we gedrag grotendeels via wat deelnemers zelf invullen, en dat is
+    gevoelig voor sociaal wenselijke antwoorden, zeker omdat we onder medestudenten
+    werven. De loggegevens helpen daar deels tegen, maar lossen het niet op. Tot slot
+    meten we gerapporteerd gedrag en geen echte vermindering van uitstoot. Onze
+    conclusies formuleren we op dat niveau.
+    
+    \section{Verwacht resultaat en conclusie}%
+    \label{sec:results}
+    
+    Het verwachte resultaat is een werkende proof-of-concept applicatie met
+    basisfunctionaliteiten en gamification-elementen. Daarnaast verwachten we inzicht
+    te verkrijgen in welke factoren bijdragen aan gedragsverandering bij jongeren.
+    
+    De conclusie zal aantonen in welke mate een digitale tool effectief kan bijdragen
+    aan duurzamer gedrag en welke verbeteringen mogelijk zijn voor toekomstige
+    toepassingen.
         
-        We bouwen een app en testen die daarna met echte gebruikers. Uit de literatuur
-        blijkt dat er al genoeg voetafdrukcalculators bestaan. Wat ontbreekt is onderzoek
-        naar wat zo'n tool met de gebruiker doet. De nadruk ligt in dit onderzoek dus op
-        het meten en niet enkel op het bouwen.
-        
-        Concreet leveren we vier dingen op:
-        
-        \begin{itemize}
-            \item een lijst van vereisten die we bij HOGENT-studenten zelf ophalen;
-            \item een berekeningsmodel dat we vergelijken met bestaande calculators;
-            \item een veldtest met een controlegroep, zodat we weten wat de gamification
-            zelf doet;
-            \item een test die meet of deelnemers achteraf beter inschatten welke keuzes
-            zwaar wegen.
-        \end{itemize}
-        
-        \subsection{Fasering}%
-        \label{ssec:fasering}
-        
-        Het onderzoek loopt in zes fasen. Tabel~\ref{tab:fasering} toont welke deelvraag
-        in welke fase aan bod komt.
-        
-        \begin{table*}[t]
-            \centering\small
-            \caption{Deelvragen, fasen en methoden}
-            \label{tab:fasering}
-            \fitwidth{
-                \begin{tabular}{@{}llp{6.5cm}p{4cm}@{}}
-                    \toprule
-                    \textbf{Fase} & \textbf{Deelvraag} & \textbf{Methode} & \textbf{Resultaat} \\
-                    \midrule
-                    1. Literatuurstudie    & 1, 2, 3 & Literatuuronderzoek, documentanalyse & Referentiekader \\
-                    2. Gebruikersonderzoek & 3       & Enquête en interviews                & Vereisten, persona's \\
-                    3. Ontwerp             & 1, 2    & Beslissingsmatrix, wireframes        & Ontwerpdossier \\
-                    4. Implementatie       & 1, 3    & Twee ontwikkelrondes                 & Proof of concept \\
-                    5. Evaluatie           & 4       & Usabilitytest, veldtest, loganalyse  & Meetgegevens \\
-                    6. Analyse             & 4       & Statistiek en thematische analyse    & Conclusie \\
-                    \bottomrule
-            \end{tabular}}
-        \end{table*}
-        
-        Voor de literatuurstudie zoeken we in Google Scholar, ScienceDirect, IEEE Xplore
-        en Web of Science. Onze zoektermen zijn onder andere \emph{ecological footprint},
-        \emph{carbon footprint calculator}, \emph{pro-environmental behaviour},
-        \emph{gamification} en \emph{adolescents}. We gebruiken peer-reviewed artikels
-        vanaf 2010. Voor emissiefactoren nemen we ook cijfers van instanties zoals de
-        Europese Commissie en ADEME, want die databanken zijn actueler dan academische
-        artikels.
-        
-        Fase~3 en~4 doorlopen we twee keer. Na de eerste versie houden we een korte
-        usabilitytest en die resultaten verwerken we in de tweede versie.
-        
-        \subsection{Gebruikersonderzoek}%
-        \label{ssec:gebruikersonderzoek}
-        
-        Onze doelgroep zijn studenten aan HOGENT, in de praktijk grotendeels tussen 18 en
-        25 jaar. We nemen in de enquête op of iemand op kot zit of thuis woont, want dat
-        bepaalt hoeveel invloed de student zelf heeft op energie en boodschappen. Wie thuis
-        woont beslist bijvoorbeeld zelden over de verwarming. Dat onderscheid gebruiken we
-        later om de resultaten op te splitsen.
-        
-        We verzamelen data op twee manieren. Eerst een online enquête bij ongeveer honderd
-        studenten, verspreid via de opleidingen, de digitale leeromgeving en
-        studentenverenigingen. Die vraagt naar hun huidige gewoontes, wat hen tegenhoudt,
-        hoe ze hun smartphone gebruiken en wat ze van zo'n app verwachten. Daarnaast houden
-        we acht tot tien interviews. Daarin laten we studenten hardop denken terwijl ze
-        twee bestaande calculators uitproberen. Zo zien we waar ze in de praktijk afhaken.
-        De interviews nemen we op en coderen we thematisch in twee rondes. Uit die thema's
-        maken we een lijst van vereisten, die we prioriteren met MoSCoW.
-        
-        \subsection{Platformkeuze}%
-        \label{ssec:platformkeuze}
-        
-        Het wordt een mobiele app. Jongeren zitten op hun smartphone en we hebben
-        pushnotificaties nodig. Zonder herinnering op het juiste moment houdt niemand
-        dagelijkse invoer vol.
-        
-        Welke technische aanpak we kiezen ligt nog open. We vergelijken drie opties in
-        een tabel: native, cross-platform (Flutter of React Native) en een progressive
-        web app. Onze criteria zijn:
-        
-        \begin{itemize}
-            \item werken pushnotificaties betrouwbaar op zowel Android als iOS;
-            \item kunnen we sensoren gebruiken, zoals de stappenteller, om invoer te
-            besparen;
-            \item hoe makkelijk raakt de app bij de studenten, en hoe lang duurt een app
-            store-review;
-            \item hoeveel tijd kost het en welke kennis heeft het team al;
-            \item werkt het in een klas waar iedereen een ander toestel heeft.
-        \end{itemize}
-        
-        Elk criterium krijgt een gewicht van 1 tot 5 en elke optie een score van 1 tot 5.
-        De volledige tabel zetten we in het verslag, zodat onze keuze te volgen is. We
-        verwachten dat een web app het beste scoort op bereik en een native app op
-        notificaties en sensoren. Wat een web app op iOS precies kan, testen we zelf uit.
-        
-        \subsection{Berekening van de voetafdruk}%
-        \label{ssec:berekeningsmodel}
-        
-        \subsubsection{Welke eenheid}
-        
-        De ecologische voetafdruk wordt normaal in mondiale hectaren uitgedrukt. Bijna
-        alle emissiefactoren die je kan vinden staan echter in kilogram
-        CO$_2$-equivalent. Wij rekenen daarom in kg CO$_2$e. Die cijfers zijn publiek
-        beschikbaar en je kan ze per activiteit optellen. Waar het nuttig is tonen we ook
-        een omrekening naar hectaren, maar de feedback in de app baseren we daar niet op.
-        
-        \subsubsection{Emissiefactoren}
-        
-        De factoren halen we uit publieke databanken, vooral ADEME Base Empreinte. Waar
-        Belgische cijfers sterk afwijken gebruiken we die. Dat geldt bijvoorbeeld voor
-        elektriciteit, want die factor verschilt sterk per land.
-        
-        De factoren zetten we in een apart configuratiebestand met een versienummer en
-        een bron per factor. Ze staan dus niet in de code zelf. Emissiefactoren worden
-        namelijk regelmatig herzien. Een app die dat niet aankan klopt na één update niet
-        meer.
-        
-        \subsubsection{Wat meten we}
-        
-        We delen gedrag op in vijf categorieën: mobiliteit, voeding, energie, consumptie
-        en afval. De verplaatsing naar de campus is voor studenten de meest herkenbare
-        dagelijkse keuze en die staat daarom centraal. Voor energie geldt een voorbehoud:
-        wie op kot zit heeft daar wel invloed op, wie thuis woont meestal niet. Voor die
-        tweede groep tonen we energie enkel informatief en laten we het niet meetellen in
-        de punten. Binnen de categorieën zijn er drie soorten waarden, zoals
-        Tabel~\ref{tab:indicatoren} toont.
-        
-        \begin{table*}[t]
-            \centering\small
-            \caption{Soorten waarden en hun verwerking}
-            \label{tab:indicatoren}
-            \fitwidth{
-                \begin{tabular}{@{}lp{5.5cm}p{7.5cm}@{}}
-                    \toprule
-                    \textbf{Soort} & \textbf{Voorbeeld} & \textbf{Verwerking} \\
-                    \midrule
-                    Getal  & Kilometers, kWh                  & Vermenigvuldigen met de factor \\
-                    Schaal & Aantal vleesmaaltijden per week  & Omrekenen via een gemiddelde portie \\
-                    Ja/nee & Met de fiets of trein naar de campus & Vermeden uitstoot tegenover de normale situatie \\
-                    \bottomrule
-            \end{tabular}}
-        \end{table*}
-        
-        Bij een ja/nee-actie is er geen meeteenheid. We rekenen die om naar uitstoot die
-        de student vermijdt tegenover zijn eigen normale situatie. Die situatie leggen we
-        vast bij het eerste gebruik. Zo kan een dag ook negatief uitvallen.
-        
-        De punten en de berekende uitstoot houden we uit elkaar. De uitstoot is een
-        schatting met een foutenmarge. De punten zijn iets wat wij bedenken om gedrag te
-        belonen. Haal je die twee door elkaar, dan gelooft niemand het cijfer nog. In de
-        app tonen we daarom een marge en geen exact getal.
-        
-        \subsubsection{Klopt ons model}
-        
-        We maken tien persona's met een volledig ingevuld gedragsprofiel. Voor elke
-        persona berekenen we de jaarlijkse voetafdruk met ons model en met twee bestaande
-        calculators. Daarna vergelijken we de resultaten per categorie en in totaal. Een
-        afwijking onder 20 procent vinden we aanvaardbaar. Grotere verschillen zoeken we
-        uit. Ook dat levert een resultaat op, want het zegt iets over hoe verschillend
-        bestaande calculators rekenen.
-        
-        \subsection{Gamification}%
-        \label{ssec:gamification}
-        
-        De speelse elementen kiezen we op basis van twee modellen. Fogg zegt dat gedrag
-        pas gebeurt als motivatie, mogelijkheid en een trigger samenvallen. De
-        zelfdeterminatietheorie zegt dat motivatie enkel blijft als iemand zich autonoom,
-        bekwaam en verbonden voelt. Beloningen van buitenaf kunnen op termijn zelfs
-        averechts werken.
-        
-        Tabel~\ref{tab:mechanics} toont per element welk principe erachter zit en hoe we
-        het meten. Elk element dat we inbouwen moet in die tabel passen.
-        
-        \begin{table*}[t]
-            \centering\small
-            \caption{Gamification-elementen, principe en meetpunt}
-            \label{tab:mechanics}
-            \fitwidth{
-                \begin{tabular}{@{}p{4.5cm}p{4.5cm}p{6.5cm}@{}}
-                    \toprule
-                    \textbf{Element} & \textbf{Principe} & \textbf{Meetpunt} \\
-                    \midrule
-                    Puntensysteem            & Directe feedback           & Punten per actieve dag \\
-                    Badges voor mijlpalen    & Bekwaamheid                & Badges per gebruiker \\
-                    Dagelijkse reeks         & Trigger en gewoontevorming & Gemiddelde reekslengte \\
-                    Zelfgekozen uitdaging    & Eigen keuze                & Aantal aangegane uitdagingen \\
-                    Ranglijst tussen opleidingen & Verbondenheid          & Bijdrage per deelnemer \\
-                    \bottomrule
-            \end{tabular}}
-        \end{table*}
-        
-        We werken met een ranglijst tussen opleidingen en niet tussen studenten
-        onderling. Een individuele ranglijst motiveert vooral wie al bovenaan staat. Wie
-        onderaan bengelt haakt af, en dat is net de groep waar het meeste te winnen valt.
-        Een groepsdoel vermijdt daarnaast dat het privégedrag van een individuele student
-        publiek vergelijkbaar wordt. Die keuze testen we niet apart. We onderbouwen ze
-        met literatuur en vermelden ze bij de beperkingen.
-        
-        \subsection{Evaluatie}%
-        \label{ssec:evaluatie}
-        
-        \subsubsection{Opzet}
-        
-        De evaluatie beantwoordt deelvraag~4 en heeft twee delen.
-        
-        Eerst een usabilitytest met vijf studenten. Die laten we hardop denken terwijl
-        ze de app gebruiken. We zoeken vooral naar dingen die de dagelijkse invoer
-        blokkeren.
-        
-        Daarna een veldtest van drie weken met twee groepen. Groep A krijgt de volledige
-        app. Groep B krijgt dezelfde app zonder gamification: wel invoer en feedback,
-        geen punten of badges. Beide groepen vullen voor en na de test dezelfde
-        vragenlijst in.
-        
-        Die tweede groep is belangrijk. Zonder controlegroep weten we niet of een
-        verbetering komt door de gamification, door het bijhouden zelf, of gewoon doordat
-        deelnemers weten dat ze gevolgd worden.
-        
-        We werven via de opleidingen, de digitale leeromgeving en studentenverenigingen,
-        en verdelen willekeurig per deelnemer. Dat kan hier, omdat studenten niet de hele
-        dag in dezelfde groep zitten zoals een klas in het secundair. Individuele
-        toewijzing is statistisch sterker, maar deelnemers uit dezelfde opleiding kunnen
-        hun versies wel met elkaar vergelijken. We vragen hen dat niet te doen en nemen
-        het risico op in de beperkingen. We mikken op 20 tot 30 deelnemers per groep.
-        
-        \subsubsection{Wat we meten}
-        
-        Tabel~\ref{tab:meetinstrumenten} toont per variabele het instrument en wanneer we
-        tevreden zijn. We combineren wat deelnemers zelf invullen met wat de app logt,
-        zodat we die twee tegen elkaar kunnen leggen.
-        
-        \begin{table*}[t]
-            \centering\small
-            \caption{Variabelen, instrumenten en criteria}
-            \label{tab:meetinstrumenten}
-            \fitwidth{
-                \begin{tabular}{@{}lp{7.5cm}p{5cm}@{}}
-                    \toprule
-                    \textbf{Variabele} & \textbf{Instrument} & \textbf{Criterium} \\
-                    \midrule
-                    Bruikbaarheid  & System Usability Scale                & Score $\geq$ 68 \\
-                    Invoerlast     & Tijd voor de dagelijkse invoer (log)  & Mediaan $<$ 60 s \\
-                    Retentie       & Actieve dagen op 21, en dag 14 (log)  & Minstens 50 procent in groep A \\
-                    Motivatie      & Intrinsic Motivation Inventory        & Verschil A en B \\
-                    Inzicht        & Acties rangschikken, voor en na       & Betere rangcorrelatie \\
-                    Gedrag         & Zelf ingevuld gedrag, voor en na      & Verschil A en B \\
-                    Nauwkeurigheid & Persona's vergelijken met calculators & Afwijking onder 20 procent \\
-                    Beleving       & Exit-interview, $n = 6$               & Kwalitatief \\
-                    \bottomrule
-            \end{tabular}}
-        \end{table*}
-        
-        De rij \emph{inzicht} verdient uitleg. Mensen schatten de klimaatimpact van hun
-        keuzes vaak verkeerd in en onderschatten net de zware acties. We laten de
-        deelnemers voor en na de test acht acties rangschikken van meeste naar minste
-        impact. Die volgorde vergelijken we met de wetenschappelijke volgorde via een
-        Spearman-rangcorrelatie. Zo meten we of ze echt iets geleerd hebben, en niet
-        alleen of ze dat zelf denken.
-        
-        \subsubsection{Analyse}
-        
-        Voor en na binnen dezelfde groep vergelijken we met een Wilcoxon signed-rank
-        test. Het verschil tussen de twee groepen toetsen we met een
-        Mann-Whitney-U-test. Onze steekproef is klein, dus geven we naast de
-        $p$-waarde ook de effectgrootte met een betrouwbaarheidsinterval. Onze conclusies
-        formuleren we als aanwijzingen. De exit-interviews coderen we op dezelfde manier
-        als in fase~2.
-        
-        \subsection{Ethiek en privacy}%
-        \label{ssec:ethiek}
-        
-        Onze deelnemers zijn meerderjarig. Toestemming van ouders is dus niet nodig, wat
-        de drempel om deel te nemen aanzienlijk verlaagt. We werken met een
-        toestemmingsformulier waarin staat welke gegevens we verzamelen, waarvoor we ze
-        gebruiken en hoe lang we ze bewaren. Deelname is vrijwillig en deelnemers kunnen
-        op elk moment stoppen zonder opgave van reden en zonder gevolgen voor hun
-        opleiding. Studenten die nog geen 18 zijn sluiten we uit, tenzij de bevoegde
-        instantie binnen de opleiding een andere regeling oplegt. Het volledige protocol
-        leggen we voor voordat de veldtest start.
-        
-        Eén punt vraagt extra aandacht. Wij zijn zelf studenten aan dezelfde
-        instelling, dus we werven onder medestudenten en soms onder mensen die we kennen.
-        Dat verhoogt het risico dat deelnemers antwoorden geven waarvan ze denken dat wij
-        ze willen horen. We werven daarom zo veel mogelijk buiten onze eigen opleiding, en
-        de enquête en de vragenlijsten voor en na de test nemen we anoniem af.
-        
-        Verder verzamelen we zo weinig mogelijk gegevens:
-        
-        \begin{itemize}
-            \item geen locatiegeschiedenis, alleen de afstand per vervoersmiddel;
-            \item accounts zonder naam of e-mailadres, gekoppeld via een deelnemerscode;
-            \item geen gevoelige categorieën zoals gezondheid;
-            \item geen publieke vergelijking tussen individuele deelnemers;
-            \item hosting binnen de EU en verwijdering na het onderzoek.
-        \end{itemize}
-        
-        \subsection{Planning}%
-        \label{ssec:planning}
-        
-        Tabel~\ref{tab:planning} geeft de indicatieve planning.
-        
-        \begin{table*}[t]
-            \centering\small
-            \caption{Indicatieve planning}
-            \label{tab:planning}
-            \fitwidth{
-                \begin{tabular}{@{}llp{9cm}@{}}
-                    \toprule
-                    \textbf{Periode} & \textbf{Fase} & \textbf{Mijlpaal} \\
-                    \midrule
-                    Week 1--3   & Literatuurstudie    & Referentiekader klaar \\
-                    Week 3--5   & Gebruikersonderzoek & Enquête afgenomen, interviews gecodeerd \\
-                    Week 5--7   & Ontwerp             & Platformkeuze en wireframes vast \\
-                    Week 7--12  & Implementatie       & Proof of concept in twee rondes \\
-                    Week 10     & Usabilitytest       & Blokkerende problemen opgelost \\
-                    Week 13--15 & Veldtest            & Drie weken data verzameld \\
-                    Week 16--17 & Analyse             & Resultaten en conclusie \\
-                    \bottomrule
-            \end{tabular}}
-        \end{table*}
-        
-        Twee dingen kunnen die planning in de war sturen. Halen we de veertig deelnemers
-        niet, dan schakelen we over op een opzet waarbij elke deelnemer de twee versies na
-        elkaar gebruikt. Dat vraagt minder mensen, maar introduceert een leereffect tussen
-        de twee periodes. Duurt de app store-review te lang, dan verdelen we een testversie
-        rechtstreeks onder de deelnemers.
-        
-        \subsection{Validiteit en beperkingen}%
-        \label{ssec:beperkingen}
-        
-        Om de betrouwbaarheid te verhogen nemen we de enquête anoniem af en volgen we bij
-        de interviews een vaste vragenlijst, zodat de antwoorden onderling vergelijkbaar
-        blijven.
-        
-        De belangrijkste beperking is de duur. Drie weken is kort. We zien daarmee of
-        deelnemers de app in het begin blijven gebruiken, maar niet of hun gedrag
-        blijvend verandert. Een deel van wat we meten zal het nieuwtje zijn. Daarom
-        rapporteren we de retentie per week apart en niet als één gemiddelde.
-        
-        Onze steekproef is ook klein en niet representatief. Alle deelnemers studeren aan
-        één instelling en melden zich vrijwillig aan, waardoor studenten die al met
-        duurzaamheid bezig zijn waarschijnlijk overtegenwoordigd zijn. Onze resultaten
-        gelden dus niet zonder meer voor jongeren in het algemeen of voor studenten aan
-        andere instellingen. Wie op kot zit en wie thuis woont hebben bovendien een heel
-        verschillende beslissingsruimte, dus rapporteren we die twee groepen apart.
-        
-        Verder meten we gedrag grotendeels via wat deelnemers zelf invullen, en dat is
-        gevoelig voor sociaal wenselijke antwoorden, zeker omdat we onder medestudenten
-        werven. De loggegevens helpen daar deels tegen, maar lossen het niet op. Tot slot
-        meten we gerapporteerd gedrag en geen echte vermindering van uitstoot. Onze
-        conclusies formuleren we op dat niveau.
-        
-        \section{Verwacht resultaat en conclusie}%
-        \label{sec:results}
-        
-        Het verwachte resultaat is een werkende proof-of-concept applicatie met
-        basisfunctionaliteiten en gamification-elementen. Daarnaast verwachten we inzicht
-        te verkrijgen in welke factoren bijdragen aan gedragsverandering bij jongeren.
-        
-        De conclusie zal aantonen in welke mate een digitale tool effectief kan bijdragen
-        aan duurzamer gedrag en welke verbeteringen mogelijk zijn voor toekomstige
-        toepassingen.
-        
-        \printbibliography[heading=bibintoc]
-        
-    \end{document}
-
-
 \printbibliography[heading=bibintoc]
 
 \end{document}

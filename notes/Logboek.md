@@ -31,6 +31,7 @@
 | 03-08-26 | Specialisatie tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Stef |
 | 03-08-26 | Mmethodologie opstellen | Manu |
 | 04-08-26 | V2 Introductie voorlopig afgewerkt | Peter |
+| 07-08-26 | carbon-footprint.md aan notities toegevoegd, V2-aanpassingen | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
@@ -48,6 +49,7 @@
 | Datum | Activiteit | Groepsleden |
 | ----- | ---------- | ----------- |
 | 31-07-26 | Taken verdelen | Manu & Peter |
+| 07-08-26 | Discussie rond methodologie | Manu & Peter |
 
 
 ## Milestones
