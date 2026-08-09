@@ -12,6 +12,13 @@
 \usepackage{enumitem} % meer enum-list opties
 \usepackage{tcolorbox} % deelvragen
 \usepackage{todonotes} % custom todos
+\usepackage{graphicx}  % nodig voor \resizebox in \fitwidth
+
+% \fitwidth werd al 5x gebruikt in de methodologie maar was nergens
+% gedefinieerd (Undefined control sequence). Krimpt een tabel alleen als
+% die niet past, in plaats van buiten de marge te lopen.
+\newcommand{\fitwidth}[1]{%
+  \resizebox{\ifdim\width>\linewidth\linewidth\else\width\fi}{!}{#1}}
 
 % Include bibliography file
 \addbibresource{references.bib}
@@ -167,7 +174,75 @@
     
     
     \subsection{Impact van menselijke gewoontes op het klimaat}
+    \label{ssec:impactgewoontes}
     % welke menselijke gewoontes hebben een positief/negatief invloed op het klimaat?
+    
+    Van alle broeikasgassen die wereldwijd worden uitgestoten, valt ongeveer twee
+    derde terug te voeren op wat huishoudens verbruiken, zowel via hun eigen
+    verbruik als via de productieketen erachter \autocite{Ivanova2020}. Gemiddeld gaat het om zo'n zes ton CO$_2$-equivalent per
+    persoon per jaar, in Europa om ongeveer zeven en een halve ton. Dagelijkse
+    keuzes van individuen zijn dus geen randverschijnsel in het klimaatprobleem, en
+    dat maakt ze een zinvol aangrijpingspunt voor een toepassing die zich op de
+    eindgebruiker richt.
+    
+    Die uitstoot verdeelt zich ongelijk over de verschillende soorten consumptie.
+    \textcite{Ivanova2020} brengen het reductiepotentieel in kaart voor vier
+    domeinen: voeding, wonen, transport en overige consumptie. Transport levert
+    daarbij het meeste op. Autovrij leven, overschakelen op een elektrische wagen en
+    één lange vliegreis minder halen elk een mediaan van meer dan 1,7 ton
+    CO$_2$e per persoon per jaar. Bij wonen wegen groene stroom (mediaan 1,6 ton) en
+    renovatie (0,9 ton) het zwaarst, bij voeding een plantaardig dieet
+    (mediaan 0,8 ton). \textcite{WynesNicholas2017} rangschikken
+    concrete individuele acties op basis van 148 scenario's uit 39 bronnen.
+    Autovrij leven, vliegreizen vermijden en plantaardig eten komen er als de
+    zwaarst wegende gedragingen uit. Dezelfde auteurs stellen vast dat lesmateriaal
+    en overheidscampagnes net die acties nauwelijks vermelden en vooral inzetten op
+    maatregelen met een klein effect. Hun vierde actie, minder kinderen krijgen,
+    blijft hier buiten beschouwing. Die keuze kreeg meerdere gepubliceerde reacties
+    in hetzelfde tijdschrift, onder meer over dubbeltelling bij het toewijzen van de
+    uitstoot van toekomstige generaties \autocite{VanBasshuysenBrandstedt2018}.
+    Ze valt bovendien buiten de dagelijkse gedragingen waar dit onderzoek zich op
+    richt.
+    
+    Voeding verdient extra aandacht, omdat de spreiding binnen dat domein groot is.
+    \textcite{PooreNemecek2018} verzamelden gegevens van 38.700 landbouwbedrijven in
+    119 landen. Voor eenzelfde product kan de impact tot vijftig keer verschillen
+    tussen producenten onderling. Tegelijk ligt de uitstoot van zelfs de best
+    scorende dierlijke producten meestal nog boven die van plantaardige
+    alternatieven. Voor een voetafdruk-tracker heeft dat een praktisch gevolg: een
+    emissiefactor per product is een gemiddelde dat een grote onderlinge spreiding
+    verbergt. Sectie~\ref{sssec:emissiefactoren} gaat verder in op hoe daarmee wordt
+    omgegaan.
+    
+    Wie zwaarwegende gewoontes wil aanpassen, moet ze eerst kunnen herkennen, en
+    daar loopt het mis. \textcite{Attari2010} legden 505 deelnemers vijftien
+    activiteiten voor en vroegen hoeveel energie die verbruiken of besparen.
+    Gemiddeld zat hun schatting er een factor 2,8 naast, telkens aan de lage kant.
+    Die fout is bovendien niet willekeurig verdeeld. Naarmate een activiteit meer
+    energie kost, groeit de onderschatting, terwijl deelnemers het effect van de
+    lichtste activiteiten juist licht overdrijven. Gevraagd naar
+    de meest effectieve maatregel noemden de meeste deelnemers minderen, zoals het
+    licht uitdoen, terwijl deskundigen eerder naar efficiëntere toestellen wijzen.
+    Een tracker die enkel een totaalcijfer toont, neemt dat misverstand niet weg. De
+    feedback moet duidelijk maken welke posten zwaar doorwegen.
+    
+    Het woord gewoonte is hier op zijn plaats. \textcite{WoodRunger2016} beschrijven
+    gewoontes als associaties tussen een context en een reactie, opgeslagen in het
+    geheugen en opgebouwd door herhaling. Ze vormen de standaardmodus van handelen
+    en vragen weinig bewuste aandacht. Wie alleen de intentie van iemand verandert,
+    verandert daarom vaak het gedrag niet. De context moet mee veranderen.
+    \textcite{VerplankenRoy2016} tonen dat levensovergangen precies dat doen. In hun
+    veldexperiment bij 800 deelnemers werkte een interventie beter bij wie recent
+    verhuisd was, en dat voordeel hield ongeveer drie maanden aan. Wie op kot gaat
+    moet dagelijkse keuzes opnieuw maken en staat op dat moment meer open voor
+    verandering, wat studenten een geschikte doelgroep maakt. De timing telt daarbij
+    mee: het effect is het grootst kort na de verhuizing.
+    
+    Dat alles verklaart waarom voorlichting alleen tekortschiet.
+    \textcite{KollmussAgyeman2002} brengen in kaart hoe groot de kloof is tussen
+    weten wat milieuvriendelijk is en er ook naar handelen, en stellen vast dat geen
+    enkel model die kloof volledig verklaart. Meer kennis vertaalt zich dus niet
+    vanzelf in ander gedrag.
     
     \subsection{Design \& bestaande apps}
     \label{ssec:designenbestaandeapps}
@@ -177,16 +252,78 @@
     
     \subsection{Gebruiker-retentie en gamification}
     \label{ssec:retentieengamification}
-    % bron: Oliveira2024
-    % Fogg's Behavior Model
-    % octalysis framework (voortgangssystemen en feedbackmechanismen)
-    % PBL-framework
+    % LET OP: het artikel dat jullie als Oliveira2024 noteerden verscheen in
+    % nummer 28(1) van januari 2023. De key in bronnen-manu.bib is Oliveira2023.
+    % Octalysis en PBL zijn praktijkkaders zonder peer-reviewed basis. Ze passen
+    % niet binnen het zoekcriterium uit sectie~\ref{ssec:fasering} en staan daarom
+    % niet in de tekst hieronder.
+    
+    Gamification staat voor het toepassen van ontwerpelementen uit games in een
+    omgeving die zelf geen game is, met de bedoeling het gedrag van gebruikers te
+    beïnvloeden \autocite{KoivistoHamari2019}. Dezelfde auteurs brachten 819 studies
+    samen. De resultaten neigen overwegend naar een positief effect, maar het
+    aandeel gemengde uitkomsten is opvallend groot. Punten, badges en ranglijsten
+    blijven de meest toegepaste elementen, en het onderzoeksveld mist samenhang in
+    de gebruikte modellen en variabelen. Gamification biedt dus geen garantie op
+    resultaat, wat betekent dat het effect ervan binnen dit onderzoek zelf gemeten
+    moet worden.
+    
+    Retentie is daarbij het kernprobleem. \textcite{Eysenbach2005} formuleerde voor
+    digitale gezondheidstoepassingen de \emph{law of attrition}: in vrijwel elke
+    studie stopt een aanzienlijk deel van de deelnemers voortijdig. Hij maakt een
+    onderscheid tussen deelnemers die de applicatie niet of niet langer gebruiken en
+    deelnemers die volledig uit het onderzoek stappen. Dat onderscheid is bruikbaar
+    voor de veldtest in dit onderzoek. Uitval hoort bij dit type toepassing en is op
+    zich geen teken dat de opzet faalt, zolang beide vormen apart gerapporteerd
+    worden.
+    
+    Wat retentie precies inhoudt, is minder vanzelfsprekend dan het lijkt.
+    \textcite{Perski2017} onderzochten hoe engagement met digitale
+    gedragsinterventies in de literatuur wordt ingevuld en onderscheiden twee
+    componenten. De gedragscomponent gaat over hoeveel, hoe vaak, hoe lang en hoe
+    diep iemand de toepassing gebruikt. De ervaringscomponent gaat over aandacht,
+    interesse en beleving tijdens dat gebruik. Een meting die alleen het aantal
+    actieve dagen telt, dekt dus maar één van de twee.
+    
+    Een tweede reden om retentie over de tijd te bekijken is het noviteitseffect.
+    \textcite{KoivistoHamari2014} bevroegen 195 gebruikers van de gamified
+    sportdienst Fitocracy. Naarmate iemand de dienst langer gebruikte, daalden zowel
+    het ervaren plezier als de ervaren bruikbaarheid. Wat in de eerste weken werkt,
+    werkt na een maand dus niet noodzakelijk nog. Een gemiddelde over de volledige
+    testperiode maskeert dat verloop, en daarom wordt de retentie in dit onderzoek
+    per week apart gerapporteerd.
+    
+    Voor duurzaamheid specifiek is het beeld voorzichtig positief.
+    \textcite{DouglasBrauer2021} bespreken games en applicaties die
+    milieuvriendelijk gedrag willen stimuleren, over onderwerpen als
+    energieverbruik, mobiliteit, afval en waterverbruik. Ze noemen gamification
+    veelbelovend, maar stellen vast dat nog onduidelijk is waarom de ene toepassing
+    werkt en de andere niet. Die openstaande vraag vormt het vertrekpunt van dit
+    onderzoek.
+    
+    Twee theoretische kaders geven richting aan het ontwerp. De
+    zelfdeterminatietheorie \autocite{RyanDeci2000} stelt dat motivatie steunt op
+    drie behoeften: autonomie, competentie en verbondenheid. Externe beloningen die
+    vooral controlerend aanvoelen, kunnen de intrinsieke motivatie net ondermijnen.
+    Punten uitdelen zonder betekenis is dus riskant. Het gedragsmodel van
+    \textcite{Fogg2009} beschrijft gedrag als het samenvallen van motivatie,
+    vermogen en een trigger. Alle drie moeten op hetzelfde moment aanwezig zijn. Dat
+    verklaart waarom een herinnering op het juiste tijdstip zwaarder kan wegen dan
+    extra motiverende inhoud, en het onderbouwt de keuze voor een mobiele toepassing
+    met pushnotificaties in sectie~\ref{ssec:platformkeuze}.
+    
+    Tot slot wordt vaak geopperd dat gamification beter werkt wanneer ze aan de
+    individuele gebruiker wordt aangepast. \textcite{Oliveira2023} screenden 2108
+    studies over gepersonaliseerde gamification en hielden er negentien over. Hun
+    conclusie is dat de resultaten elkaar tegenspreken en dat het veld nog geen
+    eenduidig antwoord heeft. Personalisatie wordt in dit onderzoek daarom als open
+    vraag behandeld en niet als vaststaand ontwerpprincipe.
     
     \section{Methodologie}%
     \label{sec:methodologie}
     
-    We bouwen een app en testen die daarna met echte gebruikers. Uit de literatuur \todo{ref:literatuur-sectie}
-    blijkt dat er al genoeg voetafdrukcalculators bestaan. Wat ontbreekt is onderzoek
+    We bouwen een app en testen die daarna met echte gebruikers. Uit de literatuurstudie in
+    sectie~\ref{sec:literatuurstudie} blijkt dat er al genoeg voetafdrukcalculators bestaan. Wat ontbreekt is onderzoek
     naar wat zo'n tool met de gebruiker doet. De nadruk ligt in dit onderzoek dus op
     het meten en niet enkel op het bouwen.
     
@@ -216,12 +353,12 @@
                 \toprule
                 \textbf{Fase} & \textbf{Deelvraag} & \textbf{Methode} & \textbf{Resultaat} \\
                 \midrule
-                1. Literatuurstudie    & 1, 2, 3 & Literatuuronderzoek, documentanalyse & Referentiekader \\
-                2. Gebruikersonderzoek & 3       & Enquête en interviews                & Vereisten, persona's \\
-                3. Ontwerp             & 1, 2    & Beslissingsmatrix, wireframes        & Ontwerpdossier \\
-                4. Implementatie       & 1, 3    & Twee ontwikkelrondes                 & Proof of concept \\
-                5. Evaluatie           & 4       & Usabilitytest, veldtest, loganalyse  & Meetgegevens \\
-                6. Analyse             & 4       & Statistiek en thematische analyse    & Conclusie \\
+                1. Literatuurstudie    & 1--4        & Literatuuronderzoek, documentanalyse & Referentiekader \\
+                2. Gebruikersonderzoek & 3, 4, 5     & Enquête en interviews                & Vereisten, persona's \\
+                3. Ontwerp             & 6, 7, 8, 10 & Beslissingsmatrix, wireframes        & Ontwerpdossier \\
+                4. Implementatie       & 6--10       & Twee ontwikkelrondes                 & Proof of concept \\
+                5. Evaluatie           & 7, 9        & Usabilitytest, veldtest, loganalyse  & Meetgegevens \\
+                6. Analyse             & 9           & Statistiek en thematische analyse    & Conclusie \\
                 \bottomrule
         \end{tabular}}
     \end{table*}
@@ -229,8 +366,21 @@
     Voor de literatuurstudie zoeken we in Google Scholar, ScienceDirect, IEEE Xplore
     en Web of Science. Onze zoektermen zijn onder andere \emph{ecological footprint},
     \emph{carbon footprint calculator}, \emph{pro-environmental behaviour},
-    \emph{gamification} en \emph{adolescents}. We gebruiken peer-reviewed artikels
-    vanaf 2010.\todo{verwijderen? onnodig strenge restrictie} Voor emissiefactoren nemen we ook cijfers van instanties zoals de
+    \emph{gamification}, \emph{user engagement} en \emph{university students}. De
+    term \emph{adolescents} gebruiken we niet: onze doelgroep is meerderjarig en
+    heeft een andere beslissingsruimte over energie, boodschappen en vervoer dan
+    scholieren.
+    
+    Voor empirisch werk over apps, gamification en retentie houden we ons aan
+    peer-reviewed artikels vanaf 2010, omdat dat veld snel veroudert. Die grens
+    laten we los voor de theoretische kaders. De zelfdeterminatietheorie
+    \autocite{RyanDeci2000}, het gedragsmodel van \textcite{Fogg2009} en het
+    attritiebegrip van \textcite{Eysenbach2005} zijn ouder, maar worden in het
+    recentere werk dat we wel binnen die grens vonden nog altijd als uitgangspunt
+    genomen. \textcite{Perski2017} bouwen rechtstreeks voort op het attritiebegrip
+    van Eysenbach, en de zelfdeterminatietheorie is een van de meest gebruikte
+    kaders in gamificationonderzoek \autocite{KoivistoHamari2019}.
+    Voor emissiefactoren nemen we ook cijfers van instanties zoals de
     Europese Commissie en ADEME, want die databanken zijn actueler dan academische
     artikels.
     
@@ -246,21 +396,36 @@
     woont beslist bijvoorbeeld zelden over de verwarming. Dat onderscheid gebruiken we
     later om de resultaten op te splitsen.
     
-    We verzamelen data op twee manieren. Eerst een online enquête bij ongeveer honderd \todo{Vanwaar 100? mogelijks kunnen we een email naar iedereen in onze opleiding sturen?}
-    studenten, verspreid via de opleidingen, de digitale leeromgeving en
-    studentenverenigingen. Die vraagt naar hun huidige gewoontes, wat hen tegenhoudt,
+    We verzamelen data op twee manieren. Eerst een online enquête, verspreid via de
+    opleidingen, de digitale leeromgeving en studentenverenigingen. We mikken op
+    zestig ingevulde vragenlijsten en beschouwen veertig als ondergrens. Die
+    ondergrens volgt uit de opsplitsing die we willen maken: om iets zinnigs te
+    kunnen zeggen over kotstudenten en thuiswonende studenten apart, hebben we
+    ongeveer twintig antwoorden per groep nodig. Halen we de zestig niet, dan
+    blijft de enquête bruikbaar om vereisten op te halen, maar rapporteren we de
+    resultaten als indicatief en leunen we zwaarder op de interviews. Die vraagt naar hun huidige gewoontes, wat hen tegenhoudt,
     hoe ze hun smartphone gebruiken en wat ze van zo'n app verwachten. Daarnaast houden
     we acht tot tien interviews. Daarin laten we studenten hardop denken terwijl ze
-    twee bestaande calculators uitproberen \todo{welke calculators specifiek?}. Zo zien we waar ze in de praktijk afhaken.
+    twee bestaande calculators uitproberen: die van het Global Footprint
+    Network\footnote{\url{https://www.footprintcalculator.org/}}, de referentietool
+    achter de nationale voetafdrukrekeningen \autocite{Lin2018}, en de
+    voetafdruktest van WWF\footnote{\url{https://voetafdruktest.wwf.nl/}}, die
+    Nederlandstalig is en zich op het brede publiek richt. Zo vergelijken we een
+    wetenschappelijke referentie met een tool die studenten zonder taaldrempel
+    kunnen doorlopen. Beide rekenen in mondiale hectaren, wat ons meteen laat zien
+    of studenten die eenheid begrijpen. Dat is relevant voor de keuze in
+    sectie~\ref{sssec:welkeeenheid}. Zo zien we ook waar ze in de praktijk afhaken.
     De interviews nemen we op en coderen we thematisch in twee rondes. Uit die thema's
     maken we een lijst van vereisten, die we prioriteren met MoSCoW.
     
     \subsection{Platformkeuze}%
     \label{ssec:platformkeuze}
     
-    Het wordt een mobiele app. Jongeren zitten op hun smartphone en we hebben
-    pushnotificaties nodig. Zonder herinnering op het juiste moment houdt niemand
-    dagelijkse invoer vol.
+    Het wordt een mobiele app. De doorslaggevende reden is de trigger. In het
+    gedragsmodel van \textcite{Fogg2009} gebeurt gedrag pas wanneer motivatie,
+    vermogen en trigger op hetzelfde moment samenvallen. Dagelijkse invoer houdt
+    niemand vol zonder herinnering op het juiste moment, en pushnotificaties zijn
+    daarvoor het meest betrouwbare kanaal.
     
     Welke technische aanpak we kiezen ligt nog open. We vergelijken drie opties in
     een tabel: native, cross-platform (Flutter of React Native) en een progressive
@@ -272,7 +437,8 @@
         besparen;
         \item hoe makkelijk raakt de app bij de studenten, en hoe lang duurt een app
         store-review;
-        \item hoeveel tijd kost het en welke kennis heeft het team al; \todo{wie zit in het team? is het niet solo?}
+        \item hoeveel ontwikkeltijd het kost en welke van deze technologieën de vier
+        teamleden al beheersen;
         \item werkt het in een klas waar iedereen een ander toestel heeft.
     \end{itemize}
     
@@ -287,22 +453,30 @@
     \subsubsection{Welke eenheid}
     \label{sssec:welkeeenheid}
     
-    De ecologische voetafdruk wordt normaal in mondiale hectaren uitgedrukt \todo{referentie nodig}. Bijna
+    De ecologische voetafdruk wordt normaal uitgedrukt in mondiale hectaren, een
+    gestandaardiseerde eenheid die biologisch productief gebied omrekent naar de
+    wereldgemiddelde productiviteit \autocite{Lin2018}. Bijna
     alle emissiefactoren die je kan vinden staan echter in kilogram
-    CO$_2$-equivalent. Wij rekenen daarom in kg CO$_2$e. Die cijfers zijn publiek \todo{voetnoot:waar staan de cijfers}
-    beschikbaar en je kan ze per activiteit optellen. Waar het nuttig is tonen we ook
+    CO$_2$-equivalent. Wij rekenen daarom in kg CO$_2$e. Die cijfers zijn publiek
+    beschikbaar\footnote{\url{https://base-empreinte.ademe.fr/}} en je kan ze per activiteit optellen. Waar het nuttig is tonen we ook
     een omrekening naar hectaren, maar de feedback in de app baseren we daar niet op.
     
     \subsubsection{Emissiefactoren}
     \label{sssec:emissiefactoren}
     
-    De factoren halen we uit publieke databanken, vooral ADEME Base Empreinte \todo{referentie of voetnoot}. Waar
+    De factoren halen we uit publieke databanken, vooral ADEME Base Empreinte \autocite{ADEME2026},
+    de officiële publieke databank van emissiefactoren van het Franse
+    milieuagentschap. Waar
     Belgische cijfers sterk afwijken gebruiken we die. Dat geldt bijvoorbeeld voor
     elektriciteit, want die factor verschilt sterk per land.
     
     De factoren zetten we in een apart configuratiebestand met een versienummer en
     een bron per factor. Ze staan dus niet in de code zelf. Emissiefactoren worden
-    namelijk regelmatig herzien \todo{ref:bewijs}. Een app die dat niet aankan klopt na één update niet
+    namelijk regelmatig herzien. Base Empreinte draagt een expliciet versienummer en
+    wordt periodiek bijgewerkt \autocite{ADEME2026}. Ook de rekenmethode achter de
+    voetafdruk zelf verandert: \textcite{Lin2018} tellen vier grote en meer dan
+    dertig kleinere aanpassingen sinds de editie van 2012, waardoor de wereldwijde
+    voetafdruk voor eenzelfde jaar zes procent hoger uitkwam. Een app die dat niet aankan klopt na één update niet
     meer.
     
     \subsubsection{Wat meten we}
@@ -315,7 +489,10 @@
     tweede groep tonen we energie enkel informatief en laten we het niet meetellen in
     de punten. Binnen de categorieën zijn er drie soorten waarden, zoals
     Tabel~\ref{tab:indicatoren} toont.
-    \todo{in tabel: "vermenigvuldigen met de factor: refereer naar waar je deze formule hebt gevonden}
+    De omrekening zelf volgt de standaardformule uit het GHG Protocol: de
+    hoeveelheid activiteit vermenigvuldigd met de emissiefactor van die activiteit
+    levert de uitstoot in kg CO$_2$e \autocite{GHGProtocol2004}.
+    
     \begin{table*}[t]
         \centering\small
         \caption{Soorten waarden en hun verwerking}
@@ -338,30 +515,55 @@
     
     De punten en de berekende uitstoot houden we uit elkaar. De uitstoot is een
     schatting met een foutenmarge. De punten zijn iets wat wij bedenken om gedrag te
-    belonen. Haal je die twee door elkaar, dan gelooft niemand het cijfer nog \todo{iets té informeel?}. In de
+    belonen. Haal je die twee door elkaar, dan verliest het cijfer zijn
+    geloofwaardigheid. In de
     app tonen we daarom een marge en geen exact getal.
     
     \subsubsection{Klopt ons model}
     \label{sssec:kloptonsmodel}
     
     We maken tien persona's met een volledig ingevuld gedragsprofiel. Voor elke
-    persona berekenen we de jaarlijkse voetafdruk met ons model en met twee bestaande
-    calculators. Daarna vergelijken we de resultaten per categorie en in totaal. Een
+    persona berekenen we de jaarlijkse voetafdruk met ons model en met dezelfde twee
+    bestaande calculators die de deelnemers in fase~2 uitproberen
+    (sectie~\ref{ssec:gebruikersonderzoek}), zodat de vergelijking over de fasen
+    heen consistent blijft. Daarna vergelijken we de resultaten per categorie en in totaal. Een
     afwijking onder 20 procent vinden we aanvaardbaar. Grotere verschillen zoeken we
     uit. Ook dat levert een resultaat op, want het zegt iets over hoe verschillend
     bestaande calculators rekenen.
     
+    Deze stap toetst de onderlinge consistentie en niet de juistheid. Een echte
+    referentiewaarde bestaat niet. Voor eenzelfde product loopt de werkelijke
+    milieu-impact tot vijftig keer uiteen naargelang de producent
+    \autocite{PooreNemecek2018}, en geen enkele calculator weet bij welke producent
+    een student gekocht heeft. Ons criterium van 20 procent zegt dus dat ons model
+    binnen de bandbreedte van gangbare calculators valt, en niet dat het klopt.
+    
     \subsection{Gamification}%
     \label{ssec:gamification}
     
-    De speelse elementen kiezen we op basis van twee modellen. Fogg zegt \todo{textcite:Volgens Fogg} dat gedrag
+    De speelse elementen kiezen we op basis van twee modellen. \textcite{Fogg2009} stelt dat gedrag
     pas gebeurt als motivatie, mogelijkheid en een trigger samenvallen. De
-    zelfdeterminatietheorie \todo{textcite: zelfdeterminatietheorie} zegt dat motivatie enkel blijft als iemand zich autonoom,
+    zelfdeterminatietheorie \autocite{RyanDeci2000} zegt dat motivatie enkel blijft als iemand zich autonoom,
     bekwaam en verbonden voelt. Beloningen van buitenaf kunnen op termijn zelfs
-    averechts werken \todo{stelling:bewijs nodig - referentie}.
+    averechts werken: beloningen die vooral controlerend aanvoelen, ondermijnen de
+    intrinsieke motivatie \autocite{RyanDeci2000}. Daar komt bij dat het effect van
+    gamification slijt naarmate mensen een toepassing langer gebruiken
+    \autocite{KoivistoHamari2014}.
+    
+    Dat levert een spanning op met het puntensysteem in tabel~\ref{tab:mechanics}.
+    \textcite{RyanDeci2000} lossen die op met een onderscheid: een beloning die
+    iemand als sturend ervaart verschuift de aanleiding om iets te doen naar buiten
+    en ondermijnt de motivatie, terwijl feedback die iemand laat merken dat hij
+    vooruitgaat net het gevoel van bekwaamheid voedt. Onze punten zijn daarom
+    ontworpen als terugkoppeling en niet als prijs. Ze zijn er niet om deelnemers
+    over te halen, en er hangt geen beloning buiten de app aan vast.
     
     Tabel~\ref{tab:mechanics} toont per element welk principe erachter zit en hoe we
-    het meten. Elk element dat we inbouwen moet in die tabel passen.
+    het meten. Elk element dat we inbouwen moet in die tabel passen. Bij de dagelijkse reeks
+    past wel een voorbehoud. Gewoontes ontstaan door herhaling in een stabiele
+    context \autocite{WoodRunger2016}, en drie weken veldtest is te kort om te zien
+    of dat lukt. We meten met de reekslengte of het element aanzet tot herhaling,
+    niet of er een gewoonte gevormd is.
     
     \begin{table*}[t]
         \centering\small
@@ -374,7 +576,7 @@
                 \midrule
                 Puntensysteem            & Directe feedback           & Punten per actieve dag \\
                 Badges voor mijlpalen    & Bekwaamheid                & Badges per gebruiker \\
-                Dagelijkse reeks         & Trigger en gewoontevorming & Gemiddelde reekslengte \\
+                Dagelijkse reeks         & Trigger, aanzet tot gewoonte & Gemiddelde reekslengte \\
                 Zelfgekozen uitdaging    & Eigen keuze                & Aantal aangegane uitdagingen \\
                 Ranglijst tussen opleidingen & Verbondenheid          & Bijdrage per deelnemer \\
                 \bottomrule
@@ -382,11 +584,15 @@
     \end{table*}
     
     We werken met een ranglijst tussen opleidingen en niet tussen studenten
-    onderling. Een individuele ranglijst motiveert vooral wie al bovenaan staat. Wie
-    onderaan bengelt haakt af, en dat is net de groep waar het meeste te winnen valt.
-    Een groepsdoel vermijdt daarnaast dat het privégedrag van een individuele student
-    publiek vergelijkbaar wordt. Die keuze testen we niet apart. We onderbouwen ze
-    met literatuur en vermelden ze bij de beperkingen.
+    onderling. \textcite{RyanDeci2000} noemen competitiedruk expliciet naast
+    dreigementen en deadlines als iets wat mensen als sturend ervaren en wat de
+    intrinsieke motivatie doet dalen. Een individuele ranglijst motiveert daardoor
+    vooral wie al bovenaan staat. Wie onderaan bengelt haakt af, en dat is net de
+    groep waar het meeste te winnen valt. Een ranglijst tussen opleidingen legt de
+    vergelijking op groepsniveau, waardoor ze eerder verbondenheid dan competitie
+    tussen individuen aanspreekt. Ze vermijdt daarnaast dat het privégedrag van een
+    individuele student publiek vergelijkbaar wordt. Die keuze testen we niet apart
+    en vermelden ze bij de beperkingen.
     
     \subsection{Evaluatie}%
     \label{ssec:evaluatie}
@@ -394,7 +600,9 @@
     \subsubsection{Opzet}
     \label{sssec:opzet}
     
-    De evaluatie beantwoordt deelvraag~4 en heeft twee delen.
+    De evaluatie beantwoordt deelvraag~9, over de vraag of gamification en
+    gepersonaliseerde aanbevelingen effectief motiveren, en levert via de
+    usabilitytest ook gegevens voor deelvraag~7. Ze heeft twee delen.
     
     Eerst een usabilitytest met vijf studenten. Die laten we hardop denken terwijl
     ze de app gebruiken. We zoeken vooral naar dingen die de dagelijkse invoer
@@ -421,7 +629,15 @@
     
     Tabel~\ref{tab:meetinstrumenten} toont per variabele het instrument en wanneer we
     tevreden zijn. We combineren wat deelnemers zelf invullen met wat de app logt,
-    zodat we die twee tegen elkaar kunnen leggen\todo{informele taal}.
+    zodat beide bronnen naast elkaar gelegd kunnen worden.
+    
+    Die combinatie is bewust. Betrokkenheid bij een digitale gedragsinterventie
+    bestaat uit twee delen: hoeveel iemand de toepassing gebruikt, en hoe hij dat
+    gebruik ervaart \autocite{Perski2017}. De rij \emph{retentie} dekt alleen het
+    eerste. Voor het tweede deel gebruiken we de Intrinsic Motivation Inventory, die
+    onder meer interesse en plezier meet, en de exit-interviews. Een deelnemer die
+    de app trouw invult maar er niets aan vindt, telt in de logs mee als geslaagd en
+    is dat niet.
     
     \begin{table*}[t]
         \centering\small
@@ -445,26 +661,32 @@
     \end{table*}
     
     De rij \emph{inzicht} verdient uitleg. Mensen schatten de klimaatimpact van hun
-    keuzes vaak verkeerd in en onderschatten net de zware acties\todo{zware acties? -> acties die een groter impact op het klimaat hebben?}. We laten de
+    keuzes vaak verkeerd in. Acties met een klein effect worden licht overschat,
+    terwijl acties met een groot effect fors worden onderschat
+    \autocite{Attari2010}. We laten de
     deelnemers voor en na de test acht acties rangschikken van meeste naar minste
     impact. Die volgorde vergelijken we met de wetenschappelijke volgorde via een
-    Spearman-rangcorrelatie \todo{referentie of footnote / uitleg}. Zo meten we of ze echt iets geleerd hebben, en niet
+    Spearman-rangcorrelatie.\footnote{Een rangcorrelatie meet of twee volgordes
+    dezelfde richting uitgaan, zonder aan te nemen dat de afstanden tussen de
+    rangen gelijk zijn \autocite{Field2018}.} Zo meten we of ze echt iets geleerd hebben, en niet
     alleen of ze dat zelf denken.
     
     \subsubsection{Analyse}
     \label{sssec:analyse}
     
     Voor en na binnen dezelfde groep vergelijken we met een Wilcoxon signed-rank
-    test \todo{ref of footnote: + uitleg?}. Het verschil tussen de twee groepen toetsen we met een
-    Mann-Whitney-U-test\todo{ref of footnote: + uitleg?}. Onze steekproef is klein, dus geven we naast de
+    test, het verschil tussen de twee groepen met een
+    Mann-Whitney-U-test.\footnote{Beide zijn niet-parametrische toetsen: de eerste
+    voor twee gepaarde metingen bij dezelfde personen, de tweede voor twee
+    onafhankelijke groepen. Ze veronderstellen geen normale verdeling, wat past bij
+    een kleine steekproef en bij ordinale gegevens \autocite{Field2018}.} Onze
+    steekproef is klein, dus geven we naast de
     $p$-waarde ook de effectgrootte met een betrouwbaarheidsinterval. Onze conclusies
     formuleren we als aanwijzingen. De exit-interviews coderen we op dezelfde manier
     als in fase~2.
     
     \subsection{Ethiek en privacy}%
     \label{ssec:ethiek}
-    
-    %todo: mogelijks referentie naar GDPR ?
     
     Onze deelnemers zijn meerderjarig. Toestemming van ouders is dus niet nodig, wat
     de drempel om deel te nemen aanzienlijk verlaagt. We werken met een
@@ -481,7 +703,12 @@
     ze willen horen. We werven daarom zo veel mogelijk buiten onze eigen opleiding, en
     de enquête en de vragenlijsten voor en na de test nemen we anoniem af.
     
-    Verder verzamelen we zo weinig mogelijk gegevens:
+    De maatregelen hieronder volgen de beginselen van de algemene verordening
+    gegevensbescherming \autocite{AVG2016}. Artikel~5 vraagt dat de verzamelde
+    gegevens toereikend en ter zake dienend zijn en beperkt blijven tot wat
+    noodzakelijk is voor het doel, wat daar minimale gegevensverwerking heet.
+    Artikel~9 verbiedt in beginsel het verwerken van bijzondere categorieën zoals
+    gegevens over gezondheid. Concreet verzamelen we zo weinig mogelijk gegevens:
     
     \begin{itemize}
         \item geen locatiegeschiedenis, alleen de afstand per vervoersmiddel;
@@ -519,8 +746,13 @@
     Twee dingen kunnen die planning in de war sturen. Halen we de veertig deelnemers
     niet, dan schakelen we over op een opzet waarbij elke deelnemer de twee versies na
     elkaar gebruikt. Dat vraagt minder mensen, maar introduceert een leereffect tussen
-    de twee periodes. Duurt de app store-review \todo{Apple App Store of de Google Play Store? of maakt het niet perse uit?} te lang, dan verdelen we een testversie
-    rechtstreeks onder de deelnemers.
+    de twee periodes. Loopt de distributie vertraging op, dan verdelen we een testversie rechtstreeks
+    onder de deelnemers. Welke winkel we gebruiken hangt af van de platformkeuze uit
+    sectie~\ref{ssec:platformkeuze}, maar het verschil telt wel mee in die keuze.
+    Op Android kunnen we buiten de Google Play Store om verdelen, via een
+    installatiebestand of een interne testtrack. Op iOS kan dat niet: ook een
+    testversie moet via TestFlight en dus alsnog langs Apple. Een progressive web
+    app omzeilt beide winkels volledig.
     
     \subsection{Validiteit en beperkingen}%
     \label{ssec:beperkingen}
