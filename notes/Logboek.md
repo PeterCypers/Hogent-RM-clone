@@ -51,6 +51,7 @@
 | ----- | ---------- | ----------- |
 | 31-07-26 | Taken verdelen | Manu & Peter |
 | 07-08-26 | Discussie rond methodologie | Manu & Peter |
+| 09-08-26 | Discussie rond methodologie + Literatuur taak verdeling | Manu & Peter |
 
 
 ## Milestones
