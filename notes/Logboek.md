@@ -33,6 +33,7 @@
 | 04-08-26 | V2 Introductie voorlopig afgewerkt | Peter |
 | 07-08-26 | carbon-footprint.md aan notities toegevoegd, V2-aanpassingen | Peter |
 | 09-08-26 | Methodologie verbeteren + deel literatuur | Manu |
+| 10-08-26 | Literatuurstudie intro & carbon footprint | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
