@@ -13,6 +13,7 @@
 \usepackage{tcolorbox} % deelvragen
 \usepackage{todonotes} % custom todos
 \usepackage{graphicx}  % nodig voor \resizebox in \fitwidth
+\usepackage{ragged2e} % tekst rechts-uitlijnen (2.2)
 
 % \fitwidth werd al 5x gebruikt in de methodologie maar was nergens
 % gedefinieerd (Undefined control sequence). Krimpt een tabel alleen als
@@ -183,8 +184,23 @@
     
     \subsection{Tools om de carbon footprint te meten}
     \label{ssec:tools}
-    % dit ssec kan misschien weggelaten worden...
-    %todo
+    % Activiteit / Consumptie-eenheid / Emissie-factor / carbon footprint
+    
+    \textcite{GHGProtocol2013} beschrijft de calculatie van de carbon footprint als volgt: \\
+    
+    Carbon footprint = \sum(Activiteits-eenheid $\times$ Emissiefactor)
+    
+    De totale carbon footprint is de som van de activiteits-eenheden van een bepaalde activiteit vermenigvuldigd met de specifieke bijhorende emissiefactor. Als voorbeeld:
+    de carbon footprint van een verplaatsing met de auto is het aantal km gereden vermenigvuldigd met de emissiefactor die hoort bij het type voertuig in combinatie met het gebruikte brandstof uitgedrukt in $CO_2$e, anders genoteerd: \\
+    
+    carbon footprint ($CO_2$e) = 
+    \begin{flushright}
+        km  $\times$ emissiefactor($CO_2$e/km)
+    \end{flushright}
+    
+    Omdat de berekening van de carbon footprint in het geval van verplaatsing met de auto sterk varieert naargelang voertuigtype, zou de exacte berekening buiten de scope van de proof\--of\--concept\--applicatie vallen.
+    
+    Ook voor andere acties, zoals elektriciteitsgebruik en vleesconsumptie, zijn er documenten beschikbaar voor het berekenen van de desbetreffende emissiefactoren, online via GHG Protocol\footnote{\href{https://ghgprotocol.org/}{https://ghgprotocol.org/}}.
     
     
     \subsection{Impact van menselijke gewoontes op het klimaat}
@@ -262,13 +278,15 @@
     \label{ssec:designenbestaandeapps}
     % bron: Petersen2020 (Smiling Earth)
     % https://www.wwf.nl/kom-in-actie/voetafdruktest
-    %todo
-    % bron: Kok2021
+        
+    Op de website van het World Wildlife Foundation (WWF)\footnote{\href{https://www.wwf.nl/kom-in-actie/voetafdruktest}{https://www.wwf.nl/kom-in-actie/voetafdruktest}} maken ze een eenmalige calculatie met een carbon footprint waarde vergeleken met het gemiddelde inwoner, dit zet niet direct aan tot een verandering van dagelijks gedrag bij de gebruiker, zeker niet wanneer er uit de test blijkt dat de afnemer onder het landelijk gemiddelde valt.
     
-    Bestaande apps en websites zoals dat van het World Wildlife Foundation (WWF)\footnote{\href{https://www.wwf.nl/kom-in-actie/voetafdruktest}{https://www.wwf.nl/kom-in-actie/voetafdruktest}} maken een eenmalige calculatie met een carbon footprint waarde vergeleken met het gemiddelde inwoner, dit zet niet direct aan tot een verandering van dagelijks gedrag bij de gebruiker, zeker niet wanneer er uit de test blijkt dat de afnemer onder het landelijk gemiddelde valt.
+    Het is mogelijk om inspiratie voor ontwerptechnieken te vinden bij eerder gemaakte onderzoeken zoals bijvoorbeeld de gelijkaardig applicatie SmilingEarth \autocite{Petersen2020}, die ook als opzet heeft om de ecologisch voetafdruk van de gebruiker te verminderen en het bewustzijn rond het klimaat te versterken.
     
+    Op de Google Play Store werd er bij het zoeken naar 'carbon footprint calculator' slechts één mobiele applicatie gevonden, namelijk \href{https://play.google.com/store/apps/details?id=com.earthheroorg.earthhero\&pcampaignid=web\_share}{Earth Hero}.
     
-    % ... gebruik van gamification -> overgang volgend deel
+    Een overzicht van ontdekte carbon footprint calculators is te vinden op de \href{https://github.com/HoGentTIN/rm-25-26-groep-85/blob/main/notes/carbon-footprint.md#overzicht}{repository}. Bovenstaande applicaties zullen verder nog worden onderzocht op hun gebruik van gamification-technieken.
+    
     
     \subsection{Gebruiker-retentie en gamification}
     \label{ssec:retentieengamification}
@@ -522,7 +540,7 @@
                 \toprule
                 \textbf{Soort} & \textbf{Voorbeeld} & \textbf{Verwerking} \\
                 \midrule
-                Getal  & Kilometers, kWh                  & Vermenigvuldigen met de factor  \\
+                Getal  & Kilometers, kWh                  & Vermenigvuldigen met de emissiefactor  \\
                 Schaal & Aantal vleesmaaltijden per week  & Omrekenen via een gemiddelde portie \\
                 Ja/nee & Met de fiets of trein naar de campus & Vermeden uitstoot tegenover de normale situatie \\
                 \bottomrule

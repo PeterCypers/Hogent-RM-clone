@@ -34,6 +34,7 @@
 | 07-08-26 | carbon-footprint.md aan notities toegevoegd, V2-aanpassingen | Peter |
 | 09-08-26 | Methodologie verbeteren + deel literatuur | Manu |
 | 10-08-26 | Literatuurstudie intro & carbon footprint | Peter |
+| 11-08-26 | Literatuurstudie footprint tools & bestaande apps afgewerkt | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
