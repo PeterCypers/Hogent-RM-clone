@@ -11,6 +11,9 @@
 \usepackage{comment} % comment-blocks
 \usepackage{enumitem} % meer enum-list opties
 \usepackage{tcolorbox} % deelvragen
+\usepackage{todonotes} % custom todos
+\usepackage{graphicx}  % nodig voor \resizebox in \fitwidth
+\usepackage{ragged2e} % tekst rechts-uitlijnen (2.2)
 
 % Include bibliography file
 \addbibresource{references.bib}
@@ -22,7 +25,7 @@
 \course{Research Methods, 2AO} 
 \assignmenttype{Groepsopdracht}
 \academicyear{2025-2026}
-\title{}
+\title{Theoretische ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten}
 
 % TODO: English text? Comment or remove the lines above and uncomment the lines
 % below
@@ -34,27 +37,17 @@
 % \title{Written preparation of research proposals}
 
 % TODO: Replace student names and email addresses
-<<<<<<< HEAD
-\author{Stef Simons}
-\email{stef.simons@student.hogent.be}
-=======
-\author{Ewout Van Mullem}
-\email{ewout.vanmullen@student.hogent.be}
->>>>>>> 22ffbae (Klaarzetten texfile voor specialisatie)
-
 \author{Manu Coppens}
 \email{manu.coppens@student.hogent.be}
 
 \author{Peter Cypers}
 \email{peter.cypers@student.hogent.be}
 
-<<<<<<< HEAD
 \author{Ewout Van Mullem}
 \email{ewout.vanmullem@student.hogent.be}
-=======
+
 \author{Stef Simons}
 \email{stef.simons@student.hogent.be}
->>>>>>> 22ffbae (Klaarzetten texfile voor specialisatie)
 
 % TODO: Link your Github-repository here
 \projectrepo{https://github.com/HoGentTIN/rm-25-26-groep-85}
@@ -72,7 +65,7 @@
 \specialisation{System Software \& Software Architecture}
 
 % TODO: choose some appropriate keywords for your research proposals
-\keywords{Linux, Modulair, Operating System}
+\keywords{Linux, Modulair, Operating System, Desktop Environment}
 
 \begin{document}
 
@@ -87,22 +80,23 @@
 
 \section{Inleiding}%
 \label{sec:inleiding}
+
+\begin{comment}
+    verwachtte structuur:
+    - Lead-in (algemene kadering)
+    - Probleemstelling
+    - Onderzoeksvraag (CoV)
+    - Deelvragen probleem
+    - Deelvragen oplossingen
+    - doel en begrenzing vh onderzoek
+    - Methode (+outline)
+\end{comment}
+
 Computers worden vandaag gebruikt voor uiteenlopende activiteiten, zoals softwareontwikkeling, het spelen van spellen maar ook administratief werk. Deze activiteiten stellen verschillende eisen aan de beschikbare software, de systeemconfiguratie en het gebruik van systeemresources. Toch maken de meeste besturingssystemen gebruik van één algemene desktopomgeving die nauwelijks verandert wanneer de gebruiker wisselt tussen verschillende workflows.
 
 Binnen het Linux-ecosysteem bestaan verschillende distributies die geoptimaliseerd zijn voor specifieke toepassingen, zoals Pop!\_OS voor development en SteamOS voor gaming. Deze optimalisaties zijn echter statisch: de gebruiker moet vooraf één distributie kiezen en handmatig instellingen of applicaties aanpassen wanneer de activiteit verandert. Hoewel Linux bekendstaat om zijn flexibiliteit en uitbreidbaarheid, bestaat er momenteel geen modulaire desktopomgeving die zich automatisch aanpast aan de context van de gebruiker en waarbij functionaliteit eenvoudig kan worden toegevoegd of gepersonaliseerd.
 
 Deze bachelorproef onderzoekt daarom hoe een modulair en contextbewust Linux-desktopsysteem kan worden ontworpen dat gebruikers ondersteunt die regelmatig wisselen tussen verschillende computeractiviteiten. Daarbij wordt nagegaan welke architectuur hiervoor geschikt is, welke contextinformatie nodig is om automatisch tussen gebruikersmodi te schakelen en welke invloed een dergelijke aanpak heeft op prestaties, gebruiksgemak en workflow.
-
-\begin{comment}
-  verwachtte structuur:
-  - Lead-in (algemene kadering)
-  - Probleemstelling
-  - Onderzoeksvraag (CoV)
-  - Deelvragen probleem
-  - Deelvragen oplossingen
-  - doel en begrenzing vh onderzoek
-  - Methode (+outline)
-\end{comment}
 
 %todo: lead-in
 % Lead-in:
@@ -110,8 +104,58 @@ Deze bachelorproef onderzoekt daarom hoe een modulair en contextbewust Linux-des
 %todo: probleemstelling
 % Probleemstelling:
 
-%todo: CoV
+ %todo: CoV
 % Centraal onderzoeksvraag
+De kernvraag van dit onderzoek luidt als volgt:
+\begin{tcolorbox}[colback=yellow!10]
+    Hoe kan een modulair Linux-desktopsysteem gebruikers ondersteunen die regelmatig wisselen tussen verschillende computeractiviteiten? 
+\end{tcolorbox}
+
+% Deelvragen
+Hieronder wordt de onderzoeksvraag opgesplitst in een aantal deelvragen die zullen worden onderzocht om het probleem beter te begrijpen:
+
+\begin{enumerate}
+    \item Hoe zijn huidige Linux-distributies zoals Pop!\_OS, SteamOS, NixOS, ... technisch opgebouwd?
+    \item Welke onderdelen van een Linux-distributie bepalen de gebruikerservaring?
+    \item Welke bestaande oplossingen bestaan er voor contextbewuste of modulaire desktopomgevingen?
+    \item Welke beperkingen ervaren gebruikers die regelmatig wisselen tussen verschillende workflows (bv. development, gaming en contentcreatie)?
+    \item Hoe worden systeemresources momenteel beheerd tijdens verschillende soorten computergebruik?
+    \item Welke ontwerpprincipes kunnen afgeleid worden uit bestaande Linux-distributies zonder hun volledige architectuur over te nemen?
+\end{enumerate}
+
+De volgende deelvragen bouwen hierop verder en richten zich op de ontwikkeling en uitwerking van een geschikte oplossing:
+
+\begin{enumerate}[start=6]
+    \item Hoe kan een modulaire architectuur ontwikkeld worden bovenop een bestaande Linux-distributie?
+    \item Welke contextinformatie is noodzakelijk om automatisch tussen gebruikersmodi te kunnen schakelen?
+    \item Hoe kan het systeem bepalen welke applicaties en processen prioriteit moeten krijgen afhankelijk van de actieve modus?
+    \item Hoe kunnen gebruikers modules toevoegen, verwijderen en personaliseren zonder de stabiliteit van het systeem in gevaar te brengen?
+    \item Welke softwarearchitectuur is geschikt voor het implementeren van een modulair Linux-desktopsysteem met contextbewuste gebruikersmodi?
+    \item Welke invloed heeft een context-bewuste desktopomgeving op prestaties, gebruiksgemak en workflow?
+\end{enumerate}
+
+\section{Literatuurstudie}%
+\label{sec:literatuurstudie}
+
+Inleiding literatuurstudie
+
+\subsection{Besturingssystemen}
+\label{ssec:besturingssytemen}
+
+\subsection{Modulaire systemen}
+\label{ssec:modulairesytemen}
+
+\subsection{Adaptieve systemen}
+\label{ssec:adaptievesytemen}
+
+\subsection{Interactie mens-computer}
+\label{ssec:interactiemenscomputer}
+
+\subsection{Context-bewuste computing}
+\label{ssec:contextbewustecomputing}
+
+\subsection{State of the Art}
+\label{ssec:stateoftheart}
 
 \section{Methodologie}%
 \label{sec:methodologie}
@@ -138,52 +182,8 @@ In de evaluatiefase wordt het prototype getest aan de hand van verschillende geb
 
 In de laatste fase worden de onderzoeksresultaten verwerkt in de bachelorproef. De resultaten van de literatuurstudie, het ontwerp, de implementatie en de evaluatie worden samengebracht om de centrale onderzoeksvraag te beantwoorden. Daarnaast worden de beperkingen van het prototype besproken en worden aanbevelingen geformuleerd voor verder onderzoek of toekomstige uitbreidingen. De fase wordt afgesloten met het finaliseren van de bachelorproef en de voorbereiding van de verdediging.
 
-% Deelvragen
-Hieronder wordt de onderzoeksvraag opgesplitst in een aantal deelvragen die zullen worden onderzocht om het probleem beter te begrijpen:
-
-\begin{itemize}[leftmargin=0pt]
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Hoe zijn huidige Linux-distributies zoals Pop!\_OS, SteamOS en Ubuntu technisch opgebouwd?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke onderdelen van een Linux-distributie bepalen de gebruikerservaring?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke bestaande oplossingen bestaan er voor contextbewuste of modulaire desktopomgevingen?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke beperkingen ervaren gebruikers die regelmatig wisselen tussen verschillende workflows (bv. development, gaming en contentcreatie)?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Hoe worden systeemresources momenteel beheerd tijdens verschillende soorten computergebruik?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke ontwerpprincipes kunnen afgeleid worden uit bestaande Linux-distributies zonder hun volledige architectuur over te nemen?
-    \end{tcolorbox}
-\end{itemize}
-
-De volgende deelvragen bouwen hierop verder en richten zich op de ontwikkeling en uitwerking van een geschikte oplossing:
-
-\begin{itemize}[leftmargin=0pt]
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Hoe kan een modulaire architectuur ontwikkeld worden bovenop een bestaande Linux-distributie?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke contextinformatie is noodzakelijk om automatisch tussen gebruikersmodi te kunnen schakelen?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Hoe kan het systeem bepalen welke applicaties en processen prioriteit moeten krijgen afhankelijk van de actieve modus?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Hoe kunnen gebruikers modules toevoegen, verwijderen en personaliseren zonder de stabiliteit van het systeem in gevaar te brengen?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke softwarearchitectuur is geschikt voor het implementeren van een modulair Linux-desktopsysteem met contextbewuste gebruikersmodi?
-    \end{tcolorbox}
-    \item[] \begin{tcolorbox}[colback=yellow!30]
-        Welke invloed heeft een contextbewuste desktopomgeving op prestaties, gebruiksgemak en workflow?
-    \end{tcolorbox}
-\end{itemize}
+\section{Verwacht resultaat en conclusie}%
+\label{sec:results}
 
 \printbibliography[heading=bibintoc]
 

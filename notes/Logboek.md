@@ -35,6 +35,8 @@
 | 09-08-26 | Methodologie verbeteren + deel literatuur | Manu |
 | 10-08-26 | Literatuurstudie intro & carbon footprint | Peter |
 | 11-08-26 | Literatuurstudie footprint tools & bestaande apps afgewerkt | Peter |
+| 12-08-26 | Toevoegen van md voor alle resources en ideën voor specialisatie | Stef |
+| 12-08-26 | Klaarzetten subsecties literatuurstudie, cov en deelvragen specialisatie | Stef |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
@@ -44,6 +46,7 @@
 | 21-07-26 | Team meeting 3 | / |
 | 23-07-26 | Onderwerpen bespreken/kiezen | / |
 | 28-07-26 | Groepen indelen specialisatie/interdisciplinair | Per 2 aan een voorstel |
+| 21-07-26 | Team meeting 4 | / |
 
 ## Activiteiten sub-groep
 * Specialisatie: Ewout & Stef
@@ -54,7 +57,7 @@
 | 31-07-26 | Taken verdelen | Manu & Peter |
 | 07-08-26 | Discussie rond methodologie | Manu & Peter |
 | 09-08-26 | Discussie rond methodologie + Literatuur taak verdeling | Manu & Peter |
-
+| 12-08-26 | Discussie rond methodologie + literatuur taak verdeling | Stef & Ewout |
 
 ## Milestones
 
