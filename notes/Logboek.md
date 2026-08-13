@@ -37,6 +37,7 @@
 | 11-08-26 | Literatuurstudie footprint tools & bestaande apps afgewerkt | Peter |
 | 12-08-26 | Toevoegen van md voor alle resources en ideën voor specialisatie | Stef |
 | 12-08-26 | Klaarzetten subsecties literatuurstudie, cov en deelvragen specialisatie | Stef |
+| 13-08-26 | Samenvatting V2 afgewerkt + kleine aanpassingen | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
@@ -67,11 +68,11 @@
 - [x] Onderwerp(en) kiezen
 - [x] Onderwerpen fijnstellen: Opstellen centraal onderzoeksvraag (Cov)
 - [x] Deelvragen probleem/oplossings-domein formuleren
-- [ ] Bronnen verzamelen
-- [ ] craap-test
-- [ ] Initiële literatuurstudie
-- [ ] Mogelijke methodes
-- [ ] Verwachtte conclusies
+- [x] Bronnen verzamelen
+- [x] craap-test
+- [x] Initiële literatuurstudie
+- [x] Mogelijke methodes
+- [x] Verwachtte conclusies
 - [ ] Presentaties voorbereiden
   - [ ] presentatie specialisatie
   - [ ] presentatie interprofessioneel
