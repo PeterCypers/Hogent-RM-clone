@@ -38,6 +38,7 @@
 | 12-08-26 | Toevoegen van md voor alle resources en ideën voor specialisatie | Stef |
 | 12-08-26 | Klaarzetten subsecties literatuurstudie, cov en deelvragen specialisatie | Stef |
 | 13-08-26 | Samenvatting V2 afgewerkt + kleine aanpassingen | Peter |
+| 13-08-26 | Kijken naar pitch presentatie, aanpak reflectie | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
