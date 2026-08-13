@@ -11,6 +11,7 @@
 - https://dl.acm.org/doi/abs/10.1145/3381052.3381316
 
 ## Adaptieve systemen
+[//]: # "Onder voorbehoudt"
 
 - https://ieeexplore.ieee.org/abstract/document/9264055
 - https://ieeexplore.ieee.org/abstract/document/10390443
@@ -37,3 +38,10 @@ Voorstel:
 - Modulair: NixOS (Hoe kan het systeem's configuratie en installatie mogelijkheden geoptimaliseerd worden?)
 - Security/isolatie: Qubes OS (Hoe ver kan het idea van verschillende omgevingen genomen worden?)
 - Minimalistisch: Alpine Linux (Wat gebeurt er als je alles verwijderd dat overbodig is?)
+
+
+## Gebruikt
+
+### Probleemstelling
+- https://www.deutsche-digitale-bibliothek.de/item/UZR2YZQ6BN2QGJ3D7DMHGYYIU33J74FO
+- https://www.usenix.org/conference/hotos-ix/hardware-works-software-doesnt-enforcing-modularity-mondriaan-memory-protection
