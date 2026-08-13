@@ -39,6 +39,7 @@
 | 12-08-26 | Klaarzetten subsecties literatuurstudie, cov en deelvragen specialisatie | Stef |
 | 13-08-26 | Samenvatting V2 afgewerkt + kleine aanpassingen | Peter |
 | 13-08-26 | Kijken naar pitch presentatie, aanpak reflectie | Peter |
+| 13-08-26 | Abstract, Lead-in en Probleemstelling specialisatie | Stef |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
