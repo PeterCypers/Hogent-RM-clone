@@ -18,6 +18,13 @@
 % (black background)
 \usecolortheme{hgwhite}
 
+% modify margin
+%\setbeamersize{text margin left=3cm,text margin right=3cm}
+%\setbeamertemplate{frametitle}{
+%    \vspace{0.3cm}
+%    \hspace{0.3cm}\insertframetitle
+%}
+
 %---------- Packages ----------------------------------------------------------
 % You can add additional packages if you need them.
 
@@ -28,13 +35,16 @@
 \usepackage{multirow,multicol} % Merge table cells
 \usepackage{eurosym}           % Euro symbool
 \usepackage{lipsum}            % Filler text
+\usepackage{graphicx}          % Required for inserting images
+\usepackage{tcolorbox}         % Color boxes
+\usepackage{xcolor}
 
 %---------- Metadata ----------------------------------------------------------
 
-\title{Pitch onderzoeksvoorstellen.}
-\subtitle{Research Methods, 25-26, groep AO2}
-\author{Ewout Van Mullem \and Manu Coppens \and Peter Cypers \and Stef Simons}
-\date{\today}
+\title{\textcolor{white}{Pitch onderzoeksvoorstellen.}}
+\subtitle{\textcolor{white}{Research Methods, 25-26, groep AO2}}
+\author{\textcolor{white}{Ewout Van Mullem \and Manu Coppens \and Peter Cypers \and Stef Simons}}
+\date{\textcolor{white}{\today}}
 
 %==============================================================================
 % Presentation content
@@ -49,8 +59,9 @@
     % "blurred-background-cellphone-coffee-842554.jpg") and the letter (in this
     % case "R") with your own choices. The image should be placed in the
     % `graphics` folder of your project and can be a jpeg or png.
-    \setbeamertemplate{background}[imgletter]
-        {this-is-fine-art.png}{R}
+    %\setbeamertemplate{background}[imgletter]
+    %    {this-is-fine-art.png}{R}
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
 
     \begin{frame}
         \maketitle
@@ -59,37 +70,64 @@
 
 % Onze presentatie
 \begin{frame}
-    \frametitle{Oplijsting voorstellen}
+    \frametitle{Onderzoeksvoorstellen 1}
     
     \begin{itemize}
-        \item[] \textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten
+        \item[] \textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.
         \item[] \textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.
     \end{itemize}
 \end{frame}
 
+\begin{frame}{Onderzoeksvoorstellen 2}
+    \begin{block}{Specialisatiedomein}
+        Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.
+    \end{block}
+    
+    \begin{exampleblock}{Interprofessioneel}
+        Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.
+    \end{exampleblock}
+\end{frame}
+
+\begin{frame}{Onderzoeksvoorstellen 3}
+    \begin{tcolorbox}[colback=blue!30]
+        \textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten
+    \end{tcolorbox}
+    \begin{tcolorbox}[colback=green!30]
+        \textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.
+    \end{tcolorbox}
+\end{frame}
+
+\begin{frame}{Onderzoeksvoorstellen 4}
+    \colorbox{hgblue}{\textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.} \\
+    \colorbox{hglightgreen}{\textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}
+\end{frame}
+
 % best op 2 aparte slides: titel + Probleemstelling
 \begin{frame}
-    \frametitle{Voorstel Specialisatiedomein.}
-    
-    {\huge \textbf{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten}} \\
-    \textbf{Probleemstelling:} \lipsum[1][1-2]
+    {\huge \textbf{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Poster Specialisatiedomein.}
+    \begin{columns}
+        \column{\textwidth} \huge \textbf{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}
+    \end{columns}
+\end{frame}
+
+
+\section{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten}
+
+\begin{frame}
+    \frametitle{Specialisatiedomein.}
     
     {\huge \textbf{POSTER}}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Voorstel Interprofessioneel.}
-    
-    {\large \textbf{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}} \\
-    \textbf{Probleemstelling:} \lipsum[1][1-2]
+\begin{frame}    
+    {\large \textbf{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}}
 \end{frame}
 
 \begin{frame}
-    \frametitle{Poster Interprofessioneel.}
+    \frametitle{Interprofessioneel.}
     
     {\huge \textbf{POSTER}}
 \end{frame}
