@@ -18,6 +18,39 @@
 % (black background)
 \usecolortheme{hgwhite}
 
+\setbeamercovered{transparent} % make invisible elements transparent
+
+% override logo for specific slides
+\newcommand{\whitelogo}{%
+    \setbeamertemplate{footline}{%
+        \begin{beamercolorbox}[wd=\paperwidth, dp=0.3cm]{footline}
+            \usebeamercolor{page number in foot}
+            \usebeamerfont{page number in foot}
+            \hspace{1em}\insertframenumber/\inserttotalframenumber
+            \hfill
+            \begin{tikzpicture}[remember picture, overlay]
+                \node[
+                anchor=south east,
+                shift={(-\the\wd\logopart, \the\wd\logopart)},
+                inner sep=0,
+                outer sep=0
+                ] at (current page.south east) {%
+                    \includegraphics[
+                    height=\the\ht\logopart
+                    ]{hogent_logo_white}%
+                };
+            \end{tikzpicture}
+        \end{beamercolorbox}
+    }%
+}
+
+\definecolor{colorone}{HTML}{F0F3FA}
+\definecolor{colortwo}{HTML}{D5DEEF}
+\definecolor{colorthree}{HTML}{B1C9EF}
+\definecolor{colorfour}{HTML}{8AAEE0}
+\definecolor{colorfive}{HTML}{628ECB}
+\definecolor{colorsix}{HTML}{395886}
+
 % modify margin
 %\setbeamersize{text margin left=3cm,text margin right=3cm}
 %\setbeamertemplate{frametitle}{
@@ -37,12 +70,43 @@
 \usepackage{lipsum}            % Filler text
 \usepackage{graphicx}          % Required for inserting images
 \usepackage{tcolorbox}         % Color boxes
-\usepackage{xcolor}
+\usepackage{xcolor}            % Custom text color
+\usepackage{comment}           % comment-blocks
 
+
+% DRY colorbox styles:
+\tcbset{
+    columntitle/.style={
+        colback=colorthree,
+        colframe=colorthree,
+        coltext=colorsix,
+        before skip=5pt,
+        after skip=5pt,
+        boxsep=.5pt,
+        height=.7cm,
+        boxrule=0pt,
+        arc=2mm,
+        fontupper=\small
+    },
+    columntext/.style={
+        colback=colorone,
+        colframe=colorone,
+        coltext=colorsix,
+        before skip=5pt,
+        after skip=5pt,
+        boxsep=0pt,
+        boxrule=0pt,
+        arc=2mm,
+        left=4pt,
+        right=4pt,
+        top=4pt,
+        bottom=4pt
+    }
+}
 %---------- Metadata ----------------------------------------------------------
 
 \title{\textcolor{white}{Pitch onderzoeksvoorstellen.}}
-\subtitle{\textcolor{white}{Research Methods, 25-26, groep AO2}}
+\subtitle{\textcolor{white}{Research Methods, 25-26, groep 85}}
 \author{\textcolor{white}{Ewout Van Mullem \and Manu Coppens \and Peter Cypers \and Stef Simons}}
 \date{\textcolor{white}{\today}}
 
@@ -61,6 +125,7 @@
     % `graphics` folder of your project and can be a jpeg or png.
     %\setbeamertemplate{background}[imgletter]
     %    {this-is-fine-art.png}{R}
+    \whitelogo
     \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
 
     \begin{frame}
@@ -68,7 +133,216 @@
     \end{frame}
 }
 
-% Onze presentatie
+\begin{frame}{Onderzoeksvoorstellen}
+    
+    \vspace{-5pt}
+     \begin{itemize}
+        \item[]<1> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
+            \textcolor{colorsix}{\textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}
+        \end{tcolorbox}
+        \item[]<2> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
+            \textcolor{colorsix}{\textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}
+        \end{tcolorbox}
+    \end{itemize}
+    
+    
+\end{frame}
+
+
+{
+\usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
+%\setbeamercolor{background canvas}{bg=black}
+\whitelogo
+\begin{frame}
+    \begin{columns}
+        \column{\textwidth} \huge \textbf{\textcolor{white}{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}}
+    \end{columns}
+\end{frame}
+}
+
+\begin{frame}[t]
+    \begin{tcolorbox}[
+        colback=colorfive,
+        colframe=colorfive,
+        coltext=white,
+        before skip=0pt,
+        after skip=0pt,
+        boxrule=0pt,
+        arc=2mm]
+        \small \textbf{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}
+    \end{tcolorbox}
+    \begin{columns}[t,onlytextwidth] % align items top, max-width textwidth
+% KOLOM 1
+        \column{0.32\textwidth}
+        \begin{tcolorbox}[columntitle]
+            \textbf{Inleiding}
+        \end{tcolorbox}
+        % removed height, minimal explicit padding in 4 directions
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1-4]
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle]
+            \textbf{Probleemstelling}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1-2]
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle]
+            \textbf{Onderzoeksvraag}
+        \end{tcolorbox}
+        % todo: deelvragen mee opnemen?
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1]
+        \end{tcolorbox}
+% KOLOM 2
+        \column{0.32\textwidth} 
+        \begin{tcolorbox}[columntitle]
+            \textbf{Methode}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \large $\ldots$ Methode Uitwerking $\ldots$
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle, height=1.1cm]
+            %note: dit past niet in KOL 3 want de HoGent logo neemt veel plek weg
+            \textbf{Verwachtte \\ Resultaten}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1-4]
+        \end{tcolorbox}
+% KOLOM 3
+        \column{0.32\textwidth}
+        \begin{tcolorbox}[columntext, colback=white, colframe=white, boxrule=0pt, boxsep=0pt, left=0pt, right=0pt, bottom=0pt]
+            \tiny \textbf{\textcolor{colorsix}{
+                    Hogent | Toegepaste Informatica | \\Research Methods Groep 85
+            }}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle, height=1.1cm]
+            \textbf{Besluit \& \\ Meerwaarde}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1]
+        \end{tcolorbox}
+    \end{columns}   
+\end{frame}
+
+{
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
+    %\setbeamercolor{background canvas}{bg=black}
+    \whitelogo
+    \begin{frame}
+        \begin{columns}
+            \column{\textwidth} \huge \textbf{\textcolor{white}{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: \\ \large Gebruik van gamification-technieken ter bevordering van gebruikersretentie.}}
+        \end{columns}
+    \end{frame}
+}
+
+%note: de titel is zo uitgebreid dat er minder plek over is om text te schrijven
+\begin{frame}[t]
+    \begin{tcolorbox}[
+        colback=colorfive,
+        colframe=colorfive,
+        coltext=white,
+        before skip=0pt,
+        after skip=0pt,
+        boxrule=0pt,
+        arc=2mm]
+        \small \textbf{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: Gebruik van gamification-technieken ter bevordering van gebruikersretentie.}
+    \end{tcolorbox}
+    \begin{columns}[t,onlytextwidth] % align items top, max-width textwidth
+        % KOLOM 1
+        \column{0.32\textwidth}
+        \begin{tcolorbox}[columntitle]
+            \textbf{Inleiding}
+        \end{tcolorbox}
+        % removed height, minimal explicit padding in 4 directions
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1-2]
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle]
+            \textbf{Probleemstelling}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1-2]
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle]
+            \textbf{Onderzoeksvraag}
+        \end{tcolorbox}
+        % todo: deelvragen mee opnemen?
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1]
+        \end{tcolorbox}
+        % KOLOM 2
+        \column{0.32\textwidth} 
+        \begin{tcolorbox}[columntitle]
+            \textbf{Methode}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \large $\ldots$ Methode Uitwerking $\ldots$
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle, height=1.1cm]
+            %note: dit past niet in KOL 3 want de HoGent logo neemt veel plek weg
+            \textbf{Verwachtte \\ Resultaten}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1-4]
+        \end{tcolorbox}
+        % KOLOM 3
+        \column{0.32\textwidth}
+        \begin{tcolorbox}[columntext, colback=white, colframe=white, boxrule=0pt, boxsep=0pt, left=0pt, right=0pt, bottom=0pt]
+            \tiny \textbf{\textcolor{colorsix}{
+                    Hogent | Toegepaste Informatica | \\Research Methods Groep 85
+            }}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntitle, height=1.1cm]
+            \textbf{Besluit \& \\ Meerwaarde}
+        \end{tcolorbox}
+        \begin{tcolorbox}[columntext]
+            \tiny \lipsum[1][1]
+        \end{tcolorbox}
+    \end{columns}   
+\end{frame}
+
+\begin{frame}
+    \frametitle{Conclusies.}
+    
+    \vspace{-5pt}
+    \begin{itemize}
+        \item[]<1> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
+            \textcolor{colorsix}{\textbf{Specialisatiedomein:} \\ \lipsum[1][1]}
+        \end{tcolorbox}
+        \item[]<2> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
+            \textcolor{colorsix}{\textbf{Interprofessioneel:} \\
+                \lipsum[1][1]}
+        \end{tcolorbox}
+    \end{itemize}
+\end{frame}
+
+\begin{frame}
+    \frametitle{Bronnen}
+    
+    {\huge \textbf{Einde Presentatie.}}
+\end{frame}
+
+% tcolorbox info lengths in pt, cm, mm
+\begin{comment}
+    \begin{tcolorbox}[
+        colback=<colour>,        % Background/fill colour of the box
+        colframe=<colour>,       % Colour of the border/frame
+        coltext=<colour>,        % Colour of the text inside the box
+        boxrule=<length>,        % Thickness of the border; 0pt = no visible border
+        arc=<length>,            % Radius of the rounded corners; 0pt = square corners
+        height=<length>,         % Fixed total height of the box
+        width=<length>,
+        boxsep=<length>,         % Internal padding between content and box edge
+        ]
+    \end{tcolorbox}
+\end{comment}
+
+\begin{frame}
+    % empty slide
+\end{frame}
+
+% Presentatie WIP
 \begin{frame}
     \frametitle{Onderzoeksvoorstellen 1}
     
@@ -113,41 +387,14 @@
     \end{columns}
 \end{frame}
 
-
 \section{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten}
 
-\begin{frame}
-    \frametitle{Specialisatiedomein.}
-    
-    {\huge \textbf{POSTER}}
-\end{frame}
-
-\begin{frame}    
-    {\large \textbf{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Interprofessioneel.}
-    
-    {\huge \textbf{POSTER}}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Conclusies.}
-    
-    \begin{itemize}
-        \item[] \textbf{Specialisatiedomein:} \lipsum[1][1]
-        \item[] \textbf{Interprofessioneel:} \lipsum[1][1]
-    \end{itemize}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Bronnen}
-    
-    {\huge \textbf{Einde Presentatie.}}
-\end{frame}
 
 % Sjabloon
+\begin{frame}
+    \huge \textbf{Sjabloon Hogent}
+\end{frame}
+
 \begin{frame}
     \frametitle{Inhoud.}
 

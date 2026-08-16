@@ -42,6 +42,8 @@
 | 13-08-26 | Samenvatting V2 afgewerkt + kleine aanpassingen | Peter |
 | 13-08-26 | Kijken naar pitch presentatie, aanpak reflectie | Peter |
 | 13-08-26 | Abstract, Lead-in en Probleemstelling specialisatie | Stef |
+| 15-08-26 | WIP presentatie & posters | Peter |
+| 16-08-26 | WIP presentatie & posters | Peter |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
@@ -52,6 +54,7 @@
 | 23-07-26 | Onderwerpen bespreken/kiezen | / |
 | 28-07-26 | Groepen indelen specialisatie/interdisciplinair | Per 2 aan een voorstel |
 | 21-07-26 | Team meeting 4 | / |
+| 14-08-26 | Team meeting 5 | / |
 
 ## Activiteiten sub-groep
 * Specialisatie: Ewout & Stef
