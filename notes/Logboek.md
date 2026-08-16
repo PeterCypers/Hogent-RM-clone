@@ -29,6 +29,7 @@
 | 30-07-26 | V2 Introductie: lead-in, work in progress probleemstelling | Peter |
 | 02-08-26 | V2 Introductie wip | Peter |
 | 03-08-26 | Specialisatie tex file voorbereid met groeps-gegevens en een aantal secties klaar gezet | Stef |
+| 03-08-26 | Opstellen inleiding en methodologie specialisatie | Ewout |
 | 03-08-26 | Methodologie opstellen | Manu |
 | 04-08-26 | V2 Introductie voorlopig afgewerkt | Peter |
 | 07-08-26 | carbon-footprint.md aan notities toegevoegd, V2-aanpassingen | Peter |
@@ -37,6 +38,7 @@
 | 11-08-26 | Literatuurstudie footprint tools & bestaande apps afgewerkt | Peter |
 | 12-08-26 | Toevoegen van md voor alle resources en ideën voor specialisatie | Stef |
 | 12-08-26 | Klaarzetten subsecties literatuurstudie, cov en deelvragen specialisatie | Stef |
+| 12-08-26 | Deel literatuurstudie specialisatie | Ewout |
 | 13-08-26 | Samenvatting V2 afgewerkt + kleine aanpassingen | Peter |
 | 13-08-26 | Kijken naar pitch presentatie, aanpak reflectie | Peter |
 | 13-08-26 | Abstract, Lead-in en Probleemstelling specialisatie | Stef |
