@@ -31,6 +31,12 @@
 - https://eylenburg.github.io/linux_comparison.htm
 - https://arxiv.org/abs/2007.16123
 
+- https://system76.com/pop
+- https://www.fedoraproject.org/workstation/
+- https://nixos.org/manual/nixos/stable/
+- https://doc.qubes-os.org/en/latest/developer/system/security-design-goals.html
+- https://wiki.alpinelinux.org/wiki/Alpine_Linux:Overview
+
 Voorstel: 
 - General-purpose: Ubuntu/Debian (Wat houd een traditionele general-purpose omgeving in Linux in?)
 - Development/desktop-workflow: Pop!_OS/Fedora (Wat houd een development gerichte desktopomgeving in?)

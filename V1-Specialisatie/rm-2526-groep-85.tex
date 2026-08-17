@@ -107,7 +107,7 @@ Binnen het Linux-ecosysteem bestaan daarom verschillende distributies die versch
 % Probleemstelling:
 Hoewel Linux-distributies mogelijkheden bieden om een systeem voor een bepaald gebruiksscenario te optimaliseren, worden deze optimalisaties doorgaans gekoppeld aan een specifieke distributie of configuratie. Een gebruiker die één computer voor verschillende workflows gebruikt, moet daardoor vaak zelf applicaties, instellingen en systeemconfiguraties aanpassen aan de activiteit die hij uitvoert.
 
-Onderzoek naar modulaire operating-system\-architecturen toont aan dat systeemfunctionaliteit kan worden opgedeeld in afzonderlijke modules en interfaces. Hierdoor kan de verdeling van functionaliteit tussen modules als een configuratiekeuze worden behandeld \autocite{}. Daarnaast is onderzocht hoe duidelijke modulegrenzen kunnen bijdragen aan de betrouwbaarheid en onderhoudbaarheid van operating systems \autocite{}. Onderzoek naar context-aware computing onderzoekt dan weer hoe systemen contextuele informatie kunnen gebruiken om hun gedrag aan te passen.
+Onderzoek naar modulaire operating-system\-architecturen toont aan dat systeemfunctionaliteit kan worden opgedeeld in afzonderlijke modules en interfaces. Hierdoor kan de verdeling van functionaliteit tussen modules als een configuratiekeuze worden behandeld \autocite{Schubert2022}. Daarnaast is onderzocht hoe duidelijke modulegrenzen kunnen bijdragen aan de betrouwbaarheid en onderhoudbaarheid van operating systems \autocite{Witchel2003}. Onderzoek naar context-aware computing onderzoekt dan weer hoe systemen contextuele informatie kunnen gebruiken om hun gedrag aan te passen.
 
 Dit onderzoek analyseerd daarom of deze principes gecombineerd kunnen worden in een modulaire Linux-desktopomgeving waarin verschillende gebruikscontexten als afzonderlijke gebruikersmodi worden aangeboden.
 
@@ -172,12 +172,104 @@ Volgens \textcite{Lee2021} wordt er door die connectie tussen de mens en de comp
 \subsection{State of the Art}
 \label{ssec:stateoftheart}
 
+Binnen het Linux-ecosysteem bestaan verschillende distributies die andere ontwerpkeuzes en gebruiksscenario's centraal stellen. Hoewel Linux-distributies allemaal gebruikmaken van de Linux-kernel, verschillen ze onder andere in de meegeleverde software, package management, releasebeleid, desktopomgeving, systeemconfiguratie en beveiliging. Een vergelijking van verschillende distributies toont aan dat deze verschillen niet uitsluitend technisch van aard zijn, maar ook voortkomen uit de doelstellingen en filosofie van de distributie.
+
+\textcite{Legay2020} onderzochten bijvoorbeeld de verschillen in package freshness tussen Linux-distributies. Volgens hun onderzoek leggen distributies verschillende accenten op stabiliteit en het beschikbaar maken van recente softwareversies. Een distributie die sneller nieuwe versies van pakketten aanbiedt, geeft gebruikers sneller toegang tot nieuwe functionaliteiten en bugfixes, maar loopt tegelijkertijd een groter risico op incompatibiliteiten en andere problemen. Dit toont aan dat distributies verschillende afwegingen maken afhankelijk van de gewenste eigenschappen van het systeem.
+
+De vergelijking van \textcite{Eylenburg2026} toont daarnaast dat Linux-distributies op verschillende niveaus van elkaar kunnen verschillen. Voorbeelden hiervan zijn het gebruikte packageformaat en package management, het init-systeem, de standaard desktopomgeving, het bestandssysteem en de mate waarin het systeem immutable of traditioneel is opgebouwd. Tegelijkertijd vertonen grote distributies ook aanzienlijke overeenkomsten in hun onderliggende technologieën. Hierdoor ontstaat een ecosysteem waarin distributies verschillende gebruiksscenario's kunnen optimaliseren zonder volledig verschillende besturingssystemen te zijn.
+
+\subsubsection{General-purpose}
+\label{sssec:generalpurpose}
+
+Ubuntu en Debian kunnen worden gebruikt als voorbeelden van general-purpose Linux-distributies. Ze proberen niet uitsluitend één specifieke activiteit te optimaliseren, maar bieden een brede basis waarop verschillende soorten toepassingen kunnen worden uitgevoerd.
+
+Debian biedt een zeer brede softwarebasis en vormt bovendien de basis voor verschillende andere distributies, waaronder Ubuntu. Ubuntu richt zich op een gebruiksvriendelijke desktopomgeving en ondersteunt veel toepassingen, waaronder communicatie, gaming, contentcreatie en softwareontwikkeling. Hierdoor kan een general-purpose distributie worden beschouwd als een omgeving waarin verschillende workflows naast elkaar bestaan zonder dat één specifieke workflow de volledige systeemarchitectuur bepaalt.
+
+Deze aanpak biedt flexibiliteit, maar betekent ook dat de standaardomgeving niet noodzakelijk specifiek geoptimaliseerd is voor één bepaalde activiteit. Dit vormt een relevant uitgangspunt voor dit onderzoek: in plaats van één vaste algemene omgeving te gebruiken, kan onderzocht worden of verschillende gespecialiseerde omgevingen binnen één systeem kunnen bestaan.
+
+\subsubsection{Development en desktop workflow}
+\label{sssec:development}
+
+Een tweede categorie wordt gevormd door distributies die bijzondere aandacht besteden aan desktop-workflow en ontwikkeling. Pop!\_OS richt zich volgens \textcite{System76} op gebruikers die hun computer voornamelijk gebruiken om te creëren, met een specifieke focus op onder andere computer science en maker-activiteiten. De desktopomgeving bevat functies zoals automatisch tegelen van vensters en verschillende energieprofielen, waarmee de werkomgeving en systeemprestaties kunnen worden afgestemd op de gebruiker.
+
+Ook Fedora Workstation bevat verschillende functies die relevant zijn voor ontwikkelaars. De distributie biedt onder andere containerondersteuning, virtualisatie en ontwikkeltools. Daarnaast bevat Fedora Workstation functies zoals een performance mode en mogelijkheden om ontwikkeltools en runtimes rechtstreeks vanuit de repositories te installeren \autocite{Fedora}.
+
+Deze distributies tonen aan dat een Linux-desktopomgeving niet noodzakelijk volledig generiek hoeft te zijn. De desktopervaring kan worden ontworpen rond bepaalde workflows en behoeften van de gebruiker.
+
+\subsubsection{Gaming}
+\label{sssec:gaming}
+
+Gaminggerichte Linux-systemen vormen een duidelijk voorbeeld van een gespecialiseerde gebruikersomgeving. In tegenstelling tot een traditionele desktopomgeving staat bij dergelijke systemen de interactie met games en gameplatformen centraal. Hierbij kunnen onder andere de gebruikersinterface, software-integratie en systeemconfiguratie worden afgestemd op gaming.
+
+SteamOS vormt hiervan een belangrijk voorbeeld. Het systeem is ontwikkeld rond de Steam-ervaring en gebruikt een Linux-basis om een omgeving te creëren die specifiek gericht is op gaming. Bazzite bouwt eveneens voort op een Linux-basis en richt zich op een gebruikservaring die vergelijkbaar is met een gamingconsole.
+
+Het belangrijkste verschil met een general-purpose distributie is hierdoor niet noodzakelijk dat het systeem fundamenteel andere hardware gebruikt, maar dat de softwareomgeving en standaardconfiguratie worden afgestemd op een specifiek gebruiksscenario.
+
+\subsubsection{Modulariteit en declaratief}
+\label{sssec:modulariteit}
+
+NixOS onderscheidt zich van traditionele Linux-distributies door de declaratieve benadering van systeemconfiguratie. De configuratie van het besturingssysteem wordt beschreven in configuratiebestanden, waarna NixOS op basis hiervan de gewenste systeemtoestand opbouwt.
+
+Een belangrijk onderdeel hiervan is het NixOS-moduleconcept. De volledige systeemconfiguratie wordt samengesteld uit kleinere, herbruikbare modules. Een module kan bijvoorbeeld verantwoordelijk zijn voor een bepaald hardwareonderdeel, een service of een andere logische component van de systeemconfiguratie. Hierdoor kan de configuratie van het systeem worden opgesplitst in afzonderlijke componenten die onafhankelijk kunnen worden beheerd \autocite{Nixos}.
+
+Deze architectuur is bijzonder relevant voor dit onderzoek, omdat ze aantoont dat de configuratie van een Linux-systeem niet noodzakelijk als één configuratie hoeft te worden beheerd. Functionaliteit kan worden beschreven als afzonderlijke componenten die gecombineerd worden tot een volledige systeemconfiguratie.
+
+\subsubsection{Veiligheid en isolatie}
+\label{sssec:veiligheid}
+
+Qubes OS gaat nog verder in het opdelen van de gebruikersomgeving door verschillende activiteiten in afzonderlijke beveiligingsdomeinen onder te brengen. Qubes gebruikt hiervoor virtualisatie en verdeelt applicaties over afzonderlijke zogenaamde qubes. Deze omgevingen worden geïsoleerd zodat een compromis van één omgeving niet automatisch toegang geeft tot andere omgevingen \autocite{Qubes}.
+
+De gebruiker kan bijvoorbeeld afzonderlijke omgevingen gebruiken voor werk, persoonlijke activiteiten en het bezoeken van potentieel onbetrouwbare websites. Hoewel de verschillende omgevingen vanuit één desktop kunnen worden gebruikt, blijven ze technisch van elkaar gescheiden.
+
+Qubes OS toont daarmee aan dat verschillende gebruikscontexten niet noodzakelijk alleen als een verzameling desktopinstellingen moeten worden geïmplementeerd. Een context kan ook gekoppeld worden aan een afzonderlijke technische omgeving met eigen processen, software en beveiligingsgrenzen. Voor dit onderzoek is het relevant als voorbeeld van hoe ver het concept van verschillende gebruikersomgevingen technisch kan worden doorgetrokken.
+
+\subsubsection{Minimalistisch}
+\label{sssec:minimalistisch}
+
+Alpine Linux vertegenwoordigt een andere ontwerpkeuze, waarbij eenvoud, beperkte omvang en efficiënt gebruik van systeemresources centraal staan. Alpine gebruikt onder andere musl libc en BusyBox als basiscomponenten en maakt gebruik van OpenRC en de eigen apk-package manager. De distributie omschrijft haar ontwerpprincipes als Small, Simple and Secure.
+
+Door deze keuzes ontstaat een relatief kleine Linux-omgeving die onder andere veel wordt gebruikt in containers en embedded systemen. Alpine toont daarmee aan dat een Linux-systeem niet noodzakelijk een grote hoeveelheid standaardfunctionaliteit hoeft te bevatten om bruikbaar te zijn \autocite{Alpine}.
+
+Voor dit onderzoek is het vooral relevant dat functionaliteit niet noodzakelijk standaard aanwezig hoeft te zijn wanneer deze niet voor een bepaalde gebruiker of context nodig is. Dit sluit aan bij het idee om functionaliteit als afzonderlijke modules beschikbaar te maken en alleen de nodige onderdelen actief te gebruiken.
+
+\subsubsection{Vergelijking}
+\label{sssec:vergelijking}
+
+Tabel~\ref{tab:vergelijking} toont de vergelijking tussen de Linux-distributies.
+
+\begin{table*}[t]
+    \centering\small
+    \caption{Vergelijking Linux-distributies}
+    \label{tab:vergelijking}
+    \fitwidth{
+        \begin{tabular}{@{}llp{6.5cm}p{4cm}@{}}
+            \toprule
+            \textbf{Categorie} & \textbf{Distributies} & \textbf{Centrale ontwerpkeuze} & \textbf{Relevantie} \\
+            \midrule
+            General-purpose             & Debian, Ubuntu   & Brede ondersteuning        & Algemene omgeving \\
+            Development en workflow     & Pop!\_OS, Fedora & Productiviteit             & Development module \\
+            Gaming                      & SteamOS, Bazzite & Gaminggerichte omgeving    & Gaming module \\
+            Modulariteit en declaratief & NixOS            & Modules als compositie     & Modulearchitectuur \\
+            Veiligheid en isolatie      & Qubes OS         & Afzonderlijke omgevingen   & Omgevingsscheiding \\
+            Minimalistisch              & Alpine Linux     & Kleine en efficiënte basis & Enkel noodzakelijke functies \\
+            \bottomrule
+    \end{tabular}}
+\end{table*}
+
+De vergelijking toont aan dat Linux-distributies verschillende ontwerpkeuzes maken om bepaalde eigenschappen of gebruiksscenario's te ondersteunen. General-purpose distributies proberen veel toepassingen te ondersteunen, terwijl andere distributies zich sterker richten op desktop-workflow, gaming, modulariteit, beveiliging of minimalisme.
+
+Daarnaast blijkt uit het onderzoek van \textcite{Legay2020} dat distributies verschillende afwegingen maken tussen onder andere stabiliteit en de snelheid waarmee nieuwe pakketversies beschikbaar worden. Deze verschillen zijn een gevolg van de verschillende doelstellingen en filosofieën van distributies.
+
+De onderzochte systemen bieden elk een deel van de eigenschappen die relevant zijn voor het voorgestelde Linux-desktopomgeving. Pop!\_OS en Fedora tonen hoe een desktopomgeving rond productiviteit en development kan worden ingericht, terwijl SteamOS en Bazzite aantonen hoe een systeem kan worden gespecialiseerd voor gaming. NixOS biedt een model voor modulaire en declaratieve systeemconfiguratie, Qubes OS toont hoe verschillende gebruikerscontexten technisch van elkaar kunnen worden geïsoleerd en Alpine Linux toont hoe een systeem bewust klein en beperkt kan worden gehouden.
+
+Geen van deze voorbeelden combineert echter al deze principes binnen één desktopomgeving met als doel om afhankelijk van de huidige gebruikerscontext tussen verschillende omgevingen te kunnen schakelen. Daarom wordt in dit onderzoek geanalyseerd of de relevante eigenschappen van deze verschillende distributies kunnen worden gecombineerd in een modulaire Linux-desktoparchitectuur.
+
 \section{Methodologie}
 \label{sec:methodologie}
 
 Dit onderzoek wordt uitgevoerd volgens de Proof-of-Concept-methodologie. Deze onderzoeksmethode combineert een theoretische analyse van een probleem met het ontwerpen, ontwikkelen en evalueren van een softwareoplossing. Het onderzoek wordt opgedeeld in vijf opeenvolgende fasen, waarbij de resultaten van elke fase de basis vormen voor de volgende. Dit wilt echter niet zeggen dat een fase volledig afgesloten wordt na het uitvoeren. Indien nodig, kunnen de vorige fases opnieuw doorlopen worden en wordt iteratief werken mogelijk.
 
-\subsection{Fasering}%
+\subsection{Fasering}
 \label{ssec:fasering}
 
 Het onderzoek loopt in zes fasen. Tabel~\ref{tab:fasering} toont welke deelvraag
