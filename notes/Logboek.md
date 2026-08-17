@@ -73,6 +73,8 @@
 | 12-08-26 | Discussie rond methodologie + literatuur taak verdeling | Stef & Ewout |
 
 ## Milestones
+- Voorstel Interdisciplinair afgewerkt ✅
+- Pitch afgewerkt ✅
 
 ## Todo's
 
@@ -85,6 +87,6 @@
 - [x] Initiële literatuurstudie
 - [x] Mogelijke methodes
 - [x] Verwachtte conclusies
-- [ ] Presentaties voorbereiden
-  - [ ] presentatie specialisatie
-  - [ ] presentatie interprofessioneel
+- [x] Presentaties voorbereiden
+  - [x] presentatie specialisatie
+  - [x] presentatie interprofessioneel

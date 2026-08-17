@@ -7,15 +7,37 @@
 | Van Mullem | Ewout | TIN-AO/2     | [Ewout-VM](https://github.com/Ewout-VM)       |
 | Simons     | Stef  | TIN-AO/1      | [StefSimons](https://github.com/StefSimons) |
 
-## TODOs
+## Groepsopdracht: Voorbereiden en pitchen van 2 onderzoeks-voorstellen
 
-- [ ] Ensure you have a working LaTeX setup so you can compile the provided templates to PDF.
-    - See our online guide at <https://hogenttin.github.io/latex-hogent-gids/>. Remark that it's only in Dutch, so you might want to use the built-in translation feature of your web browser if you don't understand Dutch.
-    - Be sure to install the fonts required by the HOGENT corporate identity, as [described in the guide](https://hogenttin.github.io/latex-hogent-gids/hogent-huisstijl/)!
-- [ ] Add group name and member names to the table above
-- [ ] Keep all your work that prepares for the group assignment in this repository. Use Markdown files for notes.
-- [x] Use the template in the `prep` folder for the written preparation of your research proposals, and compile it to PDF (e.g. using the provided Makefile, or with your own LaTeX setup). Rename the file as `rm-YYYY-groep-NN.tex` (where `YYYY` is the current academic year - e.g. 2526- and `NN` is your group number). Replace "groep" with "group" you are enrolled in the English variant of this course.
-- [ ] Use the template in the `pitch` folder to create a slide deck for your pitch presentation.
-- [ ] Remove these instructions, add a short introduction to the work your team will be presenting, and a table of contents linking to your notes.
+Overzicht gelogde groeps-activiteiten te vinden in het [logboek](./notes/Logboek.md)
 
-⚠️⚠️⚠️⚠️ **PAY ATTENTION!** Your group's repository will be deleted before the start of the course next academic year. **Take a backup if you want to keep your work!**
+---
+
+### Domeinspecifieke onderzoeksvoorstel:
+Titel: <strong>Theoretische ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.</strong>
+
+- Tex file: [rm-2526-groep-85.tex](./V1-Specialisatie/rm-2526-groep-85.tex)
+
+- Info: [modulariteit](./notes/modulariteit.md)
+
+---
+
+### Interprofessionele onderzoeksvoorstel:
+Titel: <strong>Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.</strong>
+
+- Tex file: [rm-2526-groep-85.tex](./V2-Interdisciplinair/rm-2526-groep-85.tex)
+
+- Info: [carbon footprint](./notes/carbon-footprint.md)
+
+---
+
+### Pitch presentatie
+
+Tex file: [pitch](./pitch/rm-groep-nn-pitch.tex)
+
+### Extra notities
+
+- Vastleggen van de gevonden [onderwerpen](./notes/onderwerpen.md)
+
+- [LaTeX beamer tutorial](./notes/latex-beamer-notes.md)
+
