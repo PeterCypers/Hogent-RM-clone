@@ -44,8 +44,10 @@
 | 13-08-26 | Abstract, Lead-in en Probleemstelling specialisatie | Stef |
 | 15-08-26 | WIP presentatie & posters | Peter |
 | 16-08-26 | WIP presentatie & posters | Peter |
+| 16-08-26 | Methodologie verbeteren | Manu |
 | 16-08-26 | Literatuurstudie context aware computing & human computer interaction | Ewout |
 | 17-08-26 | Poster presentatie specialisatie | Ewout |
+| 16-08-26 | Poster presentatie | Manu |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
