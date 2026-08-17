@@ -49,6 +49,7 @@
 | 17-08-26 | Poster presentatie specialisatie | Ewout |
 | 16-08-26 | Poster presentatie | Manu |
 | 17-08-26 | Afwerken methodologie, doel en verwacht resultaat | Stef |
+| 17-08-26 | Afwerken literatuurstudie en bronnen | Stef |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
