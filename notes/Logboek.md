@@ -76,6 +76,7 @@
 ## Milestones
 - Voorstel Interdisciplinair afgewerkt ✅
 - Pitch afgewerkt ✅
+- Voorstel Specialisatie afgewerkt ✅
 
 ## Todo's
 

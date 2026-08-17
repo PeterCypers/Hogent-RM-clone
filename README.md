@@ -14,7 +14,7 @@ Overzicht gelogde groeps-activiteiten te vinden in het [logboek](./notes/Logboek
 ---
 
 ### Domeinspecifieke onderzoeksvoorstel:
-Titel: <strong>Theoretische ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.</strong>
+Titel: <strong>Ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.</strong>
 
 - Tex file: [rm-2526-groep-85.tex](./V1-Specialisatie/rm-2526-groep-85.tex)
 
