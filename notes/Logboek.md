@@ -45,6 +45,7 @@
 | 15-08-26 | WIP presentatie & posters | Peter |
 | 16-08-26 | WIP presentatie & posters | Peter |
 | 16-08-26 | Literatuurstudie context aware computing & human computer interaction | Ewout |
+| 17-08-26 | Poster presentatie specialisatie | Ewout |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
