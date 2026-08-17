@@ -38,12 +38,13 @@
 | 11-08-26 | Literatuurstudie footprint tools & bestaande apps afgewerkt | Peter |
 | 12-08-26 | Toevoegen van md voor alle resources en ideën voor specialisatie | Stef |
 | 12-08-26 | Klaarzetten subsecties literatuurstudie, cov en deelvragen specialisatie | Stef |
-| 12-08-26 | Deel literatuurstudie specialisatie | Ewout |
+| 12-08-26 | Literatuurstudie intro, besturingssystemen en Linux, modulaire software en OS structuren specialisatie | Ewout |
 | 13-08-26 | Samenvatting V2 afgewerkt + kleine aanpassingen | Peter |
 | 13-08-26 | Kijken naar pitch presentatie, aanpak reflectie | Peter |
 | 13-08-26 | Abstract, Lead-in en Probleemstelling specialisatie | Stef |
 | 15-08-26 | WIP presentatie & posters | Peter |
 | 16-08-26 | WIP presentatie & posters | Peter |
+| 16-08-26 | Literatuurstudie context aware computing & human computer interaction | Ewout |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
