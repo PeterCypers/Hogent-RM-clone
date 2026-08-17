@@ -48,6 +48,7 @@
 | 16-08-26 | Literatuurstudie context aware computing & human computer interaction | Ewout |
 | 17-08-26 | Poster presentatie specialisatie | Ewout |
 | 16-08-26 | Poster presentatie | Manu |
+| 17-08-26 | Afwerken methodologie, doel en verwacht resultaat | Stef |
 
 ## Activiteiten Groep
 | Datum | Activiteit | Info |
