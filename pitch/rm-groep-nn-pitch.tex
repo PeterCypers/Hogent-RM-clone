@@ -153,7 +153,7 @@
 \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
 %\setbeamercolor{background canvas}{bg=black}
 \whitelogo
-\begin{frame}
+\begin{frame}{\textcolor{white}{Specialisatiedomein}}
     \begin{columns}
         \column{\textwidth} \huge \textbf{\textcolor{white}{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}}
     \end{columns}
@@ -174,19 +174,21 @@
     \begin{columns}[t,onlytextwidth] % align items top, max-width textwidth
 % KOLOM 1
         \column{0.32\textwidth}
-        \begin{tcolorbox}[columntitle]
-            \textbf{Inleiding}
+        \begin{tcolorbox}[columntitle, height=1.1cm]
+            \textbf{Inleiding \& \\ Probleemstelling}
         \end{tcolorbox}
         % removed height, minimal explicit padding in 4 directions
         \begin{tcolorbox}[columntext]
             \tiny \lipsum[1][1-4]
         \end{tcolorbox}
-        \begin{tcolorbox}[columntitle]
-            \textbf{Probleemstelling}
-        \end{tcolorbox}
-        \begin{tcolorbox}[columntext]
-            \tiny \lipsum[1][1-2]
-        \end{tcolorbox}
+        
+%        \begin{tcolorbox}[columntitle]
+%            \textbf{Probleemstelling}
+%        \end{tcolorbox}
+%        \begin{tcolorbox}[columntext]
+%            \tiny \lipsum[1][1-2]
+%        \end{tcolorbox}
+        
         \begin{tcolorbox}[columntitle]
             \textbf{Onderzoeksvraag}
         \end{tcolorbox}
@@ -229,9 +231,9 @@
     \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
     %\setbeamercolor{background canvas}{bg=black}
     \whitelogo
-    \begin{frame}
+    \begin{frame}{\textcolor{white}{Interprofessioneel}}
         \begin{columns}
-            \column{\textwidth} \huge \textbf{\textcolor{white}{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: \\ \large Gebruik van gamification-technieken ter bevordering van gebruikersretentie.}}
+            \column{\textwidth} \huge \textbf{\textcolor{white}{Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: \\ \large Gebruik van gamification-technieken ter bevordering \\ van gebruikersretentie.}}
         \end{columns}
     \end{frame}
 }
@@ -251,19 +253,21 @@
     \begin{columns}[t,onlytextwidth] % align items top, max-width textwidth
         % KOLOM 1
         \column{0.32\textwidth}
-        \begin{tcolorbox}[columntitle]
-            \textbf{Inleiding}
+        \begin{tcolorbox}[columntitle, height=1.1cm]
+            \textbf{Inleiding \&\\ Probleemstelling}
         \end{tcolorbox}
         % removed height, minimal explicit padding in 4 directions
         \begin{tcolorbox}[columntext]
             \tiny \lipsum[1][1-2]
         \end{tcolorbox}
-        \begin{tcolorbox}[columntitle]
-            \textbf{Probleemstelling}
-        \end{tcolorbox}
-        \begin{tcolorbox}[columntext]
-            \tiny \lipsum[1][1-2]
-        \end{tcolorbox}
+%        
+%        \begin{tcolorbox}[columntitle]
+%            \textbf{Probleemstelling}
+%        \end{tcolorbox}
+%        \begin{tcolorbox}[columntext]
+%            \tiny \lipsum[1][1-2]
+%        \end{tcolorbox}
+        
         \begin{tcolorbox}[columntitle]
             \textbf{Onderzoeksvraag}
         \end{tcolorbox}
@@ -307,7 +311,7 @@
     
     \vspace{-5pt}
     \begin{itemize}
-        \item[]<1> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
+        \item[]<1-> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
             \textcolor{colorsix}{\textbf{Specialisatiedomein:} \\ \lipsum[1][1]}
         \end{tcolorbox}
         \item[]<2> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
@@ -317,11 +321,30 @@
     \end{itemize}
 \end{frame}
 
-\begin{frame}
-    \frametitle{Bronnen}
+{
+    \whitelogo
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
+\begin{frame}{\textcolor{white}{Einde Presentatie}}
+    \huge \textcolor{white}{\textbf{Bedankt voor jullie tijd,}} \\
     
-    {\huge \textbf{Einde Presentatie.}}
+    \huge \textcolor{white}{\textbf{Zijn er nog vragen?}}
 \end{frame}
+}
+
+% optionele slide als er bronnen worden gebruikt in de presentatie
+\begin{comment}
+{
+    \whitelogo
+    \usebackgroundtemplate{\includegraphics[width=\paperwidth,height=\paperheight]{RM-bg-02.jpg}}
+    \begin{frame}{\textcolor{white}{Bronnen}}
+        \begin{itemize}
+            \item[]
+            \item[]
+            \item[]
+        \end{itemize}
+    \end{frame}
+}
+\end{comment}
 
 % tcolorbox info lengths in pt, cm, mm
 \begin{comment}
@@ -337,228 +360,5 @@
         ]
     \end{tcolorbox}
 \end{comment}
-
-\begin{frame}
-    % empty slide
-\end{frame}
-
-% Presentatie WIP
-\begin{frame}
-    \frametitle{Onderzoeksvoorstellen 1}
-    
-    \begin{itemize}
-        \item[] \textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.
-        \item[] \textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.
-    \end{itemize}
-\end{frame}
-
-\begin{frame}{Onderzoeksvoorstellen 2}
-    \begin{block}{Specialisatiedomein}
-        Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.
-    \end{block}
-    
-    \begin{exampleblock}{Interprofessioneel}
-        Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.
-    \end{exampleblock}
-\end{frame}
-
-\begin{frame}{Onderzoeksvoorstellen 3}
-    \begin{tcolorbox}[colback=blue!30]
-        \textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten
-    \end{tcolorbox}
-    \begin{tcolorbox}[colback=green!30]
-        \textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.
-    \end{tcolorbox}
-\end{frame}
-
-\begin{frame}{Onderzoeksvoorstellen 4}
-    \colorbox{hgblue}{\textbf{Specialisatiedomein:} Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.} \\
-    \colorbox{hglightgreen}{\textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}
-\end{frame}
-
-% best op 2 aparte slides: titel + Probleemstelling
-\begin{frame}
-    {\huge \textbf{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}}
-\end{frame}
-
-\begin{frame}
-    \begin{columns}
-        \column{\textwidth} \huge \textbf{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten.}
-    \end{columns}
-\end{frame}
-
-\section{Ontwikkeling van een modulaire en contextbewuste Linux-desktopomgeving voor gebruikers die regelmatig wisselen tussen verschillende computer-activiteiten}
-
-
-% Sjabloon
-\begin{frame}
-    \huge \textbf{Sjabloon Hogent}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Inhoud.}
-
-    \tableofcontents
-\end{frame}
-
-\section{Titel voorstel 1.}
-
-\begin{frame}
-    \frametitle{Inleiding.}
-
-    Some text
-\end{frame}
-
-{
-\setbeamertemplate{background}[imgletter]
-    {blurred-background-cellphone-coffee-842554.jpg}{I}
-
-\begin{frame}
-
-    {\huge \textbf{Voorbeeld van tekst door een afbeelding}}
-
-\end{frame}
-}
-
-\subsection{Subsectie 1.1.}
-
-\begin{frame}
-    \frametitle{Titel.}
-
-    \begin{itemize}
-        \item Lijn één
-        \item Lijn twee
-        \item Lijn drie
-    \end{itemize}
-\end{frame}
-
-\subsection{Subsectie 1.2.}
-
-\begin{frame}
-    \frametitle{Twee kolommen.}
-
-    \begin{columns}[c]
-        \column{.5\textwidth}
-        \begin{itemize}
-            \item Lijn 1
-            \item Lijn 2
-            \item Lijn 3
-        \end{itemize}
-
-        \column{.5\textwidth}
-        \begin{itemize}
-            \item Lijn 1
-            \item Lijn 2
-            \item Lijn 3
-        \end{itemize}
-    \end{columns}
-\end{frame}
-
-\begin{frame}
-    \frametitle{Kleuren}
-
-    % These are examples of the colours defined in HOGENT's corporate identity.
-    \textbf{\textcolor{hgdarkgreen}{tekst}
-    \textcolor{hgpink}{tekst}
-    \textcolor{hgochre}{tekst}
-    \textcolor{hgorange}{tekst}
-    \textcolor{hgpurple}{tekst}
-    \textcolor{hgblue}{tekst}
-    \textcolor{hglightgreen}{tekst}
-    \textcolor{hgbrown}{tekst}
-    \textcolor{hggrey}{tekst}
-    \textcolor{hgyellow}{tekst}}
-
-    \textbf{\colorbox{hgdarkgreen}{tekst}
-    \colorbox{hgpink}{tekst}
-    \colorbox{hgochre}{tekst}
-    \colorbox{hgorange}{tekst}
-    \colorbox{hgpurple}{tekst}
-    \colorbox{hgblue}{tekst}
-    \colorbox{hglightgreen}{tekst}
-    \colorbox{hgbrown}{tekst}
-    \colorbox{hggrey}{tekst}
-    \colorbox{hgyellow}{tekst}}
-\end{frame}
-
-\section{Titel voorstel 2.}
-
-\begin{frame}
-\frametitle{Het tweede deel.}
-
-\begin{table}
-    \begin{tabular}{lll}
-    \toprule
-                    & \textbf{lorem ipsum} & \textbf{lorem ipsum} \\
-    \midrule
-    dolor sit amet & $3.255$              & $3.255$ \\
-    \midrule
-    lorem ipsum    & $425,43 (13,07\%)$   & $425,43 (13,07\%)$ \\
-    \midrule
-    dolor sit amet & $0,00$               & $1.273,31$ ($45\%$ -- gemiddeld)\\
-    \midrule
-    \textbf{{\small Verhouding kost}} & \textbf{$1,53$} & \textbf{$2,72$}\\
-    \bottomrule
-    \end{tabular}
-
-    \label{tab:voorbeeld}
-    \caption{Deze tabel heeft een bijschrift}
-    \end{table}
-\end{frame}
-
-\subsection{Sectie 2.1.}
-
-\begin{frame}
-\frametitle{Afbeeldingen.}
-    \begin{figure}
-        \caption{Deze afbeelding heeft een bijschrift.}
-
-        \includegraphics[height=.8\textheight]
-            {beverage-coffee-computer-984536.jpg}
-        % Bron: https://www.pexels.com/photo/hand-on-cup-of-coffee-984536/
-        \label{img:voorbeeld}
-    \end{figure}
-\end{frame}
-
-% If the HOGENT logo in the bottom right corner of the slide conflicts with
-% the content, you can hide it by adding the option [plain] to the frame, as
-% shown below.
-\begin{frame}[plain]
-    \includegraphics[width=\textwidth]{beverage-coffee-computer-984536.jpg}
-\end{frame}
-
-{
-\setbeamertemplate{background}[imgletter]%
-  {beverage-coffee-computer-984536.jpg}{T}
-
-\begin{frame}
-
-    {\huge \textbf{This is a famous quote that says something about
-    my point I want to make.}}
-
-    \bigskip
-
-    \textbf{Name Quotemaker}
-
-\end{frame}
-}
-
-\begin{frame}[fragile]
-    \texttt{monogespatieerd lettertype met ligaturen -> <= >=}
-
-    \begin{verbatim}
-        a <- 1
-        b <- 2
-        a + b
-    \end{verbatim}
-\end{frame}
-
-\begin{frame}{Wiskundige formule}
-  \begin{eqnarray}
-    X_{t} = \alpha x_{t} + (1-\alpha)(X_{t-1} + b_{t-1}) & 0 \leq \alpha \leq 1 \\
-    b_{t} = \beta(X_{t}-X_{t-1}) + (1-\beta)b_{t-1} & 0 \leq \beta \leq 1 
-    \label{eq:doubleSmoothing}
-  \end{eqnarray}
-\end{frame}
 
 \end{document}
