@@ -50,6 +50,7 @@
 \definecolor{colorfour}{HTML}{8AAEE0}
 \definecolor{colorfive}{HTML}{628ECB}
 \definecolor{colorsix}{HTML}{395886}
+\definecolor{linkblue}{HTML}{4CA2D5}
 
 % modify margin
 %\setbeamersize{text margin left=3cm,text margin right=3cm}
@@ -72,6 +73,7 @@
 \usepackage{tcolorbox}         % Color boxes
 \usepackage{xcolor}            % Custom text color
 \usepackage{comment}           % comment-blocks
+\usepackage{enumitem}
 
 
 % DRY colorbox styles:
@@ -138,7 +140,7 @@
     \vspace{-5pt}
      \begin{itemize}
         \item[]<1> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
-            \textcolor{colorsix}{\textbf{Specialisatiedomein:} Theoretische ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.}
+            \textcolor{colorsix}{\textbf{Specialisatiedomein:} Ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.}
         \end{tcolorbox}
         \item[]<2> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
             \textcolor{colorsix}{\textbf{Interprofessioneel:} Ontwerp en evaluatie van een digitale ecologische voetafdruk-tracker ter ondersteuning van duurzaam dagelijks gedrag bij studenten aan HOGENT: gebruik van gamification-technieken ter bevordering van gebruikersretentie.}
@@ -155,7 +157,7 @@
 \whitelogo
 \begin{frame}{\textcolor{white}{Specialisatiedomein}}
     \begin{columns}
-        \column{\textwidth} \huge \textbf{\textcolor{white}{Theoretische ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.}}
+        \column{\textwidth} \huge \textbf{\textcolor{white}{Ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.}}
     \end{columns}
 \end{frame}
 }
@@ -169,7 +171,7 @@
         after skip=0pt,
         boxrule=0pt,
         arc=2mm]
-        \small \textbf{Theoretische ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.}
+        \small \textbf{Ontwikkeling van een modulaire, contextbewuste Linux-desktopomgeving voor verschillende gebruikersworkflows.}
     \end{tcolorbox}
     \begin{columns}[t,onlytextwidth] % align items top, max-width textwidth
 % KOLOM 1
@@ -298,10 +300,27 @@
     \end{columns}   
 \end{frame}
 
+% Belangrijke Bronnen
+\begin{frame}{Bronnen Interprofessioneel}
+    
+    \vspace{-5pt}
+
+   \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
+        \begin{itemize}[label=\textcolor{colorsix}{$\blacktriangleright$}]
+            % Bron 1 = Bestaande onderzoek rond ecologische voetafdruk calculators
+            \item \textbf{\textcolor{colorsix}{Bron 1:}} \\ Kok, A.L., \& Barendregt, W. (2021). Understanding the adoption, use, and effects of ecological footprint calculators among Dutch citizens. \textit{Journal of Cleaner Production, 326}, 129341. \href{https://doi.org/10.1016/j.jclepro.2021.129341}{\textcolor{linkblue}{https://doi.org/10.1016/j.jclepro.2021.129341}}
+            % Bron 2 = Meest gebruikte bron rond gamification?
+            \item \textbf{\textcolor{colorsix}{Bron 2:}} \\ Ryan, R.M., \& Deci, E.L. (2000). Intrinsic and extrinsic motivations: classic definitions and new directions. \textit{Contemporary Educational Psychology, 25(1), 54-67}. \href{https://doi.org/10.1006/ceps.1999.1020}{\textcolor{linkblue}{https://doi.org/10.1006/ceps.1999.1020}}
+        \end{itemize}
+   \end{tcolorbox}
+
+\end{frame}
+
 \begin{frame}
     \frametitle{Conclusies.}
     
     \vspace{-5pt}
+
     \begin{itemize}
         \item[]<1-> \begin{tcolorbox}[colback=colortwo, colframe=colorsix, width=.8\textwidth]
             \textcolor{colorsix}{\textbf{Specialisatiedomein:} \\ Naar verwachting biedt een modulaire, contextbewuste Linux-desktopomgeving meer flexibiliteit bij het wisselen tussen verschillende activiteiten.}
